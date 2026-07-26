@@ -1,0 +1,84 @@
+{
+  "title": "Panel řidiče",
+  "loading": "Načítání...",
+  "onboarding": {
+    "heading": "🐴 Staňte se řidičem",
+    "description": "Vytvořte si profil řidiče a začněte přijímat jízdy na Mackinac Island.",
+    "inputs": {
+      "displayName": {
+        "label": "Zobrazované jméno *",
+        "placeholder": "Kapitán Jack"
+      },
+      "carriageName": {
+        "label": "Název kočáru",
+        "placeholder": "Černá perla"
+      },
+      "bio": {
+        "label": "O mně",
+        "placeholder": "20 let jezdím na ostrově..."
+      }
+    },
+    "actions": {
+      "createProfile": "Vytvořit profil"
+    },
+    "alerts": {
+      "profileCreated": "Profil vytvořen!"
+    }
+  },
+  "dashboard": {
+    "heading": "🐴 Panel řidiče",
+    "status": {
+      "active": "🟢 Aktivní",
+      "offline": "⚫ Offline"
+    },
+    "inactivePrompt": "Aktivujte se, abyste začali přijímat požadavky na jízdu.",
+    "alerts": {
+      "nowActive": "Nyní jste AKTIVNÍ",
+      "nowOffline": "Nyní jste OFFLINE"
+    }
+  },
+  "location": {
+    "deniedWarning": "⚠️ Přístup k poloze byl zamítnut. Vaši cestující neuvidí váš kočár na mapě.",
+    "deniedHelp": "Pokud tlačítko níže nezobrazí výzvu prohlížeče, klikněte na ikonu zámku v adresním řádku a resetujte oprávnění polohy.",
+    "allowAccess": "📍 Povolit přístup k poloze",
+    "requesting": "Zjišťování polohy...",
+    "trackingActive": "Sledování aktivní",
+    "denied": "Poloha zamítnuta",
+    "notSupported": "Geolokace není podporována",
+    "error": "Chyba polohy: {{message}}",
+    "pingingFrequency": "Odesílání každých 5 s"
+  },
+  "activeRides": {
+    "heading": "Vaše aktivní jízdy",
+    "riderLine": "Cestující: {{riderName}} • Jízdné: {{fare}}",
+    "anonymousRider": "Anonymní",
+    "noFare": "—",
+    "statusLabels": {
+      "requested": "Požadováno",
+      "accepted": "Přijato",
+      "in_progress": "Probíhá",
+      "completed": "Dokončeno",
+      "cancelled": "Zrušeno"
+    },
+    "actions": {
+      "startTrip": "Zahájit jízdu",
+      "completeAndCheckout": "Dokončit a účtovat",
+      "cancel": "Zrušit"
+    },
+    "alerts": {
+      "rideUpdated": "Jízda aktualizována na {{status}}"
+    }
+  },
+  "incomingRequests": {
+    "heading": "Příchozí požadavky",
+    "autoRefreshes": "(automaticky se obnovuje)",
+    "empty": "Žádné čekající požadavky na jízdu. Čekám...",
+    "riderLine": "{{riderName}} • {{fare}}",
+    "actions": {
+      "accept": "Přijmout"
+    },
+    "alerts": {
+      "accepted": "Jízda do {{dropoff}} přijata!"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Přivolat kočár",
+  "restoring": {
+    "heading": "🐴 Vaše jízda",
+    "checking": "Kontrola aktivní jízdy..."
+  },
+  "activeRide": {
+    "heading": "🐴 Vaše jízda",
+    "driverLabel": "Řidič:",
+    "fareLabel": "Jízdné:",
+    "noFare": "—",
+    "paid": "✓ Zaplaceno",
+    "statusLabels": {
+      "requested": "🔍 Hledám řidiče...",
+      "accepted": "✅ Řidič přijal! Kočár je na cestě.",
+      "in_progress": "🐴 Jste na cestě!",
+      "completed": "🎉 Jízda dokončena! Děkujeme za jízdu.",
+      "cancelled": "❌ Jízda zrušena.",
+      "unknown": "Neznámý"
+    },
+    "map": {
+      "livePosition": "📍 Živá poloha: {{lat}}, {{lng}} — aktualizace každé 4 s",
+      "waitingForDriver": "Čekání na polohu vašeho řidiče. Možná ještě nemá zapnuté sdílení polohy."
+    },
+    "actions": {
+      "cancelRide": "Zrušit jízdu",
+      "hailAnother": "Přivolat další jízdu"
+    },
+    "alerts": {
+      "cancelled": "Jízda zrušena."
+    }
+  },
+  "hailForm": {
+    "heading": "🐴 Přivolat kočár",
+    "description": "Vyberte stanoviště nástupu a výstupu na Mackinac Island.",
+    "inputs": {
+      "pickup": {
+        "label": "Stanoviště nástupu",
+        "placeholder": "Kde jste?"
+      },
+      "dropoff": {
+        "label": "Stanoviště výstupu",
+        "placeholder": "Kam jedete?"
+      }
+    },
+    "actions": {
+      "hailCarriage": "Přivolat kočár 🐴",
+      "requesting": "Odesílání požadavku..."
+    },
+    "alerts": {
+      "requested": "Jízda vyžádána! Hledám řidiče..."
+    }
+  },
+  "map": {
+    "loading": "Načítání mapy..."
+  },
+  "riderDefaultName": "Cestující"
+}

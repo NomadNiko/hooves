@@ -1,0 +1,47 @@
+{
+  "title": "Detail řidiče",
+  "loading": "Načítání dat řidiče...",
+  "notFound": {
+    "heading": "Řidič nenalezen",
+    "backToFleet": "← Zpět na flotilu"
+  },
+  "backToFleet": "← Zpět na flotilu",
+  "profile": {
+    "carriageLabel": "Kočár: {{carriageName}}",
+    "status": {
+      "active": "🟢 Aktivní",
+      "offline": "⚫ Offline"
+    },
+    "joinedLine": "Registrován {{date}} • ID uživatele: {{userId}}"
+  },
+  "stats": {
+    "completed": "Dokončené",
+    "cancelled": "Zrušené",
+    "totalEarnings": "Celkové příjmy",
+    "avgFare": "Průměrné jízdné"
+  },
+  "rideHistory": {
+    "heading": "Historie jízd ({{count}})",
+    "empty": "Tento řidič zatím nemá žádné jízdy.",
+    "table": {
+      "route": "Trasa",
+      "rider": "Cestující",
+      "status": "Stav",
+      "paid": "Zaplaceno",
+      "fare": "Jízdné",
+      "date": "Datum"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "Požadováno",
+      "accepted": "Přijato",
+      "in_progress": "Probíhá",
+      "completed": "Dokončeno",
+      "cancelled": "Zrušeno",
+      "unknown": "Neznámý"
+    }
+  }
+}

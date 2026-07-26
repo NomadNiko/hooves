@@ -1,5 +1,49 @@
 {
   "title": "Hooves",
-  "description": "Bienvenido a Hooves — servicio de carruajes en Mackinac Island.",
-  "privacyPolicy": "Política de privacidad"
+  "description": "Servicio de carruajes tirados por caballos en la Isla Mackinac. Solicita un carruaje desde tu teléfono.",
+  "privacyPolicy": "Política de privacidad",
+  "hero": {
+    "heading": "Hooves",
+    "tagline": "El servicio de taxi en carruaje de la Isla Mackinac.",
+    "tagline2": "Solicita un carruaje desde tu teléfono — sin autos, solo cascos.",
+    "ctaRide": "🐴 Solicitar un Carruaje",
+    "ctaDriver": "🎠 Conducir para Hooves"
+  },
+  "howItWorks": {
+    "heading": "Cómo Funciona",
+    "step1": {
+      "title": "Elige Tu Parada",
+      "description": "Elige entre 10 ubicaciones de recogida y destino en toda la isla — los muelles, el Grand Hotel, Fort Mackinac y más."
+    },
+    "step2": {
+      "title": "Un Carruaje Viene a Ti",
+      "description": "El conductor disponible más cercano acepta el viaje. Sigue su carruaje en un mapa en vivo mientras se acerca."
+    },
+    "step3": {
+      "title": "Disfruta del Paseo",
+      "description": "Relájate, disfruta de las vistas y llega a tu destino como Mackinac fue pensada para ser explorada."
+    }
+  },
+  "island": {
+    "heading": "La Única Forma de Moverse",
+    "paragraph1": "La Isla Mackinac prohibió los vehículos motorizados desde 1898. Los carruajes tirados por caballos son los taxis, autobuses y camiones de reparto de la isla — todo en uno.",
+    "paragraph2": "Hooves conecta a los pasajeros con conductores de carruajes licenciados al instante. Sin buscar un taxi que pase, sin esperar en el muelle. Solo abre la app y viaja.",
+    "stats": {
+      "stands": "Paradas de recogida",
+      "area": "mi² de isla",
+      "cars": "Autos en la isla",
+      "years": "Años sin autos"
+    }
+  },
+  "forDrivers": {
+    "heading": "🎠 Conduce para Hooves",
+    "description": "Operadores de carruajes licenciados — crea un perfil, actívate cuando estés listo y comienza a aceptar viajes. Controla tus ganancias, gestiona tu horario, todo desde un panel.",
+    "cta": "Comenzar como Conductor →"
+  },
+  "footer": {
+    "copyright": "© 2026 Hooves · Servicio de Carruajes de la Isla Mackinac",
+    "signIn": "Iniciar sesión",
+    "signUp": "Crear cuenta",
+    "privacy": "Privacidad"
+  }
 }

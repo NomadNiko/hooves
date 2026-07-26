@@ -1,0 +1,43 @@
+{
+  "title": "Historie jízd a příjmy",
+  "loading": "Načítání...",
+  "noProfile": {
+    "heading": "📊 Historie jízd",
+    "description": "Zatím nemáte profil řidiče.",
+    "actions": {
+      "createProfile": "Vytvořit profil řidiče"
+    }
+  },
+  "heading": "📊 Vaše historie jízd",
+  "stats": {
+    "totalRides": "Celkem jízd",
+    "totalEarnings": "Celkové příjmy",
+    "thisWeek": "Tento týden",
+    "avgFare": "Průměrné jízdné"
+  },
+  "rideList": {
+    "heading": "Všechny jízdy ({{count}})",
+    "empty": "Zatím žádné jízdy. Aktivujte se na svém <0>panelu</0> a začněte přijímat jízdy.",
+    "table": {
+      "route": "Trasa",
+      "rider": "Cestující",
+      "status": "Stav",
+      "fare": "Jízdné",
+      "date": "Datum"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "route": {
+      "noBreadcrumbs": "Pro tuto jízdu nebyly zaznamenány žádné GPS body.",
+      "heading": "🗺️ Trasa ({{count}} bodů)"
+    },
+    "statusLabels": {
+      "requested": "Požadováno",
+      "accepted": "Přijato",
+      "in_progress": "Probíhá",
+      "completed": "Dokončeno",
+      "cancelled": "Zrušeno",
+      "unknown": "Neznámý"
+    }
+  }
+}

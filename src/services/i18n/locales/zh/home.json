@@ -1,5 +1,49 @@
 {
   "title": "Hooves",
-  "description": "欢迎使用 Hooves — 麦基诺岛马车叫车服务。",
-  "privacyPolicy": "隐私政策"
+  "description": "麦基诺岛马车叫车服务。用手机叫一辆马车。",
+  "privacyPolicy": "隐私政策",
+  "hero": {
+    "heading": "Hooves",
+    "tagline": "麦基诺岛的马车出租服务。",
+    "tagline2": "用手机叫一辆马车 — 没有汽车，只有马蹄声。",
+    "ctaRide": "🐴 叫一辆马车",
+    "ctaDriver": "🎠 成为 Hooves 司机"
+  },
+  "howItWorks": {
+    "heading": "如何使用",
+    "step1": {
+      "title": "选择站点",
+      "description": "从岛上 10 个命名的上下车地点中选择 — 码头、大酒店、麦基诺堡等。"
+    },
+    "step2": {
+      "title": "马车来接您",
+      "description": "最近的可用司机接受行程。在实时地图上追踪他们的马车。"
+    },
+    "step3": {
+      "title": "享受旅程",
+      "description": "放松身心，欣赏风景，以麦基诺岛应有的方式到达目的地。"
+    }
+  },
+  "island": {
+    "heading": "唯一的出行方式",
+    "paragraph1": "麦基诺岛自 1898 年起禁止机动车辆。马车是岛上的出租车、公共汽车和送货车 — 集于一身。",
+    "paragraph2": "Hooves 即时连接乘客与持证马车司机。无需拦截过路出租车，无需在码头等待。打开应用即可乘坐。",
+    "stats": {
+      "stands": "上车站点",
+      "area": "平方英里岛屿",
+      "cars": "岛上汽车数",
+      "years": "年无车历史"
+    }
+  },
+  "forDrivers": {
+    "heading": "🎠 为 Hooves 驾驶",
+    "description": "持证马车运营商 — 创建个人资料，准备好时上线，开始接受行程。追踪收入，管理日程，尽在一个仪表板。",
+    "cta": "开始成为司机 →"
+  },
+  "footer": {
+    "copyright": "© 2026 Hooves · 麦基诺岛马车服务",
+    "signIn": "登录",
+    "signUp": "注册",
+    "privacy": "隐私"
+  }
 }

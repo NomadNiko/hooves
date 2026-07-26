@@ -1,0 +1,29 @@
+{
+  "title": "Přehled flotily",
+  "loading": "Načítání dat flotily...",
+  "heading": "🐴 Přehled flotily",
+  "viewAllRides": "Zobrazit všechny jízdy →",
+  "stats": {
+    "totalDrivers": "Celkem řidičů",
+    "activeNow": "Nyní aktivních",
+    "completedRides": "Dokončené jízdy",
+    "totalRevenue": "Celkové tržby"
+  },
+  "table": {
+    "heading": "Všichni řidiči",
+    "empty": "Zatím nejsou registrováni žádní řidiči.",
+    "columns": {
+      "driver": "Řidič",
+      "carriage": "Kočár",
+      "status": "Stav",
+      "rides": "Jízdy",
+      "earnings": "Příjmy",
+      "joined": "Registrován"
+    },
+    "noCarriage": "—",
+    "status": {
+      "active": "Aktivní",
+      "offline": "Offline"
+    }
+  }
+}

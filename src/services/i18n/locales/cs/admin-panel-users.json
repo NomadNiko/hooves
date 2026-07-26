@@ -1,0 +1,38 @@
+{
+  "title": "Uživatelé",
+  "table": {
+    "column1": "ID",
+    "column2": "Jméno",
+    "column3": "E-mail",
+    "column4": "Role"
+  },
+  "actions": {
+    "add": "Přidat uživatele",
+    "edit": "Upravit",
+    "delete": "Smazat",
+    "create": "Vytvořit uživatele"
+  },
+  "confirm": {
+    "delete": {
+      "title": "Smazat uživatele",
+      "message": "Opravdu chcete smazat tohoto uživatele?"
+    }
+  },
+  "filter": {
+    "actions": {
+      "filter": "Filtrovat",
+      "apply": "Použít"
+    },
+    "inputs": {
+      "role": {
+        "label": "Role",
+        "options": {
+          "1": "Super Admin",
+          "2": "Admin",
+          "3": "Řidič",
+          "4": "Uživatel"
+        }
+      }
+    }
+  }
+}

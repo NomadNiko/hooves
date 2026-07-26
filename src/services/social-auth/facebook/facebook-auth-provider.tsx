@@ -31,6 +31,8 @@ declare global {
 const languageToCode: Record<LanguageCode, string> = {
   en: "en_US",
   ar: "ar_AR",
+  cs: "cs_CZ",
+  de: "de_DE",
   es: "es_ES",
   fr: "fr_FR",
   hi: "hi_IN",

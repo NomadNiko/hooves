@@ -1,0 +1,84 @@
+{
+  "title": "Fahrer-Dashboard",
+  "loading": "Wird geladen...",
+  "onboarding": {
+    "heading": "🐴 Fahrer werden",
+    "description": "Erstellen Sie Ihr Fahrerprofil, um Fahrten auf Mackinac Island anzunehmen.",
+    "inputs": {
+      "displayName": {
+        "label": "Anzeigename *",
+        "placeholder": "Kapitän Jack"
+      },
+      "carriageName": {
+        "label": "Kutschenname",
+        "placeholder": "Die Schwarze Perle"
+      },
+      "bio": {
+        "label": "Biografie",
+        "placeholder": "20 Jahre Kutschfahrten auf der Insel..."
+      }
+    },
+    "actions": {
+      "createProfile": "Profil erstellen"
+    },
+    "alerts": {
+      "profileCreated": "Profil erstellt!"
+    }
+  },
+  "dashboard": {
+    "heading": "🐴 Fahrer-Dashboard",
+    "status": {
+      "active": "🟢 Aktiv",
+      "offline": "⚫ Offline"
+    },
+    "inactivePrompt": "Gehen Sie aktiv, um Fahrtanfragen zu erhalten.",
+    "alerts": {
+      "nowActive": "Sie sind jetzt AKTIV",
+      "nowOffline": "Sie sind jetzt OFFLINE"
+    }
+  },
+  "location": {
+    "deniedWarning": "⚠️ Standortzugriff wurde verweigert. Ihre Fahrgäste können Ihre Kutsche nicht auf der Karte sehen.",
+    "deniedHelp": "Wenn die Schaltfläche unten keine Browser-Eingabeaufforderung anzeigt, klicken Sie auf das Schloss-Symbol in Ihrer Adressleiste, um die Standortberechtigungen zurückzusetzen.",
+    "allowAccess": "📍 Standortzugriff erlauben",
+    "requesting": "Standort wird abgefragt...",
+    "trackingActive": "Standortverfolgung aktiv",
+    "denied": "Standort verweigert",
+    "notSupported": "Standortbestimmung nicht unterstützt",
+    "error": "Standortfehler: {{message}}",
+    "pingingFrequency": "Ping alle 5 Sekunden"
+  },
+  "activeRides": {
+    "heading": "Ihre aktiven Fahrten",
+    "riderLine": "Fahrgast: {{riderName}} • Fahrpreis: {{fare}}",
+    "anonymousRider": "Anonym",
+    "noFare": "—",
+    "statusLabels": {
+      "requested": "Angefragt",
+      "accepted": "Angenommen",
+      "in_progress": "Unterwegs",
+      "completed": "Abgeschlossen",
+      "cancelled": "Storniert"
+    },
+    "actions": {
+      "startTrip": "Fahrt starten",
+      "completeAndCheckout": "Abschließen & Abrechnen",
+      "cancel": "Stornieren"
+    },
+    "alerts": {
+      "rideUpdated": "Fahrt aktualisiert auf {{status}}"
+    }
+  },
+  "incomingRequests": {
+    "heading": "Eingehende Anfragen",
+    "autoRefreshes": "(wird automatisch aktualisiert)",
+    "empty": "Keine ausstehenden Fahrtanfragen. Warten...",
+    "riderLine": "{{riderName}} • {{fare}}",
+    "actions": {
+      "accept": "Annehmen"
+    },
+    "alerts": {
+      "accepted": "Fahrt nach {{dropoff}} angenommen!"
+    }
+  }
+}

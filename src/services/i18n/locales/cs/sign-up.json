@@ -1,0 +1,49 @@
+{
+  "title": "Registrace",
+  "actions": {
+    "submit": "Zaregistrovat se",
+    "accountAlreadyExists": "Již máte účet?"
+  },
+  "inputs": {
+    "firstName": {
+      "label": "Jméno",
+      "validation": {
+        "required": "Jméno je povinné"
+      }
+    },
+    "lastName": {
+      "label": "Příjmení",
+      "validation": {
+        "required": "Příjmení je povinné"
+      }
+    },
+    "email": {
+      "label": "E-mail",
+      "validation": {
+        "required": "E-mail je povinný",
+        "invalid": "E-mail není platný",
+        "server": {
+          "emailAlreadyExists": "E-mail již existuje"
+        }
+      }
+    },
+    "password": {
+      "label": "Heslo",
+      "validation": {
+        "required": "Heslo je povinné",
+        "min": "Heslo musí mít alespoň 6 znaků",
+        "server": {
+          "incorrectPassword": "Heslo není platné"
+        }
+      }
+    },
+    "policy": {
+      "label": "Zásady ochrany osobních údajů",
+      "agreement": "Přečetl/a jsem si a souhlasím s ",
+      "validation": {
+        "required": "Souhlas se Zásadami ochrany osobních údajů je povinný"
+      }
+    }
+  },
+  "or": "NEBO"
+}

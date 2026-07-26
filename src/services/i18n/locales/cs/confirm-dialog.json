@@ -1,0 +1,8 @@
+{
+  "title": "Potvrzení",
+  "message": "Opravdu chcete provést tuto akci?",
+  "actions": {
+    "yes": "Ano",
+    "no": "Ne"
+  }
+}

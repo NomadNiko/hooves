@@ -1,0 +1,78 @@
+{
+  "title": "Profil",
+  "title1": "Upravit profil",
+  "title2": "Změnit e-mail",
+  "title3": "Změnit heslo",
+  "actions": {
+    "edit": "Upravit",
+    "submit": "Uložit",
+    "cancel": "Zrušit"
+  },
+  "inputs": {
+    "firstName": {
+      "label": "Jméno",
+      "validation": {
+        "required": "Jméno je povinné"
+      }
+    },
+    "lastName": {
+      "label": "Příjmení",
+      "validation": {
+        "required": "Příjmení je povinné"
+      }
+    },
+    "email": {
+      "label": "Nový e-mail",
+      "validation": {
+        "required": "E-mail je povinný",
+        "email": "E-mail musí být platný",
+        "currentEmail": "E-mail se musí lišit od aktuálního e-mailu",
+        "server": {
+          "emailExists": "E-mail je již obsazen"
+        }
+      }
+    },
+    "emailConfirmation": {
+      "label": "Potvrzení e-mailu",
+      "validation": {
+        "required": "Potvrzení e-mailu je povinné",
+        "match": "Potvrzení e-mailu se musí shodovat s e-mailem"
+      }
+    },
+    "oldPassword": {
+      "label": "Staré heslo",
+      "validation": {
+        "required": "Staré heslo je povinné",
+        "min": "Staré heslo musí mít alespoň 6 znaků",
+        "server": {
+          "incorrectOldPassword": "Staré heslo není platné"
+        }
+      }
+    },
+    "password": {
+      "label": "Nové heslo",
+      "validation": {
+        "required": "Nové heslo je povinné",
+        "min": "Nové heslo musí mít alespoň 6 znaků"
+      }
+    },
+    "passwordConfirmation": {
+      "label": "Potvrzení hesla",
+      "validation": {
+        "required": "Potvrzení hesla je povinné",
+        "match": "Potvrzení hesla se musí shodovat s heslem"
+      }
+    }
+  },
+  "alerts": {
+    "email": {
+      "success": "Žádost o změnu e-mailu byla odeslána na vaši novou e-mailovou adresu. Zkontrolujte prosím svůj e-mail a klikněte na odkaz pro potvrzení změny."
+    },
+    "password": {
+      "success": "Heslo bylo úspěšně aktualizováno"
+    },
+    "profile": {
+      "success": "Profil byl úspěšně aktualizován"
+    }
+  }
+}

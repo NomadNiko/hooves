@@ -1,0 +1,49 @@
+{
+  "title": "Alle Fahrten",
+  "loading": "Fahrten werden geladen...",
+  "heading": "🎫 Alle Fahrten",
+  "fleetOverviewLink": "← Flottenübersicht",
+  "stats": {
+    "totalRides": "Fahrten gesamt",
+    "completed": "Abgeschlossen",
+    "pending": "Ausstehend",
+    "revenue": "Umsatz"
+  },
+  "filter": {
+    "label": "Filter:",
+    "options": {
+      "all": "Alle",
+      "requested": "Angefragt",
+      "accepted": "Angenommen",
+      "in_progress": "Unterwegs",
+      "completed": "Abgeschlossen",
+      "cancelled": "Storniert"
+    }
+  },
+  "table": {
+    "empty": "Keine Fahrten entsprechen dem aktuellen Filter.",
+    "columns": {
+      "route": "Route",
+      "rider": "Fahrgast",
+      "driver": "Fahrer",
+      "status": "Status",
+      "paid": "Bezahlt",
+      "fare": "Fahrpreis",
+      "date": "Datum"
+    },
+    "noRider": "—",
+    "noDriver": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "Angefragt",
+      "accepted": "Angenommen",
+      "in_progress": "Unterwegs",
+      "completed": "Abgeschlossen",
+      "cancelled": "Storniert",
+      "unknown": "Unbekannt"
+    }
+  },
+  "showingCount": "{{shown}} von {{total}} Fahrten werden angezeigt"
+}

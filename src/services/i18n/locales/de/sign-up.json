@@ -1,0 +1,49 @@
+{
+  "title": "Registrieren",
+  "actions": {
+    "submit": "Registrieren",
+    "accountAlreadyExists": "Bereits ein Konto vorhanden?"
+  },
+  "inputs": {
+    "firstName": {
+      "label": "Vorname",
+      "validation": {
+        "required": "Vorname ist erforderlich"
+      }
+    },
+    "lastName": {
+      "label": "Nachname",
+      "validation": {
+        "required": "Nachname ist erforderlich"
+      }
+    },
+    "email": {
+      "label": "E-Mail",
+      "validation": {
+        "required": "E-Mail ist erforderlich",
+        "invalid": "E-Mail ist ungültig",
+        "server": {
+          "emailAlreadyExists": "E-Mail existiert bereits"
+        }
+      }
+    },
+    "password": {
+      "label": "Passwort",
+      "validation": {
+        "required": "Passwort ist erforderlich",
+        "min": "Passwort muss mindestens 6 Zeichen lang sein",
+        "server": {
+          "incorrectPassword": "Passwort ist ungültig"
+        }
+      }
+    },
+    "policy": {
+      "label": "Datenschutzrichtlinie",
+      "agreement": "Ich habe die Datenschutzrichtlinie gelesen und akzeptiere ",
+      "validation": {
+        "required": "Zustimmung zur Datenschutzrichtlinie ist erforderlich"
+      }
+    }
+  },
+  "or": "ODER"
+}

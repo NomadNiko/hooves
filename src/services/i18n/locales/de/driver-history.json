@@ -1,0 +1,43 @@
+{
+  "title": "Fahrtenverlauf & Einnahmen",
+  "loading": "Wird geladen...",
+  "noProfile": {
+    "heading": "📊 Fahrtenverlauf",
+    "description": "Sie haben noch kein Fahrerprofil.",
+    "actions": {
+      "createProfile": "Fahrerprofil erstellen"
+    }
+  },
+  "heading": "📊 Ihr Fahrtenverlauf",
+  "stats": {
+    "totalRides": "Fahrten gesamt",
+    "totalEarnings": "Gesamteinnahmen",
+    "thisWeek": "Diese Woche",
+    "avgFare": "Durchschn. Fahrpreis"
+  },
+  "rideList": {
+    "heading": "Alle Fahrten ({{count}})",
+    "empty": "Noch keine Fahrten. Gehen Sie auf Ihrem <0>Dashboard</0> aktiv, um Fahrten anzunehmen.",
+    "table": {
+      "route": "Route",
+      "rider": "Fahrgast",
+      "status": "Status",
+      "fare": "Fahrpreis",
+      "date": "Datum"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "route": {
+      "noBreadcrumbs": "Keine GPS-Aufzeichnungen für diese Fahrt vorhanden.",
+      "heading": "🗺️ Route ({{count}} Punkte)"
+    },
+    "statusLabels": {
+      "requested": "Angefragt",
+      "accepted": "Angenommen",
+      "in_progress": "Unterwegs",
+      "completed": "Abgeschlossen",
+      "cancelled": "Storniert",
+      "unknown": "Unbekannt"
+    }
+  }
+}

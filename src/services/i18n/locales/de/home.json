@@ -1,0 +1,49 @@
+{
+  "title": "Hooves",
+  "description": "Pferdekutschen-Rufservice auf Mackinac Island. Rufen Sie eine Kutsche von Ihrem Handy aus.",
+  "privacyPolicy": "Datenschutzrichtlinie",
+  "hero": {
+    "heading": "Hooves",
+    "tagline": "Mackinac Islands Pferdekutschen-Taxiservice.",
+    "tagline2": "Rufen Sie eine Kutsche von Ihrem Handy — keine Autos, nur Hufe.",
+    "ctaRide": "🐴 Kutsche rufen",
+    "ctaDriver": "🎠 Für Hooves fahren"
+  },
+  "howItWorks": {
+    "heading": "So funktioniert's",
+    "step1": {
+      "title": "Haltestelle wählen",
+      "description": "Wählen Sie aus 10 benannten Abhol- und Zielstandorten auf der Insel — die Docks, Grand Hotel, Fort Mackinac und mehr."
+    },
+    "step2": {
+      "title": "Eine Kutsche kommt zu Ihnen",
+      "description": "Ihr nächster verfügbarer Fahrer nimmt die Fahrt an. Verfolgen Sie die Kutsche auf einer Live-Karte, während sie sich nähert."
+    },
+    "step3": {
+      "title": "Genießen Sie die Fahrt",
+      "description": "Lehnen Sie sich zurück, genießen Sie die Aussicht und erreichen Sie Ihr Ziel so, wie Mackinac erkundet werden sollte."
+    }
+  },
+  "island": {
+    "heading": "Die einzige Art, sich fortzubewegen",
+    "paragraph1": "Mackinac Island hat Kraftfahrzeuge seit 1898 verboten. Pferdekutschen sind die Taxis, Busse und Lieferfahrzeuge der Insel — alles in einem.",
+    "paragraph2": "Hooves verbindet Fahrgäste sofort mit lizenzierten Kutschfahrern. Kein Heranwinken eines vorbeifahrenden Taxis, kein Warten am Dock in der Hoffnung, dass eines auftaucht. Einfach die App öffnen und losfahren.",
+    "stats": {
+      "stands": "Abholstationen",
+      "area": "Quadratmeilen Insel",
+      "cars": "Autos auf der Insel",
+      "years": "Jahre autofrei"
+    }
+  },
+  "forDrivers": {
+    "heading": "🎠 Für Hooves fahren",
+    "description": "Lizenzierte Kutschbetreiber — erstellen Sie ein Profil, gehen Sie aktiv, wenn Sie bereit sind, und nehmen Sie Fahrten an. Verfolgen Sie Ihre Einnahmen, verwalten Sie Ihren Zeitplan, alles von einem Dashboard aus.",
+    "cta": "Als Fahrer loslegen →"
+  },
+  "footer": {
+    "copyright": "© 2026 Hooves · Mackinac Island Kutschenservice",
+    "signIn": "Anmelden",
+    "signUp": "Registrieren",
+    "privacy": "Datenschutz"
+  }
+}

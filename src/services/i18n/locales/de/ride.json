@@ -1,0 +1,58 @@
+{
+  "title": "Kutsche rufen",
+  "restoring": {
+    "heading": "🐴 Ihre Fahrt",
+    "checking": "Es wird nach einer aktiven Fahrt gesucht..."
+  },
+  "activeRide": {
+    "heading": "🐴 Ihre Fahrt",
+    "driverLabel": "Fahrer:",
+    "fareLabel": "Fahrpreis:",
+    "noFare": "—",
+    "paid": "✓ Bezahlt",
+    "statusLabels": {
+      "requested": "🔍 Suche nach einem Fahrer...",
+      "accepted": "✅ Fahrer hat angenommen! Die Kutsche ist unterwegs.",
+      "in_progress": "🐴 Sie sind unterwegs!",
+      "completed": "🎉 Fahrt abgeschlossen! Danke fürs Mitfahren.",
+      "cancelled": "❌ Fahrt storniert.",
+      "unknown": "Unbekannt"
+    },
+    "map": {
+      "livePosition": "📍 Live-Position: {{lat}}, {{lng}} — Aktualisierung alle 4 Sek.",
+      "waitingForDriver": "Warten auf den Standort Ihres Fahrers. Die Standortfreigabe ist möglicherweise noch nicht aktiviert."
+    },
+    "actions": {
+      "cancelRide": "Fahrt stornieren",
+      "hailAnother": "Weitere Kutsche rufen"
+    },
+    "alerts": {
+      "cancelled": "Fahrt storniert."
+    }
+  },
+  "hailForm": {
+    "heading": "🐴 Kutsche rufen",
+    "description": "Wählen Sie Ihre Abhol- und Zielstation auf Mackinac Island.",
+    "inputs": {
+      "pickup": {
+        "label": "Abholstation",
+        "placeholder": "Wo befinden Sie sich?"
+      },
+      "dropoff": {
+        "label": "Zielstation",
+        "placeholder": "Wohin möchten Sie?"
+      }
+    },
+    "actions": {
+      "hailCarriage": "Kutsche rufen 🐴",
+      "requesting": "Wird angefragt..."
+    },
+    "alerts": {
+      "requested": "Fahrt angefragt! Suche nach einem Fahrer..."
+    }
+  },
+  "map": {
+    "loading": "Karte wird geladen..."
+  },
+  "riderDefaultName": "Fahrgast"
+}

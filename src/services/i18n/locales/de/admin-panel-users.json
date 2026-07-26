@@ -1,0 +1,38 @@
+{
+  "title": "Benutzer",
+  "table": {
+    "column1": "ID",
+    "column2": "Name",
+    "column3": "E-Mail",
+    "column4": "Rolle"
+  },
+  "actions": {
+    "add": "Benutzer hinzufügen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "create": "Benutzer erstellen"
+  },
+  "confirm": {
+    "delete": {
+      "title": "Benutzer löschen",
+      "message": "Sind Sie sicher, dass Sie diesen Benutzer löschen möchten?"
+    }
+  },
+  "filter": {
+    "actions": {
+      "filter": "Filtern",
+      "apply": "Anwenden"
+    },
+    "inputs": {
+      "role": {
+        "label": "Rolle",
+        "options": {
+          "1": "Super-Admin",
+          "2": "Admin",
+          "3": "Fahrer",
+          "4": "Benutzer"
+        }
+      }
+    }
+  }
+}

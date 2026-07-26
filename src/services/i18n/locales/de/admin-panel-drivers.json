@@ -1,0 +1,29 @@
+{
+  "title": "Flottenübersicht",
+  "loading": "Flottendaten werden geladen...",
+  "heading": "🐴 Flottenübersicht",
+  "viewAllRides": "Alle Fahrten anzeigen →",
+  "stats": {
+    "totalDrivers": "Fahrer gesamt",
+    "activeNow": "Derzeit aktiv",
+    "completedRides": "Abgeschlossene Fahrten",
+    "totalRevenue": "Gesamtumsatz"
+  },
+  "table": {
+    "heading": "Alle Fahrer",
+    "empty": "Noch keine Fahrer registriert.",
+    "columns": {
+      "driver": "Fahrer",
+      "carriage": "Kutsche",
+      "status": "Status",
+      "rides": "Fahrten",
+      "earnings": "Einnahmen",
+      "joined": "Beigetreten"
+    },
+    "noCarriage": "—",
+    "status": {
+      "active": "Aktiv",
+      "offline": "Offline"
+    }
+  }
+}

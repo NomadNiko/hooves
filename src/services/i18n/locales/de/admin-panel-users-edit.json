@@ -1,0 +1,67 @@
+{
+  "title1": "Benutzer bearbeiten",
+  "title2": "Passwort ändern",
+  "actions": {
+    "submit": "Speichern",
+    "cancel": "Abbrechen"
+  },
+  "inputs": {
+    "email": {
+      "label": "E-Mail",
+      "validation": {
+        "invalid": "E-Mail ist ungültig",
+        "required": "E-Mail ist erforderlich",
+        "server": {
+          "emailAlreadyExists": "E-Mail existiert bereits"
+        }
+      }
+    },
+    "firstName": {
+      "label": "Vorname",
+      "validation": {
+        "required": "Vorname ist erforderlich"
+      }
+    },
+    "lastName": {
+      "label": "Nachname",
+      "validation": {
+        "required": "Nachname ist erforderlich"
+      }
+    },
+    "role": {
+      "label": "Rolle",
+      "validation": {
+        "required": "Rolle ist erforderlich"
+      },
+      "options": {
+        "1": "Super-Admin",
+        "2": "Admin",
+        "3": "Fahrer",
+        "4": "Benutzer"
+      }
+    },
+    "password": {
+      "label": "Passwort",
+      "validation": {
+        "required": "Passwort ist erforderlich",
+        "min": "Passwort muss mindestens 6 Zeichen lang sein"
+      }
+    },
+    "passwordConfirmation": {
+      "label": "Passwort bestätigen",
+      "validation": {
+        "required": "Passwortbestätigung ist erforderlich",
+        "match": "Passwortbestätigung muss mit dem Passwort übereinstimmen"
+      }
+    },
+    "<system>": "Do not remove this property"
+  },
+  "alerts": {
+    "password": {
+      "success": "Passwort wurde erfolgreich aktualisiert"
+    },
+    "user": {
+      "success": "Benutzerprofil wurde erfolgreich aktualisiert"
+    }
+  }
+}

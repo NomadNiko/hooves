@@ -1,0 +1,63 @@
+{
+  "title": "Vytvořit uživatele",
+  "actions": {
+    "submit": "Uložit",
+    "cancel": "Zrušit"
+  },
+  "inputs": {
+    "email": {
+      "label": "E-mail",
+      "validation": {
+        "invalid": "E-mail je neplatný",
+        "required": "E-mail je povinný",
+        "server": {
+          "emailAlreadyExists": "E-mail již existuje"
+        }
+      }
+    },
+    "firstName": {
+      "label": "Jméno",
+      "validation": {
+        "required": "Jméno je povinné"
+      }
+    },
+    "lastName": {
+      "label": "Příjmení",
+      "validation": {
+        "required": "Příjmení je povinné"
+      }
+    },
+    "role": {
+      "label": "Role",
+      "validation": {
+        "required": "Role je povinná"
+      },
+      "options": {
+        "1": "Super Admin",
+        "2": "Admin",
+        "3": "Řidič",
+        "4": "Uživatel"
+      }
+    },
+    "password": {
+      "label": "Heslo",
+      "validation": {
+        "required": "Heslo je povinné",
+        "min": "Heslo musí mít alespoň 6 znaků"
+      }
+    },
+    "passwordConfirmation": {
+      "label": "Potvrzení hesla",
+      "validation": {
+        "required": "Potvrzení hesla je povinné",
+        "match": "Potvrzení hesla se musí shodovat s heslem"
+      }
+    },
+    "<system>": "Do not remove this property"
+  },
+  "alerts": {
+    "user": {
+      "success": "Profil uživatele byl úspěšně vytvořen"
+    }
+  }
+}

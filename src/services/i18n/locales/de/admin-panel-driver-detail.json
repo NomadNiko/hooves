@@ -1,0 +1,47 @@
+{
+  "title": "Fahrer-Details",
+  "loading": "Fahrerdaten werden geladen...",
+  "notFound": {
+    "heading": "Fahrer nicht gefunden",
+    "backToFleet": "← Zurück zur Flotte"
+  },
+  "backToFleet": "← Zurück zur Flotte",
+  "profile": {
+    "carriageLabel": "Kutsche: {{carriageName}}",
+    "status": {
+      "active": "🟢 Aktiv",
+      "offline": "⚫ Offline"
+    },
+    "joinedLine": "Beigetreten {{date}} • Benutzer-ID: {{userId}}"
+  },
+  "stats": {
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert",
+    "totalEarnings": "Gesamteinnahmen",
+    "avgFare": "Durchschn. Fahrpreis"
+  },
+  "rideHistory": {
+    "heading": "Fahrtenverlauf ({{count}})",
+    "empty": "Dieser Fahrer hat noch keine Fahrten.",
+    "table": {
+      "route": "Route",
+      "rider": "Fahrgast",
+      "status": "Status",
+      "paid": "Bezahlt",
+      "fare": "Fahrpreis",
+      "date": "Datum"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "Angefragt",
+      "accepted": "Angenommen",
+      "in_progress": "Unterwegs",
+      "completed": "Abgeschlossen",
+      "cancelled": "Storniert",
+      "unknown": "Unbekannt"
+    }
+  }
+}

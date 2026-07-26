@@ -1,0 +1,8 @@
+{
+  "title": "Bestätigung",
+  "message": "Sind Sie sicher, dass Sie diese Aktion durchführen möchten?",
+  "actions": {
+    "yes": "Ja",
+    "no": "Nein"
+  }
+}

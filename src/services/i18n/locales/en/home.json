@@ -1,5 +1,49 @@
 {
   "title": "Hooves",
-  "description": "Welcome to Hooves — horse carriage ride-hailing for Mackinac Island. Hail a carriage or go active as a driver from the sidebar.",
-  "privacyPolicy": "Privacy Policy"
+  "description": "Horse carriage ride-hailing on Mackinac Island. Hail a carriage from your phone.",
+  "privacyPolicy": "Privacy Policy",
+  "hero": {
+    "heading": "Hooves",
+    "tagline": "Mackinac Island's horse carriage taxi service.",
+    "tagline2": "Hail a carriage from your phone — no cars, just hooves.",
+    "ctaRide": "🐴 Hail a Carriage",
+    "ctaDriver": "🎠 Drive for Hooves"
+  },
+  "howItWorks": {
+    "heading": "How It Works",
+    "step1": {
+      "title": "Pick Your Stand",
+      "description": "Choose from 10 named pickup & dropoff locations across the island — the docks, Grand Hotel, Fort Mackinac, and more."
+    },
+    "step2": {
+      "title": "A Carriage Comes to You",
+      "description": "Your nearest available driver accepts the ride. Track their carriage on a live map as they approach."
+    },
+    "step3": {
+      "title": "Enjoy the Ride",
+      "description": "Sit back, take in the views, and arrive at your destination the way Mackinac was meant to be explored."
+    }
+  },
+  "island": {
+    "heading": "The Only Way to Get Around",
+    "paragraph1": "Mackinac Island has banned motor vehicles since 1898. Horse-drawn carriages are the island's taxis, buses, and delivery trucks — all rolled into one.",
+    "paragraph2": "Hooves connects riders with licensed carriage drivers instantly. No flagging down a passing cab, no waiting at the dock hoping one shows up. Just open the app and ride.",
+    "stats": {
+      "stands": "Pickup Stands",
+      "area": "sq mi island",
+      "cars": "Cars on the island",
+      "years": "Years car-free"
+    }
+  },
+  "forDrivers": {
+    "heading": "🎠 Drive for Hooves",
+    "description": "Licensed carriage operators — create a profile, go active when you're ready, and start accepting rides. Track your earnings, manage your schedule, all from one dashboard.",
+    "cta": "Get Started as a Driver →"
+  },
+  "footer": {
+    "copyright": "© 2026 Hooves · Mackinac Island Carriage Service",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "privacy": "Privacy"
+  }
 }

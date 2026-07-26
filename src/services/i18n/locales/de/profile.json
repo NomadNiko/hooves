@@ -1,0 +1,78 @@
+{
+  "title": "Profil",
+  "title1": "Profil bearbeiten",
+  "title2": "E-Mail ändern",
+  "title3": "Passwort ändern",
+  "actions": {
+    "edit": "Bearbeiten",
+    "submit": "Speichern",
+    "cancel": "Abbrechen"
+  },
+  "inputs": {
+    "firstName": {
+      "label": "Vorname",
+      "validation": {
+        "required": "Vorname ist erforderlich"
+      }
+    },
+    "lastName": {
+      "label": "Nachname",
+      "validation": {
+        "required": "Nachname ist erforderlich"
+      }
+    },
+    "email": {
+      "label": "Neue E-Mail",
+      "validation": {
+        "required": "E-Mail ist erforderlich",
+        "email": "E-Mail muss gültig sein",
+        "currentEmail": "E-Mail muss sich von der aktuellen E-Mail unterscheiden",
+        "server": {
+          "emailExists": "E-Mail ist bereits vergeben"
+        }
+      }
+    },
+    "emailConfirmation": {
+      "label": "E-Mail-Bestätigung",
+      "validation": {
+        "required": "E-Mail-Bestätigung ist erforderlich",
+        "match": "E-Mail-Bestätigung muss mit der E-Mail übereinstimmen"
+      }
+    },
+    "oldPassword": {
+      "label": "Altes Passwort",
+      "validation": {
+        "required": "Altes Passwort ist erforderlich",
+        "min": "Altes Passwort muss mindestens 6 Zeichen lang sein",
+        "server": {
+          "incorrectOldPassword": "Altes Passwort ist ungültig"
+        }
+      }
+    },
+    "password": {
+      "label": "Neues Passwort",
+      "validation": {
+        "required": "Neues Passwort ist erforderlich",
+        "min": "Neues Passwort muss mindestens 6 Zeichen lang sein"
+      }
+    },
+    "passwordConfirmation": {
+      "label": "Passwort bestätigen",
+      "validation": {
+        "required": "Passwortbestätigung ist erforderlich",
+        "match": "Passwortbestätigung muss mit dem Passwort übereinstimmen"
+      }
+    }
+  },
+  "alerts": {
+    "email": {
+      "success": "Eine Anfrage zur E-Mail-Änderung wurde an Ihre neue E-Mail-Adresse gesendet. Bitte überprüfen Sie Ihre E-Mail und klicken Sie auf den Link, um die Änderung zu bestätigen."
+    },
+    "password": {
+      "success": "Passwort wurde erfolgreich aktualisiert"
+    },
+    "profile": {
+      "success": "Profil wurde erfolgreich aktualisiert"
+    }
+  }
+}

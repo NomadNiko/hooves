@@ -1,0 +1,32 @@
+{
+  "title": "Přihlášení",
+  "actions": {
+    "submit": "Přihlásit se",
+    "createAccount": "Vytvořit účet",
+    "forgotPassword": "Zapomněli jste heslo?"
+  },
+  "inputs": {
+    "email": {
+      "label": "E-mail",
+      "validation": {
+        "required": "E-mail je povinný",
+        "invalid": "E-mail není platný",
+        "server": {
+          "emailNotExists": "E-mail neexistuje",
+          "notFound": "E-mail neexistuje"
+        }
+      }
+    },
+    "password": {
+      "label": "Heslo",
+      "validation": {
+        "required": "Heslo je povinné",
+        "min": "Heslo musí mít alespoň 6 znaků",
+        "server": {
+          "incorrectPassword": "Heslo není platné"
+        }
+      }
+    }
+  },
+  "or": "NEBO"
+}

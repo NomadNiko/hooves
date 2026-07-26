@@ -1,0 +1,49 @@
+{
+  "title": "Všechny jízdy",
+  "loading": "Načítání jízd...",
+  "heading": "🎫 Všechny jízdy",
+  "fleetOverviewLink": "← Přehled flotily",
+  "stats": {
+    "totalRides": "Celkem jízd",
+    "completed": "Dokončené",
+    "pending": "Čekající",
+    "revenue": "Tržby"
+  },
+  "filter": {
+    "label": "Filtr:",
+    "options": {
+      "all": "Vše",
+      "requested": "Požadováno",
+      "accepted": "Přijato",
+      "in_progress": "Probíhá",
+      "completed": "Dokončeno",
+      "cancelled": "Zrušeno"
+    }
+  },
+  "table": {
+    "empty": "Žádné jízdy neodpovídají aktuálnímu filtru.",
+    "columns": {
+      "route": "Trasa",
+      "rider": "Cestující",
+      "driver": "Řidič",
+      "status": "Stav",
+      "paid": "Zaplaceno",
+      "fare": "Jízdné",
+      "date": "Datum"
+    },
+    "noRider": "—",
+    "noDriver": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "Požadováno",
+      "accepted": "Přijato",
+      "in_progress": "Probíhá",
+      "completed": "Dokončeno",
+      "cancelled": "Zrušeno",
+      "unknown": "Neznámý"
+    }
+  },
+  "showingCount": "Zobrazeno {{shown}} z {{total}} jízd"
+}

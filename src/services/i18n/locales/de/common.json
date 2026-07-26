@@ -1,0 +1,66 @@
+{
+  "app-name": "Hooves",
+  "loading": "Wird geladen ...",
+  "close": "Schließen",
+  "navigation": {
+    "home": "Startseite",
+    "signIn": "Anmelden",
+    "signUp": "Registrieren",
+    "profile": "Profil",
+    "users": "Benutzer",
+    "logout": "Abmelden",
+    "hailRide": "🐴 Kutsche rufen",
+    "driverDashboard": "🎠 Fahrer-Dashboard",
+    "rideHistory": "📊 Fahrtenverlauf",
+    "fleetDrivers": "🐴 Flotte (Fahrer)",
+    "allRides": "🎫 Alle Fahrten"
+  },
+  "formInputs": {
+    "avatarInput": {
+      "dropzoneText": "Bild hier ablegen ...",
+      "dragAndDrop": "Oder Bild hierher ziehen",
+      "selectFile": "Bild auswählen"
+    },
+    "multipleImageInput": {
+      "dropzoneText": "Bild hier ablegen ...",
+      "dragAndDrop": "Oder Bilder hierher ziehen",
+      "selectFile": "Bild auswählen"
+    },
+    "singleImageInput": {
+      "dropzoneText": "Bild hier ablegen ...",
+      "dragAndDrop": "Oder Bilder hierher ziehen",
+      "selectFile": "Bild auswählen"
+    }
+  },
+  "leavePage": {
+    "title": "Diese Seite verlassen?",
+    "message": "Ihre Änderungen werden möglicherweise nicht gespeichert",
+    "stay": "Auf Seite bleiben",
+    "leave": "Seite verlassen"
+  },
+  "auth": {
+    "facebook": {
+      "action": "Mit Facebook anmelden"
+    }
+  },
+  "locationPermission": {
+    "requesting": "📍 Ihr Standort wird abgefragt...",
+    "errors": {
+      "notSupported": "Ihr Browser unterstützt keine Standortbestimmung.",
+      "denied": "Standortzugriff wurde verweigert. Bitte erlauben Sie den Standortzugriff und versuchen Sie es erneut.",
+      "unavailable": "Ihr Standort konnte nicht ermittelt werden. Bitte versuchen Sie es erneut.",
+      "timeout": "Standortabfrage hat das Zeitlimit überschritten. Bitte versuchen Sie es erneut."
+    },
+    "resetHelp": "Wenn ein Klick auf die Schaltfläche unten keine Browser-Eingabeaufforderung anzeigt, müssen Sie möglicherweise die Standortberechtigungen in den Website-Einstellungen Ihres Browsers zurücksetzen (klicken Sie auf das Schloss-Symbol in der Adressleiste).",
+    "actions": {
+      "allowAccess": "📍 Standortzugriff erlauben"
+    }
+  },
+  "driverTrackingMap": {
+    "pickupLabel": "Abholung",
+    "dropoffLabel": "Ziel",
+    "unavailable": "Karte nicht verfügbar — NEXT_PUBLIC_MAPBOX_TOKEN ist nicht konfiguriert.",
+    "carriageTitle": "Ihre Kutsche",
+    "recentre": "📍 Neu zentrieren"
+  }
+}

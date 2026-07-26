@@ -1,0 +1,32 @@
+{
+  "title": "Anmelden",
+  "actions": {
+    "submit": "Anmelden",
+    "createAccount": "Konto erstellen",
+    "forgotPassword": "Passwort vergessen?"
+  },
+  "inputs": {
+    "email": {
+      "label": "E-Mail",
+      "validation": {
+        "required": "E-Mail ist erforderlich",
+        "invalid": "E-Mail ist ungültig",
+        "server": {
+          "emailNotExists": "E-Mail existiert nicht",
+          "notFound": "E-Mail existiert nicht"
+        }
+      }
+    },
+    "password": {
+      "label": "Passwort",
+      "validation": {
+        "required": "Passwort ist erforderlich",
+        "min": "Passwort muss mindestens 6 Zeichen lang sein",
+        "server": {
+          "incorrectPassword": "Passwort ist ungültig"
+        }
+      }
+    }
+  },
+  "or": "ODER"
+}

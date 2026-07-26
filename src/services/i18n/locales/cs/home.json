@@ -1,0 +1,49 @@
+{
+  "title": "Hooves",
+  "description": "Přivolání koňského kočáru na Mackinac Island. Přivolejte si kočár z telefonu.",
+  "privacyPolicy": "Zásady ochrany osobních údajů",
+  "hero": {
+    "heading": "Hooves",
+    "tagline": "Taxi služba koňských kočárů na Mackinac Island.",
+    "tagline2": "Přivolejte si kočár z telefonu — žádná auta, jen kopyta.",
+    "ctaRide": "🐴 Přivolat kočár",
+    "ctaDriver": "🎠 Jezdit pro Hooves"
+  },
+  "howItWorks": {
+    "heading": "Jak to funguje",
+    "step1": {
+      "title": "Vyberte si stanoviště",
+      "description": "Vyberte si z 10 pojmenovaných míst nástupu a výstupu po celém ostrově — přístavy, Grand Hotel, Fort Mackinac a další."
+    },
+    "step2": {
+      "title": "Kočár přijede k vám",
+      "description": "Váš nejbližší dostupný řidič přijme jízdu. Sledujte jeho kočár na živé mapě, jak se blíží."
+    },
+    "step3": {
+      "title": "Užijte si jízdu",
+      "description": "Posaďte se, vychutnejte si výhledy a dorazte do cíle tak, jak byl Mackinac Island stvořen k prozkoumání."
+    }
+  },
+  "island": {
+    "heading": "Jediný způsob dopravy",
+    "paragraph1": "Mackinac Island zakázal motorová vozidla od roku 1898. Koňské kočáry jsou na ostrově taxi, autobusy i dodávky — vše v jednom.",
+    "paragraph2": "Hooves spojuje cestující s licencovanými kočími okamžitě. Žádné mávání na projíždějící taxi, žádné čekání u přístaviště v naději, že se nějaký objeví. Stačí otevřít aplikaci a jet.",
+    "stats": {
+      "stands": "Stanoviště",
+      "area": "čtv. míle ostrov",
+      "cars": "Aut na ostrově",
+      "years": "Let bez aut"
+    }
+  },
+  "forDrivers": {
+    "heading": "🎠 Jezděte pro Hooves",
+    "description": "Licencovaní provozovatelé kočárů — vytvořte si profil, aktivujte se, když jste připraveni, a začněte přijímat jízdy. Sledujte své příjmy, spravujte svůj rozvrh, vše z jednoho panelu.",
+    "cta": "Začít jako řidič →"
+  },
+  "footer": {
+    "copyright": "© 2026 Hooves · Služba koňských kočárů na Mackinac Island",
+    "signIn": "Přihlášení",
+    "signUp": "Registrace",
+    "privacy": "Ochrana soukromí"
+  }
+}

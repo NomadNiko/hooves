@@ -1,5 +1,49 @@
 {
   "title": "Hooves",
-  "description": "Bienvenue sur Hooves — service de calèches sur Mackinac Island.",
-  "privacyPolicy": "Politique de confidentialité"
+  "description": "Service de calèches sur l'île Mackinac. Appelez une calèche depuis votre téléphone.",
+  "privacyPolicy": "Politique de confidentialité",
+  "hero": {
+    "heading": "Hooves",
+    "tagline": "Le service de taxi en calèche de l'île Mackinac.",
+    "tagline2": "Appelez une calèche depuis votre téléphone — pas de voitures, juste des sabots.",
+    "ctaRide": "🐴 Appeler une Calèche",
+    "ctaDriver": "🎠 Conduire pour Hooves"
+  },
+  "howItWorks": {
+    "heading": "Comment ça marche",
+    "step1": {
+      "title": "Choisissez Votre Arrêt",
+      "description": "Choisissez parmi 10 points de prise en charge et de dépose sur l'île — les quais, le Grand Hotel, Fort Mackinac, et plus encore."
+    },
+    "step2": {
+      "title": "Une Calèche Vient à Vous",
+      "description": "Le conducteur disponible le plus proche accepte la course. Suivez sa calèche sur une carte en direct à mesure qu'il approche."
+    },
+    "step3": {
+      "title": "Profitez du Trajet",
+      "description": "Détendez-vous, admirez les paysages et arrivez à destination comme Mackinac était destinée à être explorée."
+    }
+  },
+  "island": {
+    "heading": "Le Seul Moyen de Se Déplacer",
+    "paragraph1": "L'île Mackinac interdit les véhicules motorisés depuis 1898. Les calèches sont les taxis, bus et camions de livraison de l'île — tout en un.",
+    "paragraph2": "Hooves connecte les passagers avec des conducteurs de calèches licenciés instantanément. Plus besoin de héler un taxi qui passe ou d'attendre au quai. Ouvrez l'app et roulez.",
+    "stats": {
+      "stands": "Arrêts de prise en charge",
+      "area": "mi² d'île",
+      "cars": "Voitures sur l'île",
+      "years": "Années sans voiture"
+    }
+  },
+  "forDrivers": {
+    "heading": "🎠 Conduisez pour Hooves",
+    "description": "Opérateurs de calèches licenciés — créez un profil, passez en mode actif quand vous êtes prêt et commencez à accepter des courses. Suivez vos revenus, gérez votre emploi du temps, le tout depuis un tableau de bord.",
+    "cta": "Commencer en tant que Conducteur →"
+  },
+  "footer": {
+    "copyright": "© 2026 Hooves · Service de Calèches de l'île Mackinac",
+    "signIn": "Se connecter",
+    "signUp": "S'inscrire",
+    "privacy": "Confidentialité"
+  }
 }

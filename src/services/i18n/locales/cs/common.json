@@ -1,0 +1,66 @@
+{
+  "app-name": "Hooves",
+  "loading": "Načítání ...",
+  "close": "Zavřít",
+  "navigation": {
+    "home": "Domů",
+    "signIn": "Přihlášení",
+    "signUp": "Registrace",
+    "profile": "Profil",
+    "users": "Uživatelé",
+    "logout": "Odhlásit se",
+    "hailRide": "🐴 Přivolat jízdu",
+    "driverDashboard": "🎠 Panel řidiče",
+    "rideHistory": "📊 Historie jízd",
+    "fleetDrivers": "🐴 Flotila (Řidiči)",
+    "allRides": "🎫 Všechny jízdy"
+  },
+  "formInputs": {
+    "avatarInput": {
+      "dropzoneText": "Přetáhněte obrázek sem ...",
+      "dragAndDrop": "Nebo přetáhněte obrázek sem",
+      "selectFile": "Vybrat obrázek"
+    },
+    "multipleImageInput": {
+      "dropzoneText": "Přetáhněte obrázek sem ...",
+      "dragAndDrop": "Nebo přetáhněte obrázky sem",
+      "selectFile": "Vybrat obrázek"
+    },
+    "singleImageInput": {
+      "dropzoneText": "Přetáhněte obrázek sem ...",
+      "dragAndDrop": "Nebo přetáhněte obrázky sem",
+      "selectFile": "Vybrat obrázek"
+    }
+  },
+  "leavePage": {
+    "title": "Opustit tuto stránku?",
+    "message": "Provedené změny nemusí být uloženy",
+    "stay": "Zůstat na stránce",
+    "leave": "Opustit stránku"
+  },
+  "auth": {
+    "facebook": {
+      "action": "Přihlásit se přes Facebook"
+    }
+  },
+  "locationPermission": {
+    "requesting": "📍 Zjišťování vaší polohy...",
+    "errors": {
+      "notSupported": "Váš prohlížeč nepodporuje geolokaci.",
+      "denied": "Přístup k poloze byl zamítnut. Povolte prosím přístup k poloze a zkuste to znovu.",
+      "unavailable": "Nepodařilo se zjistit vaši polohu. Zkuste to prosím znovu.",
+      "timeout": "Požadavek na polohu vypršel. Zkuste to prosím znovu."
+    },
+    "resetHelp": "Pokud kliknutí na tlačítko níže nezobrazí výzvu prohlížeče, možná budete muset resetovat oprávnění polohy v nastavení webu vašeho prohlížeče (klikněte na ikonu zámku v adresním řádku).",
+    "actions": {
+      "allowAccess": "📍 Povolit přístup k poloze"
+    }
+  },
+  "driverTrackingMap": {
+    "pickupLabel": "Nástup",
+    "dropoffLabel": "Výstup",
+    "unavailable": "Mapa není k dispozici — NEXT_PUBLIC_MAPBOX_TOKEN není nakonfigurován.",
+    "carriageTitle": "Váš kočár",
+    "recentre": "📍 Vycentrovat"
+  }
+}

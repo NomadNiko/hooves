@@ -12,12 +12,14 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 
   return {
     title: t("title"),
-    description:
-      "Horse carriage ride-hailing on Mackinac Island. Hail a carriage from your phone.",
+    description: t("description"),
   };
 }
 
-export default async function Home() {
+export default async function Home(props: Props) {
+  const params = await props.params;
+  const { t } = await getServerTranslation(params.language, "home");
+
   return (
     <div className="w-full">
       {/* Hero */}
@@ -28,25 +30,24 @@ export default async function Home() {
             className="text-4xl md:text-6xl font-bold tracking-tight mb-4"
             data-testid="home-title"
           >
-            Hooves
+            {t("hero.heading")}
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            Mackinac Island&apos;s horse carriage taxi service.
-            <br className="hidden md:inline" /> Hail a carriage from your phone
-            — no cars, just hooves.
+            {t("hero.tagline")}
+            <br className="hidden md:inline" /> {t("hero.tagline2")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/ride"
               className="inline-flex items-center justify-center rounded-lg bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 text-lg font-medium transition-colors"
             >
-              🐴 Hail a Carriage
+              {t("hero.ctaRide")}
             </Link>
             <Link
               href="/driver"
               className="inline-flex items-center justify-center rounded-lg border-2 border-orange-600 text-orange-700 dark:text-orange-400 hover:bg-orange-50 dark:hover:bg-orange-950 px-8 py-3 text-lg font-medium transition-colors"
             >
-              🎠 Drive for Hooves
+              {t("hero.ctaDriver")}
             </Link>
           </div>
         </div>
@@ -58,33 +59,34 @@ export default async function Home() {
       {/* How it works */}
       <section className="mx-auto max-w-5xl px-6 py-16 md:py-24">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
-          How It Works
+          {t("howItWorks.heading")}
         </h2>
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           <div className="text-center">
             <div className="text-4xl mb-4">📍</div>
-            <h3 className="text-lg font-semibold mb-2">Pick Your Stand</h3>
+            <h3 className="text-lg font-semibold mb-2">
+              {t("howItWorks.step1.title")}
+            </h3>
             <p className="text-muted-foreground">
-              Choose from 10 named pickup & dropoff locations across the island
-              — the docks, Grand Hotel, Fort Mackinac, and more.
+              {t("howItWorks.step1.description")}
             </p>
           </div>
           <div className="text-center">
             <div className="text-4xl mb-4">🐴</div>
             <h3 className="text-lg font-semibold mb-2">
-              A Carriage Comes to You
+              {t("howItWorks.step2.title")}
             </h3>
             <p className="text-muted-foreground">
-              Your nearest available driver accepts the ride. Track their
-              carriage on a live map as they approach.
+              {t("howItWorks.step2.description")}
             </p>
           </div>
           <div className="text-center">
             <div className="text-4xl mb-4">🏁</div>
-            <h3 className="text-lg font-semibold mb-2">Enjoy the Ride</h3>
+            <h3 className="text-lg font-semibold mb-2">
+              {t("howItWorks.step3.title")}
+            </h3>
             <p className="text-muted-foreground">
-              Sit back, take in the views, and arrive at your destination the
-              way Mackinac was meant to be explored.
+              {t("howItWorks.step3.description")}
             </p>
           </div>
         </div>
@@ -96,42 +98,36 @@ export default async function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                The Only Way to Get Around
+                {t("island.heading")}
               </h2>
               <p className="text-muted-foreground mb-4">
-                Mackinac Island has banned motor vehicles since 1898.
-                Horse-drawn carriages are the island&apos;s taxis, buses, and
-                delivery trucks — all rolled into one.
+                {t("island.paragraph1")}
               </p>
-              <p className="text-muted-foreground">
-                Hooves connects riders with licensed carriage drivers instantly.
-                No flagging down a passing cab, no waiting at the dock hoping
-                one shows up. Just open the app and ride.
-              </p>
+              <p className="text-muted-foreground">{t("island.paragraph2")}</p>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-lg border bg-background p-4 text-center">
                 <div className="text-3xl font-bold text-orange-600">10</div>
                 <div className="text-sm text-muted-foreground">
-                  Pickup Stands
+                  {t("island.stats.stands")}
                 </div>
               </div>
               <div className="rounded-lg border bg-background p-4 text-center">
                 <div className="text-3xl font-bold text-orange-600">3.8</div>
                 <div className="text-sm text-muted-foreground">
-                  sq mi island
+                  {t("island.stats.area")}
                 </div>
               </div>
               <div className="rounded-lg border bg-background p-4 text-center">
                 <div className="text-3xl font-bold text-orange-600">0</div>
                 <div className="text-sm text-muted-foreground">
-                  Cars on the island
+                  {t("island.stats.cars")}
                 </div>
               </div>
               <div className="rounded-lg border bg-background p-4 text-center">
                 <div className="text-3xl font-bold text-orange-600">126</div>
                 <div className="text-sm text-muted-foreground">
-                  Years car-free
+                  {t("island.stats.years")}
                 </div>
               </div>
             </div>
@@ -143,18 +139,16 @@ export default async function Home() {
       <section className="mx-auto max-w-5xl px-6 py-16 md:py-24">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            🎠 Drive for Hooves
+            {t("forDrivers.heading")}
           </h2>
           <p className="text-muted-foreground mb-6">
-            Licensed carriage operators — create a profile, go active when
-            you&apos;re ready, and start accepting rides. Track your earnings,
-            manage your schedule, all from one dashboard.
+            {t("forDrivers.description")}
           </p>
           <Link
             href="/driver"
             className="inline-flex items-center justify-center rounded-lg bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 font-medium transition-colors"
           >
-            Get Started as a Driver →
+            {t("forDrivers.cta")}
           </Link>
         </div>
       </section>
@@ -162,16 +156,16 @@ export default async function Home() {
       {/* Footer */}
       <footer className="border-t">
         <div className="mx-auto max-w-5xl px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <div>© 2026 Hooves · Mackinac Island Carriage Service</div>
+          <div>{t("footer.copyright")}</div>
           <div className="flex gap-4">
             <Link href="/sign-in" className="hover:text-foreground">
-              Sign In
+              {t("footer.signIn")}
             </Link>
             <Link href="/sign-up" className="hover:text-foreground">
-              Sign Up
+              {t("footer.signUp")}
             </Link>
             <Link href="/privacy-policy" className="hover:text-foreground">
-              Privacy
+              {t("footer.privacy")}
             </Link>
           </div>
         </div>

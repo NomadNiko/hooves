@@ -163,7 +163,8 @@ function RidePageContent() {
       const driverProfile = data.data.find(
         (p) => p.userId === activeRide.driverId
       );
-      if (driverProfile?.lat !== null && driverProfile?.lng !== null) {
+      // eslint-disable-next-line eqeqeq
+      if (driverProfile?.lat != null && driverProfile?.lng != null) {
         setDriverLocation({ lat: driverProfile.lat, lng: driverProfile.lng });
       }
     }
