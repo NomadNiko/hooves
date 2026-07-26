@@ -1,0 +1,47 @@
+{
+  "title": "Driver Detail",
+  "loading": "Loading driver data...",
+  "notFound": {
+    "heading": "Driver Not Found",
+    "backToFleet": "← Back to Fleet"
+  },
+  "backToFleet": "← Back to Fleet",
+  "profile": {
+    "carriageLabel": "Carriage: {{carriageName}}",
+    "status": {
+      "active": "🟢 Active",
+      "offline": "⚫ Offline"
+    },
+    "joinedLine": "Joined {{date}} • User ID: {{userId}}"
+  },
+  "stats": {
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "totalEarnings": "Total Earnings",
+    "avgFare": "Avg Fare"
+  },
+  "rideHistory": {
+    "heading": "Ride History ({{count}})",
+    "empty": "This driver has no rides yet.",
+    "table": {
+      "route": "Route",
+      "rider": "Rider",
+      "status": "Status",
+      "paid": "Paid",
+      "fare": "Fare",
+      "date": "Date"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "Requested",
+      "accepted": "Accepted",
+      "in_progress": "In Progress",
+      "completed": "Completed",
+      "cancelled": "Cancelled",
+      "unknown": "Unknown"
+    }
+  }
+}

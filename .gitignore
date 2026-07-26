@@ -40,4 +40,6 @@ next-env.d.ts
 
 *storybook.log
 /storybook-static
-.codegpt
+.codegpt.env
+HOOVES_BUILD_LOG.md
+HOOVES_ENVIRONMENT.md

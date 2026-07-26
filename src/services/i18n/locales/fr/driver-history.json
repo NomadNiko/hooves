@@ -1,0 +1,43 @@
+{
+  "title": "Historique et Revenus",
+  "loading": "Chargement...",
+  "noProfile": {
+    "heading": "📊 Historique des Courses",
+    "description": "Vous n'avez pas encore de profil de conducteur.",
+    "actions": {
+      "createProfile": "Créer un Profil de Conducteur"
+    }
+  },
+  "heading": "📊 Votre Historique de Courses",
+  "stats": {
+    "totalRides": "Courses Totales",
+    "totalEarnings": "Revenus Totaux",
+    "thisWeek": "Cette Semaine",
+    "avgFare": "Tarif Moyen"
+  },
+  "rideList": {
+    "heading": "Toutes les Courses ({{count}})",
+    "empty": "Aucune course pour l'instant. Passez en mode actif sur votre <0>tableau de bord</0> pour commencer à accepter des courses.",
+    "table": {
+      "route": "Trajet",
+      "rider": "Passager",
+      "status": "Statut",
+      "fare": "Tarif",
+      "date": "Date"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "route": {
+      "noBreadcrumbs": "Aucune coordonnée GPS enregistrée pour cette course.",
+      "heading": "🗺️ Trajet ({{count}} points)"
+    },
+    "statusLabels": {
+      "requested": "Demandée",
+      "accepted": "Acceptée",
+      "in_progress": "En cours",
+      "completed": "Terminée",
+      "cancelled": "Annulée",
+      "unknown": "Inconnu"
+    }
+  }
+}

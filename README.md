@@ -1,92 +1,145 @@
-# Extensive React Boilerplate
+# 🐴 Hooves
 
-[![image](https://github.com/brocoders/extensive-react-boilerplate/assets/72293912/052e74be-7de0-4a4a-92a6-e6a4b68fd4b5)](https://github.com/new?template_name=extensive-react-boilerplate&template_owner=brocoders)
+Frontend for **Hooves** — a horse carriage ride-hailing app for Mackinac Island, Michigan. Built on the [Extensive React Boilerplate](https://github.com/brocoders/extensive-react-boilerplate) with Next.js.
 
-**Belongs to the [bc boilerplates](https://bcboilerplates.com/) ecosystem**
+## Overview
 
-## Table of Contents <!-- omit in toc -->
+Hooves lets riders hail horse-drawn carriages on Mackinac Island (where motorized vehicles are banned). This frontend provides the rider experience, driver dashboard, and admin panel — all with real-time GPS maps and full internationalization.
 
-- [Extensive React Boilerplate](#extensive-react-boilerplate)
-  - [Description](#description)
-  - [Getting Started](#getting-started)
-  - [Features](#features)
-  - [Screenshots](#screenshots)
-  - [Contributors](#contributors)
-  - [Support](#support)
+## Tech Stack
 
-## Description
-
-ReactJS Boilerplate for a typical project.
-
-[Full documentation here](/docs/README.md)
-
-Demo: <https://react-boilerplate-coral.vercel.app>
-
-Backend: <https://github.com/brocoders/nestjs-boilerplate>
-
-## Getting Started
-
-When you start a new project from this boilerplate, first run the one-time configuration command. It removes the boilerplate's internal generator tests, keeping the resource and field generators in place. Skip this step if you are contributing to the boilerplate itself.
-
-```bash
-npm run app:config
-```
-
-Then, run the development server:
-
-```bash
-cp example.env.local .env.local
-
-npm run dev
-```
+- **Framework:** Next.js 16 (App Router, React 19)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS + shadcn/ui
+- **Maps:** Mapbox GL JS via react-map-gl
+- **i18n:** i18next (7 locales)
+- **Auth:** JWT with refresh token rotation
+- **State:** React Query + React Hook Form
+- **Process Manager:** PM2
 
 ## Features
 
-- [x] Next.js
-- [x] TypeScript
-- [x] [i18n](https://react.i18next.com/) (based on https://github.com/i18next/next-13-app-dir-i18next-example)
-- [x] [shadcn/ui](https://ui.shadcn.com/) + [Tailwind CSS](https://tailwindcss.com/). Supports dark mode.
-- [x] [React Hook Form](https://react-hook-form.com/)
-- [x] React Query
-- [x] Auth (Sign in, Sign up, Reset password, Confirm email, Refresh Token)
-- [x] User management (CRUD)
-- [x] File Upload
-- [x] E2E tests ([Playwright](https://playwright.dev/))
-- [x] ESLint
-- [x] CI (GitHub Actions)
+### Rider
+- Hail a carriage by selecting pickup & dropoff from named stands
+- **Route preview map** with real road geometry (Mapbox Directions API)
+- Live tracking of approaching driver with animated route line
+- Trip progress view with zooming map as destination approaches
+- Ride session persistence (navigate away and back without losing state)
+- GPS permission UX with retry prompt
 
-## Screenshots
+### Driver
+- Profile creation (carriage name)
+- Online/offline toggle with GPS tracking
+- Incoming ride requests with accept action
+- Active ride management (start trip, complete, cancel)
+- Ride history with earnings stats and GPS breadcrumb trail
+- Expandable route replay per ride
 
-<img width="1552" alt="Sign In" src="https://github.com/brocoders/extensive-react-boilerplate/assets/6001723/5d42cd15-685b-4ae7-951d-4c8ed89c5390">
+### Admin
+- Fleet overview — all drivers, status, ride counts, earnings
+- Driver detail with full ride history
+- All rides view with status filtering and stats
+- User management with 4-role system
 
-<img width="1552" alt="Sign Up" src="https://github.com/brocoders/extensive-react-boilerplate/assets/6001723/aca2d405-2155-4755-8d0e-d41bdc0db852">
+### General
+- 7 supported locales: English, Spanish, French, Arabic, Chinese, Ukrainian, Hindi
+- Dark mode support
+- Mobile-responsive design
+- Maiden Orange font theming
+- Location permission handling with helpful retry UI
 
-<img width="1552" alt="Users list" src="https://github.com/brocoders/extensive-react-boilerplate/assets/6001723/244409c0-2235-4018-b062-44fb54ea4321">
+## Getting Started
 
-<img width="1552" alt="Create user" src="https://github.com/brocoders/extensive-react-boilerplate/assets/6001723/cb86a3e1-331f-4bd7-9668-3c6cf44eb372">
+### Prerequisites
 
-## Contributors
+- Node.js 18+
+- Mapbox access token
+- Running [hooves-server](https://github.com/NomadNiko/hooves-server) backend
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Shchepotin"><img src="https://avatars.githubusercontent.com/u/6001723?v=4?s=100" width="100px;" alt="Vladyslav Shchepotin"/><br /><sub><b>Vladyslav Shchepotin</b></sub></a><br /><a href="#maintenance-Shchepotin" title="Maintenance">🚧</a> <a href="#doc-Shchepotin" title="Documentation">📖</a> <a href="#code-Shchepotin" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ElenVlass"><img src="https://avatars.githubusercontent.com/u/72293912?v=4?s=100" width="100px;" alt="Elena Vlasenko"/><br /><sub><b>Elena Vlasenko</b></sub></a><br /><a href="#doc-ElenVlass" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/TetianaFomina"><img src="https://avatars.githubusercontent.com/u/72749258?v=4?s=100" width="100px;" alt="TetianaFomina"/><br /><sub><b>TetianaFomina</b></sub></a><br /><a href="#test-TetianaFomina" title="Tests">⚠️</a> <a href="#bug-TetianaFomina" title="Bug reports">🐛</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/LiudmylaKostenko"><img src="https://avatars.githubusercontent.com/u/55603883?v=4?s=100" width="100px;" alt="Liudmyla Kostenko"/><br /><sub><b>Liudmyla Kostenko</b></sub></a><br /><a href="#code-LiudmylaKostenko" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="http://brocoders.com"><img src="https://avatars.githubusercontent.com/u/226194?v=4?s=100" width="100px;" alt="Rodion"/><br /><sub><b>Rodion</b></sub></a><br /><a href="#business-sars" title="Business development">💼</a></td>
-    </tr>
-  </tbody>
-</table>
+### Installation
 
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
+```bash
+git clone https://github.com/NomadNiko/hooves.git
+cd hooves
+cp example.env.local .env.local
+npm install
+```
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+### Configuration
 
-## Support
+Edit `.env.local`:
 
-If you seek consulting, support, or wish to collaborate, please get in touch with us via [boilerplates@brocoders.com](boilerplates@brocoders.com) or feel free to ask us on [GitHub Discussions](https://github.com/brocoders/extensive-react-boilerplate/discussions). We are totally open to any suggestions and improvements.
+```
+NEXT_PUBLIC_API_URL=http://localhost:3000
+NEXT_PUBLIC_MAPBOX_TOKEN=pk.your-mapbox-token
+```
+
+> **Note:** `NEXT_PUBLIC_*` values are baked at build time. Rebuild after changing them.
+
+### Development
+
+```bash
+npm run dev
+```
+
+App available at `http://localhost:3000`.
+
+### Production
+
+```bash
+npm run build
+pm2 start ecosystem.config.js
+```
+
+## Project Structure
+
+```
+src/
+├── app/[language]/
+│   ├── ride/                    # Rider hail page
+│   ├── driver/                  # Driver dashboard
+│   │   └── history/             # Driver ride history
+│   ├── admin-panel/
+│   │   ├── drivers/             # Fleet overview
+│   │   │   └── [id]/           # Driver detail
+│   │   ├── rides/               # All rides
+│   │   └── users/               # User management
+│   ├── page.tsx                 # Landing page
+│   └── layout.tsx               # Root layout (font, theme)
+├── components/
+│   ├── map/
+│   │   └── driver-tracking-map.tsx  # Mapbox map with markers & route line
+│   ├── location-permission.tsx      # GPS permission UX
+│   └── app-sidebar.tsx              # Navigation sidebar
+├── hooks/
+│   └── use-mapbox-route.ts      # Mapbox Directions API route fetcher
+├── services/
+│   ├── api/                     # API client & types
+│   └── i18n/
+│       └── locales/{lang}/      # Translation JSON files
+└── ...
+```
+
+## Map Features
+
+The map component (`DriverTrackingMap`) supports:
+- **Markers** — Pickup (🟢), dropoff (🏁), carriage (🐴)
+- **Route lines** — Real road geometry from Mapbox Directions API (cycling profile)
+- **Auto-fit** — Camera automatically frames relevant points, zooms in as distance shrinks
+- **User override** — Manual pan/zoom pauses auto-fit for 10s, with re-centre button
+- **Fit modes** — `pickupAndDropoff` (preview), `driverAndPickup` (approach), `driverAndDropoff` (trip)
+
+## i18n
+
+All user-facing text is externalized to JSON files under `src/services/i18n/locales/`. Each page has its own namespace file. Pattern:
+
+- `page.tsx` — Server component with `generateMetadata` using `getServerTranslation`
+- `page-content.tsx` — Client component with `useTranslation("namespace")`
+
+## Based On
+
+[Brocoders Extensive React Boilerplate](https://github.com/brocoders/extensive-react-boilerplate) — provides auth flows, user management UI, i18n scaffolding, and the component library foundation.
+
+## License
+
+MIT

@@ -64,7 +64,13 @@ function UserFilter() {
                   label={t("admin-panel-users:filter.inputs.role.label")}
                   options={[
                     {
+                      id: RoleEnum.SUPER_ADMIN,
+                    },
+                    {
                       id: RoleEnum.ADMIN,
+                    },
+                    {
+                      id: RoleEnum.DRIVER,
                     },
                     {
                       id: RoleEnum.USER,

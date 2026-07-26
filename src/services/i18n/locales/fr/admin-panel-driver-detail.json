@@ -1,0 +1,47 @@
+{
+  "title": "Détail du Conducteur",
+  "loading": "Chargement des données du conducteur...",
+  "notFound": {
+    "heading": "Conducteur Introuvable",
+    "backToFleet": "← Retour à la Flotte"
+  },
+  "backToFleet": "← Retour à la Flotte",
+  "profile": {
+    "carriageLabel": "Carrosse : {{carriageName}}",
+    "status": {
+      "active": "🟢 Actif",
+      "offline": "⚫ Hors ligne"
+    },
+    "joinedLine": "Inscrit le {{date}} • ID Utilisateur : {{userId}}"
+  },
+  "stats": {
+    "completed": "Terminées",
+    "cancelled": "Annulées",
+    "totalEarnings": "Revenus Totaux",
+    "avgFare": "Tarif Moyen"
+  },
+  "rideHistory": {
+    "heading": "Historique des Courses ({{count}})",
+    "empty": "Ce conducteur n'a pas encore de courses.",
+    "table": {
+      "route": "Trajet",
+      "rider": "Passager",
+      "status": "Statut",
+      "paid": "Payé",
+      "fare": "Tarif",
+      "date": "Date"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "Demandée",
+      "accepted": "Acceptée",
+      "in_progress": "En cours",
+      "completed": "Terminée",
+      "cancelled": "Annulée",
+      "unknown": "Inconnu"
+    }
+  }
+}

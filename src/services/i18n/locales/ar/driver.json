@@ -1,0 +1,84 @@
+{
+  "title": "لوحة تحكم السائق",
+  "loading": "جار التحميل...",
+  "onboarding": {
+    "heading": "🐴 كن سائقًا",
+    "description": "أنشئ ملفك التعريفي كسائق لتبدأ بقبول الرحلات في جزيرة ماكيناك.",
+    "inputs": {
+      "displayName": {
+        "label": "الاسم المعروض *",
+        "placeholder": "الكابتن جاك"
+      },
+      "carriageName": {
+        "label": "اسم العربة",
+        "placeholder": "اللؤلؤة السوداء"
+      },
+      "bio": {
+        "label": "نبذة تعريفية",
+        "placeholder": "20 عامًا من القيادة في الجزيرة..."
+      }
+    },
+    "actions": {
+      "createProfile": "إنشاء الملف الشخصي"
+    },
+    "alerts": {
+      "profileCreated": "تم إنشاء الملف الشخصي!"
+    }
+  },
+  "dashboard": {
+    "heading": "🐴 لوحة تحكم السائق",
+    "status": {
+      "active": "🟢 نشط",
+      "offline": "⚫ غير متصل"
+    },
+    "inactivePrompt": "فعّل حالتك لبدء استقبال طلبات الرحلات.",
+    "alerts": {
+      "nowActive": "أنت الآن نشط",
+      "nowOffline": "أنت الآن غير متصل"
+    }
+  },
+  "location": {
+    "deniedWarning": "⚠️ تم رفض الوصول إلى الموقع. لن يتمكن ركابك من رؤية عربتك على الخريطة.",
+    "deniedHelp": "إذا لم يظهر الزر أدناه طلب المتصفح، فقد تحتاج إلى إعادة ضبط أذونات الموقع من إعدادات الموقع في متصفحك (انقر على أيقونة القفل في شريط العنوان).",
+    "allowAccess": "📍 السماح بالوصول إلى الموقع",
+    "requesting": "طلب الموقع...",
+    "trackingActive": "التتبع نشط",
+    "denied": "تم رفض الموقع",
+    "notSupported": "تحديد الموقع الجغرافي غير مدعوم",
+    "error": "خطأ في الموقع: {{message}}",
+    "pingingFrequency": "الإرسال كل 5 ثوانٍ"
+  },
+  "activeRides": {
+    "heading": "رحلاتك النشطة",
+    "riderLine": "الراكب: {{riderName}} • الأجرة: {{fare}}",
+    "anonymousRider": "مجهول",
+    "noFare": "—",
+    "statusLabels": {
+      "requested": "مطلوبة",
+      "accepted": "مقبولة",
+      "in_progress": "قيد التنفيذ",
+      "completed": "مكتملة",
+      "cancelled": "ملغاة"
+    },
+    "actions": {
+      "startTrip": "بدء الرحلة",
+      "completeAndCheckout": "إتمام والدفع",
+      "cancel": "إلغاء"
+    },
+    "alerts": {
+      "rideUpdated": "تم تحديث الرحلة إلى {{status}}"
+    }
+  },
+  "incomingRequests": {
+    "heading": "الطلبات الواردة",
+    "autoRefreshes": "(تحديث تلقائي)",
+    "empty": "لا توجد طلبات رحلات معلقة. في انتظار...",
+    "riderLine": "{{riderName}} • {{fare}}",
+    "actions": {
+      "accept": "قبول"
+    },
+    "alerts": {
+      "accepted": "تم قبول الرحلة إلى {{dropoff}}!"
+    }
+  }
+}

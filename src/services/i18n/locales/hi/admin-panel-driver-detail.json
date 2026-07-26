@@ -1,0 +1,47 @@
+{
+  "title": "ड्राइवर विवरण",
+  "loading": "ड्राइवर डेटा लोड हो रहा है...",
+  "notFound": {
+    "heading": "ड्राइवर नहीं मिला",
+    "backToFleet": "← बेड़े पर वापस जाएं"
+  },
+  "backToFleet": "← बेड़े पर वापस जाएं",
+  "profile": {
+    "carriageLabel": "गाड़ी: {{carriageName}}",
+    "status": {
+      "active": "🟢 सक्रिय",
+      "offline": "⚫ ऑफ़लाइन"
+    },
+    "joinedLine": "{{date}} को शामिल हुए • उपयोगकर्ता आईडी: {{userId}}"
+  },
+  "stats": {
+    "completed": "पूर्ण",
+    "cancelled": "रद्द",
+    "totalEarnings": "कुल कमाई",
+    "avgFare": "औसत किराया"
+  },
+  "rideHistory": {
+    "heading": "सवारी इतिहास ({{count}})",
+    "empty": "इस ड्राइवर की अभी तक कोई सवारी नहीं है।",
+    "table": {
+      "route": "मार्ग",
+      "rider": "यात्री",
+      "status": "स्थिति",
+      "paid": "भुगतान किया गया",
+      "fare": "किराया",
+      "date": "तारीख"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "अनुरोधित",
+      "accepted": "स्वीकृत",
+      "in_progress": "प्रगति पर",
+      "completed": "पूर्ण",
+      "cancelled": "रद्द",
+      "unknown": "अज्ञात"
+    }
+  }
+}

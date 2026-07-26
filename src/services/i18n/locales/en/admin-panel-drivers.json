@@ -1,0 +1,29 @@
+{
+  "title": "Fleet Overview",
+  "loading": "Loading fleet data...",
+  "heading": "🐴 Fleet Overview",
+  "viewAllRides": "View All Rides →",
+  "stats": {
+    "totalDrivers": "Total Drivers",
+    "activeNow": "Active Now",
+    "completedRides": "Completed Rides",
+    "totalRevenue": "Total Revenue"
+  },
+  "table": {
+    "heading": "All Drivers",
+    "empty": "No drivers registered yet.",
+    "columns": {
+      "driver": "Driver",
+      "carriage": "Carriage",
+      "status": "Status",
+      "rides": "Rides",
+      "earnings": "Earnings",
+      "joined": "Joined"
+    },
+    "noCarriage": "—",
+    "status": {
+      "active": "Active",
+      "offline": "Offline"
+    }
+  }
+}

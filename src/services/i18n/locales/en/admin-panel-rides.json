@@ -1,0 +1,49 @@
+{
+  "title": "All Rides",
+  "loading": "Loading rides...",
+  "heading": "🎫 All Rides",
+  "fleetOverviewLink": "← Fleet Overview",
+  "stats": {
+    "totalRides": "Total Rides",
+    "completed": "Completed",
+    "pending": "Pending",
+    "revenue": "Revenue"
+  },
+  "filter": {
+    "label": "Filter:",
+    "options": {
+      "all": "All",
+      "requested": "Requested",
+      "accepted": "Accepted",
+      "in_progress": "In Progress",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "table": {
+    "empty": "No rides match the current filter.",
+    "columns": {
+      "route": "Route",
+      "rider": "Rider",
+      "driver": "Driver",
+      "status": "Status",
+      "paid": "Paid",
+      "fare": "Fare",
+      "date": "Date"
+    },
+    "noRider": "—",
+    "noDriver": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "Requested",
+      "accepted": "Accepted",
+      "in_progress": "In Progress",
+      "completed": "Completed",
+      "cancelled": "Cancelled",
+      "unknown": "Unknown"
+    }
+  },
+  "showingCount": "Showing {{shown}} of {{total}} rides"
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Vista de la Flota",
+  "loading": "Cargando datos de la flota...",
+  "heading": "🐴 Vista de la Flota",
+  "viewAllRides": "Ver Todos los Viajes →",
+  "stats": {
+    "totalDrivers": "Conductores Totales",
+    "activeNow": "Activos Ahora",
+    "completedRides": "Viajes Completados",
+    "totalRevenue": "Ingresos Totales"
+  },
+  "table": {
+    "heading": "Todos los Conductores",
+    "empty": "Aún no hay conductores registrados.",
+    "columns": {
+      "driver": "Conductor",
+      "carriage": "Carruaje",
+      "status": "Estado",
+      "rides": "Viajes",
+      "earnings": "Ganancias",
+      "joined": "Se Unió"
+    },
+    "noCarriage": "—",
+    "status": {
+      "active": "Activo",
+      "offline": "Sin conexión"
+    }
+  }
+}

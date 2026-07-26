@@ -1,0 +1,49 @@
+{
+  "title": "सभी सवारियां",
+  "loading": "सवारियां लोड हो रही हैं...",
+  "heading": "🎫 सभी सवारियां",
+  "fleetOverviewLink": "← बेड़ा अवलोकन",
+  "stats": {
+    "totalRides": "कुल सवारियां",
+    "completed": "पूर्ण",
+    "pending": "लंबित",
+    "revenue": "आय"
+  },
+  "filter": {
+    "label": "फ़िल्टर:",
+    "options": {
+      "all": "सभी",
+      "requested": "अनुरोधित",
+      "accepted": "स्वीकृत",
+      "in_progress": "प्रगति पर",
+      "completed": "पूर्ण",
+      "cancelled": "रद्द"
+    }
+  },
+  "table": {
+    "empty": "वर्तमान फ़िल्टर से कोई सवारी मेल नहीं खाती।",
+    "columns": {
+      "route": "मार्ग",
+      "rider": "यात्री",
+      "driver": "ड्राइवर",
+      "status": "स्थिति",
+      "paid": "भुगतान किया गया",
+      "fare": "किराया",
+      "date": "तारीख"
+    },
+    "noRider": "—",
+    "noDriver": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "अनुरोधित",
+      "accepted": "स्वीकृत",
+      "in_progress": "प्रगति पर",
+      "completed": "पूर्ण",
+      "cancelled": "रद्द",
+      "unknown": "अज्ञात"
+    }
+  },
+  "showingCount": "{{total}} में से {{shown}} सवारियां दिखाई जा रही हैं"
+}

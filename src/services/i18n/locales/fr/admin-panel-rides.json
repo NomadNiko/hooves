@@ -1,0 +1,49 @@
+{
+  "title": "Tous les Trajets",
+  "loading": "Chargement des trajets...",
+  "heading": "🎫 Tous les Trajets",
+  "fleetOverviewLink": "← Vue de la Flotte",
+  "stats": {
+    "totalRides": "Trajets Totaux",
+    "completed": "Terminés",
+    "pending": "En Attente",
+    "revenue": "Revenus"
+  },
+  "filter": {
+    "label": "Filtrer :",
+    "options": {
+      "all": "Tous",
+      "requested": "Demandée",
+      "accepted": "Acceptée",
+      "in_progress": "En cours",
+      "completed": "Terminée",
+      "cancelled": "Annulée"
+    }
+  },
+  "table": {
+    "empty": "Aucun trajet ne correspond au filtre actuel.",
+    "columns": {
+      "route": "Trajet",
+      "rider": "Passager",
+      "driver": "Conducteur",
+      "status": "Statut",
+      "paid": "Payé",
+      "fare": "Tarif",
+      "date": "Date"
+    },
+    "noRider": "—",
+    "noDriver": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "Demandée",
+      "accepted": "Acceptée",
+      "in_progress": "En cours",
+      "completed": "Terminée",
+      "cancelled": "Annulée",
+      "unknown": "Inconnu"
+    }
+  },
+  "showingCount": "Affichage de {{shown}} sur {{total}} trajets"
+}

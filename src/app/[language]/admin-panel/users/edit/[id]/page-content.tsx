@@ -230,7 +230,13 @@ function FormEditUser() {
                 label={t("admin-panel-users-edit:inputs.role.label")}
                 options={[
                   {
+                    id: RoleEnum.SUPER_ADMIN,
+                  },
+                  {
                     id: RoleEnum.ADMIN,
+                  },
+                  {
+                    id: RoleEnum.DRIVER,
                   },
                   {
                     id: RoleEnum.USER,

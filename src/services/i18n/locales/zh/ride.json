@@ -1,0 +1,58 @@
+{
+  "title": "叫一辆马车",
+  "restoring": {
+    "heading": "🐴 您的行程",
+    "checking": "正在检查是否有进行中的行程..."
+  },
+  "activeRide": {
+    "heading": "🐴 您的行程",
+    "driverLabel": "司机：",
+    "fareLabel": "车费：",
+    "noFare": "—",
+    "paid": "✓ 已支付",
+    "statusLabels": {
+      "requested": "🔍 正在寻找司机...",
+      "accepted": "✅ 司机已接单！马车正在赶来。",
+      "in_progress": "🐴 您已在路上！",
+      "completed": "🎉 行程已完成！感谢您的乘坐。",
+      "cancelled": "❌ 行程已取消。",
+      "unknown": "未知"
+    },
+    "map": {
+      "livePosition": "📍 实时位置：{{lat}}, {{lng}} — 每4秒更新",
+      "waitingForDriver": "正在等待司机的位置信息。他们可能尚未开启位置共享。"
+    },
+    "actions": {
+      "cancelRide": "取消行程",
+      "hailAnother": "再叫一辆马车"
+    },
+    "alerts": {
+      "cancelled": "行程已取消。"
+    }
+  },
+  "hailForm": {
+    "heading": "🐴 叫一辆马车",
+    "description": "选择您在麦基诺岛的上车点和目的地。",
+    "inputs": {
+      "pickup": {
+        "label": "上车点",
+        "placeholder": "您在哪里？"
+      },
+      "dropoff": {
+        "label": "目的地",
+        "placeholder": "您要去哪里？"
+      }
+    },
+    "actions": {
+      "hailCarriage": "叫马车 🐴",
+      "requesting": "正在请求..."
+    },
+    "alerts": {
+      "requested": "行程已请求！正在寻找司机..."
+    }
+  },
+  "map": {
+    "loading": "地图加载中..."
+  },
+  "riderDefaultName": "乘客"
+}

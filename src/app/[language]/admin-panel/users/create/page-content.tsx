@@ -204,7 +204,13 @@ function FormCreateUser() {
                 label={t("admin-panel-users-create:inputs.role.label")}
                 options={[
                   {
+                    id: RoleEnum.SUPER_ADMIN,
+                  },
+                  {
                     id: RoleEnum.ADMIN,
+                  },
+                  {
+                    id: RoleEnum.DRIVER,
                   },
                   {
                     id: RoleEnum.USER,

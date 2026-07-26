@@ -1,0 +1,58 @@
+{
+  "title": "اطلب عربة",
+  "restoring": {
+    "heading": "🐴 رحلتك",
+    "checking": "جار التحقق من وجود رحلة نشطة..."
+  },
+  "activeRide": {
+    "heading": "🐴 رحلتك",
+    "driverLabel": "السائق:",
+    "fareLabel": "الأجرة:",
+    "noFare": "—",
+    "paid": "✓ مدفوع",
+    "statusLabels": {
+      "requested": "🔍 جاري البحث عن سائق...",
+      "accepted": "✅ تم قبول السائق! العربة في الطريق.",
+      "in_progress": "🐴 أنت في طريقك!",
+      "completed": "🎉 اكتملت الرحلة! شكرًا لركوبك معنا.",
+      "cancelled": "❌ تم إلغاء الرحلة.",
+      "unknown": "غير معروف"
+    },
+    "map": {
+      "livePosition": "📍 الموقع المباشر: {{lat}}, {{lng}} — يتم التحديث كل 4 ثوانٍ",
+      "waitingForDriver": "في انتظار موقع سائقك. قد لا يكون قد فعّل مشاركة الموقع بعد."
+    },
+    "actions": {
+      "cancelRide": "إلغاء الرحلة",
+      "hailAnother": "طلب عربة أخرى"
+    },
+    "alerts": {
+      "cancelled": "تم إلغاء الرحلة."
+    }
+  },
+  "hailForm": {
+    "heading": "🐴 اطلب عربة",
+    "description": "اختر محطات الانطلاق والوصول في جزيرة ماكيناك.",
+    "inputs": {
+      "pickup": {
+        "label": "محطة الانطلاق",
+        "placeholder": "أين أنت؟"
+      },
+      "dropoff": {
+        "label": "محطة الوصول",
+        "placeholder": "إلى أين تذهب؟"
+      }
+    },
+    "actions": {
+      "hailCarriage": "طلب عربة 🐴",
+      "requesting": "جار الطلب..."
+    },
+    "alerts": {
+      "requested": "تم طلب الرحلة! جاري البحث عن سائق..."
+    }
+  },
+  "map": {
+    "loading": "جار تحميل الخريطة..."
+  },
+  "riderDefaultName": "الراكب"
+}

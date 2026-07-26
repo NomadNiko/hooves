@@ -1,0 +1,58 @@
+{
+  "title": "Hail a Carriage",
+  "restoring": {
+    "heading": "🐴 Your Ride",
+    "checking": "Checking for an active ride..."
+  },
+  "activeRide": {
+    "heading": "🐴 Your Ride",
+    "driverLabel": "Driver:",
+    "fareLabel": "Fare:",
+    "noFare": "—",
+    "paid": "✓ Paid",
+    "statusLabels": {
+      "requested": "🔍 Looking for a driver...",
+      "accepted": "✅ Driver accepted! Carriage is on the way.",
+      "in_progress": "🐴 You're on your way!",
+      "completed": "🎉 Ride complete! Thanks for riding.",
+      "cancelled": "❌ Ride cancelled.",
+      "unknown": "Unknown"
+    },
+    "map": {
+      "livePosition": "📍 Live position: {{lat}}, {{lng}} — updates every 4s",
+      "waitingForDriver": "Waiting for your driver's location. They may not have location sharing on yet."
+    },
+    "actions": {
+      "cancelRide": "Cancel Ride",
+      "hailAnother": "Hail Another Ride"
+    },
+    "alerts": {
+      "cancelled": "Ride cancelled."
+    }
+  },
+  "hailForm": {
+    "heading": "🐴 Hail a Carriage",
+    "description": "Select your pickup and dropoff stands on Mackinac Island.",
+    "inputs": {
+      "pickup": {
+        "label": "Pickup Stand",
+        "placeholder": "Where are you?"
+      },
+      "dropoff": {
+        "label": "Dropoff Stand",
+        "placeholder": "Where are you going?"
+      }
+    },
+    "actions": {
+      "hailCarriage": "Hail Carriage 🐴",
+      "requesting": "Requesting..."
+    },
+    "alerts": {
+      "requested": "Ride requested! Looking for a driver..."
+    }
+  },
+  "map": {
+    "loading": "Loading map..."
+  },
+  "riderDefaultName": "Rider"
+}

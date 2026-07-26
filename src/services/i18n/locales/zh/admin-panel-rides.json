@@ -1,0 +1,49 @@
+{
+  "title": "所有行程",
+  "loading": "正在加载行程...",
+  "heading": "🎫 所有行程",
+  "fleetOverviewLink": "← 车队概览",
+  "stats": {
+    "totalRides": "行程总数",
+    "completed": "已完成",
+    "pending": "待处理",
+    "revenue": "收入"
+  },
+  "filter": {
+    "label": "筛选：",
+    "options": {
+      "all": "全部",
+      "requested": "已请求",
+      "accepted": "已接受",
+      "in_progress": "进行中",
+      "completed": "已完成",
+      "cancelled": "已取消"
+    }
+  },
+  "table": {
+    "empty": "没有符合当前筛选条件的行程。",
+    "columns": {
+      "route": "路线",
+      "rider": "乘客",
+      "driver": "司机",
+      "status": "状态",
+      "paid": "已支付",
+      "fare": "车费",
+      "date": "日期"
+    },
+    "noRider": "—",
+    "noDriver": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "已请求",
+      "accepted": "已接受",
+      "in_progress": "进行中",
+      "completed": "已完成",
+      "cancelled": "已取消",
+      "unknown": "未知"
+    }
+  },
+  "showingCount": "显示 {{total}} 个行程中的 {{shown}} 个"
+}

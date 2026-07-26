@@ -1,0 +1,58 @@
+{
+  "title": "Appeler un Carrosse",
+  "restoring": {
+    "heading": "🐴 Votre Course",
+    "checking": "Vérification d'une course active..."
+  },
+  "activeRide": {
+    "heading": "🐴 Votre Course",
+    "driverLabel": "Conducteur :",
+    "fareLabel": "Tarif :",
+    "noFare": "—",
+    "paid": "✓ Payé",
+    "statusLabels": {
+      "requested": "🔍 Recherche d'un conducteur...",
+      "accepted": "✅ Conducteur accepté ! Le carrosse est en route.",
+      "in_progress": "🐴 Vous êtes en route !",
+      "completed": "🎉 Course terminée ! Merci d'avoir voyagé avec nous.",
+      "cancelled": "❌ Course annulée.",
+      "unknown": "Inconnu"
+    },
+    "map": {
+      "livePosition": "📍 Position en direct : {{lat}}, {{lng}} — mise à jour toutes les 4s",
+      "waitingForDriver": "En attente de la position de votre conducteur. Il n'a peut-être pas encore activé le partage de position."
+    },
+    "actions": {
+      "cancelRide": "Annuler la Course",
+      "hailAnother": "Appeler un Autre Carrosse"
+    },
+    "alerts": {
+      "cancelled": "Course annulée."
+    }
+  },
+  "hailForm": {
+    "heading": "🐴 Appeler un Carrosse",
+    "description": "Sélectionnez vos arrêts de départ et d'arrivée sur Mackinac Island.",
+    "inputs": {
+      "pickup": {
+        "label": "Arrêt de Départ",
+        "placeholder": "Où êtes-vous ?"
+      },
+      "dropoff": {
+        "label": "Arrêt d'Arrivée",
+        "placeholder": "Où allez-vous ?"
+      }
+    },
+    "actions": {
+      "hailCarriage": "Appeler un Carrosse 🐴",
+      "requesting": "Demande en cours..."
+    },
+    "alerts": {
+      "requested": "Course demandée ! Recherche d'un conducteur..."
+    }
+  },
+  "map": {
+    "loading": "Chargement de la carte..."
+  },
+  "riderDefaultName": "Passager"
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Всі поїздки",
+  "loading": "Завантаження поїздок...",
+  "heading": "🎫 Всі поїздки",
+  "fleetOverviewLink": "← Огляд автопарку",
+  "stats": {
+    "totalRides": "Всього поїздок",
+    "completed": "Завершено",
+    "pending": "В очікуванні",
+    "revenue": "Дохід"
+  },
+  "filter": {
+    "label": "Фільтр:",
+    "options": {
+      "all": "Усі",
+      "requested": "Запитано",
+      "accepted": "Прийнято",
+      "in_progress": "В процесі",
+      "completed": "Завершено",
+      "cancelled": "Скасовано"
+    }
+  },
+  "table": {
+    "empty": "Немає поїздок, що відповідають поточному фільтру.",
+    "columns": {
+      "route": "Маршрут",
+      "rider": "Пасажир",
+      "driver": "Водій",
+      "status": "Статус",
+      "paid": "Оплачено",
+      "fare": "Тариф",
+      "date": "Дата"
+    },
+    "noRider": "—",
+    "noDriver": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "Запитано",
+      "accepted": "Прийнято",
+      "in_progress": "В процесі",
+      "completed": "Завершено",
+      "cancelled": "Скасовано",
+      "unknown": "Невідомо"
+    }
+  },
+  "showingCount": "Показано {{shown}} з {{total}} поїздок"
+}

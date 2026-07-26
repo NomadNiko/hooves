@@ -1,0 +1,84 @@
+{
+  "title": "Tableau de bord Conducteur",
+  "loading": "Chargement...",
+  "onboarding": {
+    "heading": "🐴 Devenir Conducteur",
+    "description": "Créez votre profil de conducteur pour commencer à accepter des courses sur Mackinac Island.",
+    "inputs": {
+      "displayName": {
+        "label": "Nom d'affichage *",
+        "placeholder": "Capitaine Jack"
+      },
+      "carriageName": {
+        "label": "Nom du carrosse",
+        "placeholder": "La Perle Noire"
+      },
+      "bio": {
+        "label": "Biographie",
+        "placeholder": "20 ans de conduite sur l'île..."
+      }
+    },
+    "actions": {
+      "createProfile": "Créer le Profil"
+    },
+    "alerts": {
+      "profileCreated": "Profil créé !"
+    }
+  },
+  "dashboard": {
+    "heading": "🐴 Tableau de bord Conducteur",
+    "status": {
+      "active": "🟢 Actif",
+      "offline": "⚫ Hors ligne"
+    },
+    "inactivePrompt": "Passez en mode actif pour commencer à recevoir des demandes de course.",
+    "alerts": {
+      "nowActive": "Vous êtes maintenant ACTIF",
+      "nowOffline": "Vous êtes maintenant HORS LIGNE"
+    }
+  },
+  "location": {
+    "deniedWarning": "⚠️ L'accès à la localisation a été refusé. Vos passagers ne pourront pas voir votre carrosse sur la carte.",
+    "deniedHelp": "Si le bouton ci-dessous n'affiche pas d'invite du navigateur, cliquez sur l'icône de verrouillage dans la barre d'adresse pour réinitialiser les autorisations de localisation.",
+    "allowAccess": "📍 Autoriser l'accès à la localisation",
+    "requesting": "Demande de localisation...",
+    "trackingActive": "Suivi actif",
+    "denied": "Localisation refusée",
+    "notSupported": "Géolocalisation non prise en charge",
+    "error": "Erreur de localisation : {{message}}",
+    "pingingFrequency": "Envoi toutes les 5s"
+  },
+  "activeRides": {
+    "heading": "Vos Courses Actives",
+    "riderLine": "Passager : {{riderName}} • Tarif : {{fare}}",
+    "anonymousRider": "Anonyme",
+    "noFare": "—",
+    "statusLabels": {
+      "requested": "Demandée",
+      "accepted": "Acceptée",
+      "in_progress": "En cours",
+      "completed": "Terminée",
+      "cancelled": "Annulée"
+    },
+    "actions": {
+      "startTrip": "Démarrer la Course",
+      "completeAndCheckout": "Terminer et Encaisser",
+      "cancel": "Annuler"
+    },
+    "alerts": {
+      "rideUpdated": "Course mise à jour : {{status}}"
+    }
+  },
+  "incomingRequests": {
+    "heading": "Demandes Entrantes",
+    "autoRefreshes": "(actualisation automatique)",
+    "empty": "Aucune demande de course en attente. En attente...",
+    "riderLine": "{{riderName}} • {{fare}}",
+    "actions": {
+      "accept": "Accepter"
+    },
+    "alerts": {
+      "accepted": "Course acceptée vers {{dropoff}} !"
+    }
+  }
+}

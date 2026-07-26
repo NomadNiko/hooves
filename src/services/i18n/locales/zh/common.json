@@ -1,5 +1,5 @@
 {
-  "app-name": "Boilerplate",
+  "app-name": "Hooves",
   "loading": "加载中 ...",
   "close": "关闭",
   "navigation": {
@@ -8,7 +8,12 @@
     "signUp": "注册",
     "profile": "个人资料",
     "users": "用户",
-    "logout": "退出登录"
+    "logout": "退出登录",
+    "hailRide": "🐴 叫一辆马车",
+    "driverDashboard": "🎠 司机仪表板",
+    "rideHistory": "📊 行程历史",
+    "fleetDrivers": "🐴 车队（司机）",
+    "allRides": "🎫 所有行程"
   },
   "formInputs": {
     "avatarInput": {
@@ -37,5 +42,25 @@
     "facebook": {
       "action": "使用 Facebook 登录"
     }
+  },
+  "locationPermission": {
+    "requesting": "📍 正在请求您的位置...",
+    "errors": {
+      "notSupported": "您的浏览器不支持地理定位。",
+      "denied": "位置访问被拒绝。请允许位置访问后重试。",
+      "unavailable": "无法确定您的位置。请重试。",
+      "timeout": "位置请求超时。请重试。"
+    },
+    "resetHelp": "如果点击下方按钮未显示浏览器提示，您可能需要在浏览器的网站设置中重置位置权限（点击地址栏中的锁形图标）。",
+    "actions": {
+      "allowAccess": "📍 允许访问位置"
+    }
+  },
+  "driverTrackingMap": {
+    "pickupLabel": "上车点",
+    "dropoffLabel": "目的地",
+    "unavailable": "地图不可用 — 未配置 NEXT_PUBLIC_MAPBOX_TOKEN。",
+    "carriageTitle": "您的马车",
+    "recentre": "📍 重新居中"
   }
 }

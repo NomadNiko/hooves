@@ -1,5 +1,5 @@
 {
-  "app-name": "Boilerplate",
+  "app-name": "Hooves",
   "loading": "Loading ...",
   "close": "Close",
   "navigation": {
@@ -8,7 +8,12 @@
     "signUp": "Sign Up",
     "profile": "Profile",
     "users": "Users",
-    "logout": "Logout"
+    "logout": "Logout",
+    "hailRide": "🐴 Hail a Ride",
+    "driverDashboard": "🎠 Driver Dashboard",
+    "rideHistory": "📊 Ride History",
+    "fleetDrivers": "🐴 Fleet (Drivers)",
+    "allRides": "🎫 All Rides"
   },
   "formInputs": {
     "avatarInput": {
@@ -37,5 +42,25 @@
     "facebook": {
       "action": "Login with Facebook"
     }
+  },
+  "locationPermission": {
+    "requesting": "📍 Requesting your location...",
+    "errors": {
+      "notSupported": "Your browser does not support geolocation.",
+      "denied": "Location access was denied. Please allow location access and try again.",
+      "unavailable": "Unable to determine your location. Please try again.",
+      "timeout": "Location request timed out. Please try again."
+    },
+    "resetHelp": "If clicking the button below doesn't show a browser prompt, you may need to reset location permissions in your browser's site settings (click the lock icon in the address bar).",
+    "actions": {
+      "allowAccess": "📍 Allow Location Access"
+    }
+  },
+  "driverTrackingMap": {
+    "pickupLabel": "Pickup",
+    "dropoffLabel": "Dropoff",
+    "unavailable": "Map unavailable — NEXT_PUBLIC_MAPBOX_TOKEN is not configured.",
+    "carriageTitle": "Your carriage",
+    "recentre": "📍 Re-centre"
   }
 }

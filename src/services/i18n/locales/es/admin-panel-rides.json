@@ -1,0 +1,49 @@
+{
+  "title": "Todos los Viajes",
+  "loading": "Cargando viajes...",
+  "heading": "🎫 Todos los Viajes",
+  "fleetOverviewLink": "← Vista de la Flota",
+  "stats": {
+    "totalRides": "Viajes Totales",
+    "completed": "Completados",
+    "pending": "Pendientes",
+    "revenue": "Ingresos"
+  },
+  "filter": {
+    "label": "Filtrar:",
+    "options": {
+      "all": "Todos",
+      "requested": "Solicitado",
+      "accepted": "Aceptado",
+      "in_progress": "En Curso",
+      "completed": "Completado",
+      "cancelled": "Cancelado"
+    }
+  },
+  "table": {
+    "empty": "Ningún viaje coincide con el filtro actual.",
+    "columns": {
+      "route": "Ruta",
+      "rider": "Pasajero",
+      "driver": "Conductor",
+      "status": "Estado",
+      "paid": "Pagado",
+      "fare": "Tarifa",
+      "date": "Fecha"
+    },
+    "noRider": "—",
+    "noDriver": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "Solicitado",
+      "accepted": "Aceptado",
+      "in_progress": "En Curso",
+      "completed": "Completado",
+      "cancelled": "Cancelado",
+      "unknown": "Desconocido"
+    }
+  },
+  "showingCount": "Mostrando {{shown}} de {{total}} viajes"
+}

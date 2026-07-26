@@ -1,0 +1,43 @@
+{
+  "title": "سجل الرحلات والأرباح",
+  "loading": "جار التحميل...",
+  "noProfile": {
+    "heading": "📊 سجل الرحلات",
+    "description": "ليس لديك ملف تعريفي كسائق بعد.",
+    "actions": {
+      "createProfile": "إنشاء ملف تعريفي كسائق"
+    }
+  },
+  "heading": "📊 سجل رحلاتك",
+  "stats": {
+    "totalRides": "إجمالي الرحلات",
+    "totalEarnings": "إجمالي الأرباح",
+    "thisWeek": "هذا الأسبوع",
+    "avgFare": "متوسط الأجرة"
+  },
+  "rideList": {
+    "heading": "جميع الرحلات ({{count}})",
+    "empty": "لا توجد رحلات بعد. فعّل حالتك من <0>لوحة التحكم</0> لبدء قبول الرحلات.",
+    "table": {
+      "route": "المسار",
+      "rider": "الراكب",
+      "status": "الحالة",
+      "fare": "الأجرة",
+      "date": "التاريخ"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "route": {
+      "noBreadcrumbs": "لم يتم تسجيل أي نقاط GPS لهذه الرحلة.",
+      "heading": "🗺️ المسار ({{count}} نقطة)"
+    },
+    "statusLabels": {
+      "requested": "مطلوبة",
+      "accepted": "مقبولة",
+      "in_progress": "قيد التنفيذ",
+      "completed": "مكتملة",
+      "cancelled": "ملغاة",
+      "unknown": "غير معروف"
+    }
+  }
+}

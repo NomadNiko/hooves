@@ -1,0 +1,84 @@
+{
+  "title": "Driver Dashboard",
+  "loading": "Loading...",
+  "onboarding": {
+    "heading": "🐴 Become a Driver",
+    "description": "Create your driver profile to start accepting rides on Mackinac Island.",
+    "inputs": {
+      "displayName": {
+        "label": "Display Name *",
+        "placeholder": "Captain Jack"
+      },
+      "carriageName": {
+        "label": "Carriage Name",
+        "placeholder": "The Black Pearl"
+      },
+      "bio": {
+        "label": "Bio",
+        "placeholder": "20 years driving on the island..."
+      }
+    },
+    "actions": {
+      "createProfile": "Create Profile"
+    },
+    "alerts": {
+      "profileCreated": "Profile created!"
+    }
+  },
+  "dashboard": {
+    "heading": "🐴 Driver Dashboard",
+    "status": {
+      "active": "🟢 Active",
+      "offline": "⚫ Offline"
+    },
+    "inactivePrompt": "Go active to start receiving ride requests.",
+    "alerts": {
+      "nowActive": "You are now ACTIVE",
+      "nowOffline": "You are now OFFLINE"
+    }
+  },
+  "location": {
+    "deniedWarning": "⚠️ Location access was denied. Your passengers won't be able to see your carriage on the map.",
+    "deniedHelp": "If the button below doesn't show a browser prompt, click the lock icon in your address bar to reset location permissions.",
+    "allowAccess": "📍 Allow Location Access",
+    "requesting": "Requesting location...",
+    "trackingActive": "Tracking active",
+    "denied": "Location denied",
+    "notSupported": "Geolocation not supported",
+    "error": "Location error: {{message}}",
+    "pingingFrequency": "Pinging every 5s"
+  },
+  "activeRides": {
+    "heading": "Your Active Rides",
+    "riderLine": "Rider: {{riderName}} • Fare: {{fare}}",
+    "anonymousRider": "Anonymous",
+    "noFare": "—",
+    "statusLabels": {
+      "requested": "Requested",
+      "accepted": "Accepted",
+      "in_progress": "In Progress",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "actions": {
+      "startTrip": "Start Trip",
+      "completeAndCheckout": "Complete & Checkout",
+      "cancel": "Cancel"
+    },
+    "alerts": {
+      "rideUpdated": "Ride updated to {{status}}"
+    }
+  },
+  "incomingRequests": {
+    "heading": "Incoming Requests",
+    "autoRefreshes": "(auto-refreshes)",
+    "empty": "No pending ride requests. Waiting...",
+    "riderLine": "{{riderName}} • {{fare}}",
+    "actions": {
+      "accept": "Accept"
+    },
+    "alerts": {
+      "accepted": "Accepted ride to {{dropoff}}!"
+    }
+  }
+}

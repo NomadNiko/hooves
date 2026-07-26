@@ -1,0 +1,43 @@
+{
+  "title": "Historial de Viajes y Ganancias",
+  "loading": "Cargando...",
+  "noProfile": {
+    "heading": "📊 Historial de Viajes",
+    "description": "Aún no tienes un perfil de conductor.",
+    "actions": {
+      "createProfile": "Crear Perfil de Conductor"
+    }
+  },
+  "heading": "📊 Tu Historial de Viajes",
+  "stats": {
+    "totalRides": "Viajes Totales",
+    "totalEarnings": "Ganancias Totales",
+    "thisWeek": "Esta Semana",
+    "avgFare": "Tarifa Promedio"
+  },
+  "rideList": {
+    "heading": "Todos los Viajes ({{count}})",
+    "empty": "Aún no hay viajes. Activa tu disponibilidad en tu <0>panel</0> para empezar a aceptar viajes.",
+    "table": {
+      "route": "Ruta",
+      "rider": "Pasajero",
+      "status": "Estado",
+      "fare": "Tarifa",
+      "date": "Fecha"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "route": {
+      "noBreadcrumbs": "No se registraron coordenadas GPS para este viaje.",
+      "heading": "🗺️ Ruta ({{count}} puntos)"
+    },
+    "statusLabels": {
+      "requested": "Solicitado",
+      "accepted": "Aceptado",
+      "in_progress": "En Curso",
+      "completed": "Completado",
+      "cancelled": "Cancelado",
+      "unknown": "Desconocido"
+    }
+  }
+}

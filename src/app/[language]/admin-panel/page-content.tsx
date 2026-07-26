@@ -19,4 +19,6 @@ function AdminPanel() {
   );
 }
 
-export default withPageRequiredAuth(AdminPanel, { roles: [RoleEnum.ADMIN] });
+export default withPageRequiredAuth(AdminPanel, {
+  roles: [RoleEnum.SUPER_ADMIN, RoleEnum.ADMIN],
+});

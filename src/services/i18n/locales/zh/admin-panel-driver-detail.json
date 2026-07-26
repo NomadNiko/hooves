@@ -1,0 +1,47 @@
+{
+  "title": "司机详情",
+  "loading": "正在加载司机数据...",
+  "notFound": {
+    "heading": "未找到该司机",
+    "backToFleet": "← 返回车队"
+  },
+  "backToFleet": "← 返回车队",
+  "profile": {
+    "carriageLabel": "马车：{{carriageName}}",
+    "status": {
+      "active": "🟢 在线",
+      "offline": "⚫ 离线"
+    },
+    "joinedLine": "加入时间 {{date}} • 用户ID：{{userId}}"
+  },
+  "stats": {
+    "completed": "已完成",
+    "cancelled": "已取消",
+    "totalEarnings": "总收入",
+    "avgFare": "平均车费"
+  },
+  "rideHistory": {
+    "heading": "行程历史（{{count}}）",
+    "empty": "该司机暂无行程记录。",
+    "table": {
+      "route": "路线",
+      "rider": "乘客",
+      "status": "状态",
+      "paid": "已支付",
+      "fare": "车费",
+      "date": "日期"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "已请求",
+      "accepted": "已接受",
+      "in_progress": "进行中",
+      "completed": "已完成",
+      "cancelled": "已取消",
+      "unknown": "未知"
+    }
+  }
+}

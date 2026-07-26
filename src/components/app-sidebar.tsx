@@ -136,7 +136,8 @@ function AppSidebar() {
   const pathname = usePathname();
 
   const isAdmin =
-    !!user?.role && [RoleEnum.ADMIN].includes(Number(user?.role?.id));
+    !!user?.role &&
+    [RoleEnum.SUPER_ADMIN, RoleEnum.ADMIN].includes(Number(user?.role?.id));
 
   return (
     <>
@@ -155,6 +156,44 @@ function AppSidebar() {
                   </SidebarMenuButton>
                 </SidebarMenuItem>
 
+                {!!user && (
+                  <>
+                    <SidebarMenuItem>
+                      <SidebarMenuButton
+                        asChild
+                        isActive={pathname.includes("/ride")}
+                      >
+                        <Link href="/ride">
+                          {t("common:navigation.hailRide")}
+                        </Link>
+                      </SidebarMenuButton>
+                    </SidebarMenuItem>
+                    <SidebarMenuItem>
+                      <SidebarMenuButton
+                        asChild
+                        isActive={
+                          pathname === `/${pathname.split("/")[1]}/driver` ||
+                          pathname.endsWith("/driver")
+                        }
+                      >
+                        <Link href="/driver">
+                          {t("common:navigation.driverDashboard")}
+                        </Link>
+                      </SidebarMenuButton>
+                    </SidebarMenuItem>
+                    <SidebarMenuItem>
+                      <SidebarMenuButton
+                        asChild
+                        isActive={pathname.includes("/driver/history")}
+                      >
+                        <Link href="/driver/history">
+                          {t("common:navigation.rideHistory")}
+                        </Link>
+                      </SidebarMenuButton>
+                    </SidebarMenuItem>
+                  </>
+                )}
+
                 {isAdmin && (
                   <>
                     <SidebarMenuItem>
@@ -164,6 +203,26 @@ function AppSidebar() {
                       >
                         <Link href="/admin-panel/users">
                           {t("common:navigation.users")}
+                        </Link>
+                      </SidebarMenuButton>
+                    </SidebarMenuItem>
+                    <SidebarMenuItem>
+                      <SidebarMenuButton
+                        asChild
+                        isActive={pathname.includes("/admin-panel/drivers")}
+                      >
+                        <Link href="/admin-panel/drivers">
+                          {t("common:navigation.fleetDrivers")}
+                        </Link>
+                      </SidebarMenuButton>
+                    </SidebarMenuItem>
+                    <SidebarMenuItem>
+                      <SidebarMenuButton
+                        asChild
+                        isActive={pathname.includes("/admin-panel/rides")}
+                      >
+                        <Link href="/admin-panel/rides">
+                          {t("common:navigation.allRides")}
                         </Link>
                       </SidebarMenuButton>
                     </SidebarMenuItem>

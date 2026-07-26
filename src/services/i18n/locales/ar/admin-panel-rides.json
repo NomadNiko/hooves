@@ -1,0 +1,49 @@
+{
+  "title": "جميع الرحلات",
+  "loading": "جار تحميل الرحلات...",
+  "heading": "🎫 جميع الرحلات",
+  "fleetOverviewLink": "← نظرة عامة على الأسطول",
+  "stats": {
+    "totalRides": "إجمالي الرحلات",
+    "completed": "مكتملة",
+    "pending": "معلقة",
+    "revenue": "الإيرادات"
+  },
+  "filter": {
+    "label": "تصفية:",
+    "options": {
+      "all": "الكل",
+      "requested": "مطلوبة",
+      "accepted": "مقبولة",
+      "in_progress": "قيد التنفيذ",
+      "completed": "مكتملة",
+      "cancelled": "ملغاة"
+    }
+  },
+  "table": {
+    "empty": "لا توجد رحلات مطابقة للتصفية الحالية.",
+    "columns": {
+      "route": "المسار",
+      "rider": "الراكب",
+      "driver": "السائق",
+      "status": "الحالة",
+      "paid": "مدفوع",
+      "fare": "الأجرة",
+      "date": "التاريخ"
+    },
+    "noRider": "—",
+    "noDriver": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "مطلوبة",
+      "accepted": "مقبولة",
+      "in_progress": "قيد التنفيذ",
+      "completed": "مكتملة",
+      "cancelled": "ملغاة",
+      "unknown": "غير معروف"
+    }
+  },
+  "showingCount": "عرض {{shown}} من {{total}} رحلة"
+}

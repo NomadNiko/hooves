@@ -1,0 +1,29 @@
+{
+  "title": "Vue de la Flotte",
+  "loading": "Chargement des données de la flotte...",
+  "heading": "🐴 Vue de la Flotte",
+  "viewAllRides": "Voir Tous les Trajets →",
+  "stats": {
+    "totalDrivers": "Conducteurs Totaux",
+    "activeNow": "Actifs Maintenant",
+    "completedRides": "Trajets Terminés",
+    "totalRevenue": "Revenus Totaux"
+  },
+  "table": {
+    "heading": "Tous les Conducteurs",
+    "empty": "Aucun conducteur enregistré pour l'instant.",
+    "columns": {
+      "driver": "Conducteur",
+      "carriage": "Carrosse",
+      "status": "Statut",
+      "rides": "Trajets",
+      "earnings": "Revenus",
+      "joined": "Inscrit le"
+    },
+    "noCarriage": "—",
+    "status": {
+      "active": "Actif",
+      "offline": "Hors ligne"
+    }
+  }
+}

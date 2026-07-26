@@ -33,8 +33,10 @@
         "required": "Role is required"
       },
       "options": {
-        "1": "Admin",
-        "2": "User"
+        "1": "Super Admin",
+        "2": "Admin",
+        "3": "Driver",
+        "4": "User"
       }
     },
     "password": {

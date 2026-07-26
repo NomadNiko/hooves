@@ -1,0 +1,29 @@
+{
+  "title": "车队概览",
+  "loading": "正在加载车队数据...",
+  "heading": "🐴 车队概览",
+  "viewAllRides": "查看所有行程 →",
+  "stats": {
+    "totalDrivers": "司机总数",
+    "activeNow": "当前在线",
+    "completedRides": "已完成行程",
+    "totalRevenue": "总收入"
+  },
+  "table": {
+    "heading": "所有司机",
+    "empty": "尚无注册司机。",
+    "columns": {
+      "driver": "司机",
+      "carriage": "马车",
+      "status": "状态",
+      "rides": "行程数",
+      "earnings": "收入",
+      "joined": "加入时间"
+    },
+    "noCarriage": "—",
+    "status": {
+      "active": "在线",
+      "offline": "离线"
+    }
+  }
+}

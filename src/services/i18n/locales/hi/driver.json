@@ -1,0 +1,84 @@
+{
+  "title": "ड्राइवर डैशबोर्ड",
+  "loading": "लोड हो रहा है...",
+  "onboarding": {
+    "heading": "🐴 ड्राइवर बनें",
+    "description": "मैकिनैक द्वीप पर सवारियां स्वीकार करना शुरू करने के लिए अपनी ड्राइवर प्रोफ़ाइल बनाएं।",
+    "inputs": {
+      "displayName": {
+        "label": "प्रदर्शन नाम *",
+        "placeholder": "कैप्टन जैक"
+      },
+      "carriageName": {
+        "label": "गाड़ी का नाम",
+        "placeholder": "द ब्लैक पर्ल"
+      },
+      "bio": {
+        "label": "बायो",
+        "placeholder": "द्वीप पर 20 साल गाड़ी चलाने का अनुभव..."
+      }
+    },
+    "actions": {
+      "createProfile": "प्रोफ़ाइल बनाएं"
+    },
+    "alerts": {
+      "profileCreated": "प्रोफ़ाइल बन गई!"
+    }
+  },
+  "dashboard": {
+    "heading": "🐴 ड्राइवर डैशबोर्ड",
+    "status": {
+      "active": "🟢 सक्रिय",
+      "offline": "⚫ ऑफ़लाइन"
+    },
+    "inactivePrompt": "सवारी अनुरोध प्राप्त करना शुरू करने के लिए सक्रिय हो जाएं।",
+    "alerts": {
+      "nowActive": "आप अब सक्रिय हैं",
+      "nowOffline": "आप अब ऑफ़लाइन हैं"
+    }
+  },
+  "location": {
+    "deniedWarning": "⚠️ स्थान का उपयोग अस्वीकार कर दिया गया। आपके यात्री मानचित्र पर आपकी गाड़ी नहीं देख सकेंगे।",
+    "deniedHelp": "यदि नीचे दिया गया बटन ब्राउज़र प्रॉम्प्ट नहीं दिखाता है, तो आपको अपने ब्राउज़र की साइट सेटिंग्स में स्थान अनुमतियां रीसेट करने की आवश्यकता हो सकती है (एड्रेस बार में लॉक आइकन पर क्लिक करें)।",
+    "allowAccess": "📍 स्थान का उपयोग करने की अनुमति दें",
+    "requesting": "स्थान का अनुरोध किया जा रहा है...",
+    "trackingActive": "ट्रैकिंग सक्रिय है",
+    "denied": "स्थान अस्वीकृत",
+    "notSupported": "जियोलोकेशन समर्थित नहीं है",
+    "error": "स्थान त्रुटि: {{message}}",
+    "pingingFrequency": "हर 5 सेकंड में भेजा जा रहा है"
+  },
+  "activeRides": {
+    "heading": "आपकी सक्रिय सवारियां",
+    "riderLine": "यात्री: {{riderName}} • किराया: {{fare}}",
+    "anonymousRider": "अज्ञात",
+    "noFare": "—",
+    "statusLabels": {
+      "requested": "अनुरोधित",
+      "accepted": "स्वीकृत",
+      "in_progress": "प्रगति पर",
+      "completed": "पूर्ण",
+      "cancelled": "रद्द"
+    },
+    "actions": {
+      "startTrip": "यात्रा शुरू करें",
+      "completeAndCheckout": "पूर्ण करें और भुगतान लें",
+      "cancel": "रद्द करें"
+    },
+    "alerts": {
+      "rideUpdated": "सवारी को {{status}} में अपडेट किया गया"
+    }
+  },
+  "incomingRequests": {
+    "heading": "आने वाले अनुरोध",
+    "autoRefreshes": "(स्वचालित रूप से ताज़ा होता है)",
+    "empty": "कोई लंबित सवारी अनुरोध नहीं है। प्रतीक्षा की जा रही है...",
+    "riderLine": "{{riderName}} • {{fare}}",
+    "actions": {
+      "accept": "स्वीकार करें"
+    },
+    "alerts": {
+      "accepted": "{{dropoff}} के लिए सवारी स्वीकार की गई!"
+    }
+  }
+}

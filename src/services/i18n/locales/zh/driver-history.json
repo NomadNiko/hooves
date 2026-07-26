@@ -1,0 +1,43 @@
+{
+  "title": "行程历史与收入",
+  "loading": "加载中...",
+  "noProfile": {
+    "heading": "📊 行程历史",
+    "description": "您还没有司机资料。",
+    "actions": {
+      "createProfile": "创建司机资料"
+    }
+  },
+  "heading": "📊 您的行程历史",
+  "stats": {
+    "totalRides": "总行程数",
+    "totalEarnings": "总收入",
+    "thisWeek": "本周",
+    "avgFare": "平均车费"
+  },
+  "rideList": {
+    "heading": "所有行程（{{count}}）",
+    "empty": "暂无行程。请在您的<0>仪表板</0>上线以开始接单。",
+    "table": {
+      "route": "路线",
+      "rider": "乘客",
+      "status": "状态",
+      "fare": "车费",
+      "date": "日期"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "route": {
+      "noBreadcrumbs": "此行程未记录GPS轨迹点。",
+      "heading": "🗺️ 路线（{{count}} 个点）"
+    },
+    "statusLabels": {
+      "requested": "已请求",
+      "accepted": "已接受",
+      "in_progress": "进行中",
+      "completed": "已完成",
+      "cancelled": "已取消",
+      "unknown": "未知"
+    }
+  }
+}

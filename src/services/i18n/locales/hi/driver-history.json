@@ -1,0 +1,43 @@
+{
+  "title": "सवारी इतिहास और कमाई",
+  "loading": "लोड हो रहा है...",
+  "noProfile": {
+    "heading": "📊 सवारी इतिहास",
+    "description": "आपके पास अभी तक ड्राइवर प्रोफ़ाइल नहीं है।",
+    "actions": {
+      "createProfile": "ड्राइवर प्रोफ़ाइल बनाएं"
+    }
+  },
+  "heading": "📊 आपका सवारी इतिहास",
+  "stats": {
+    "totalRides": "कुल सवारियां",
+    "totalEarnings": "कुल कमाई",
+    "thisWeek": "इस सप्ताह",
+    "avgFare": "औसत किराया"
+  },
+  "rideList": {
+    "heading": "सभी सवारियां ({{count}})",
+    "empty": "अभी तक कोई सवारी नहीं है। सवारी स्वीकार करना शुरू करने के लिए अपने <0>डैशबोर्ड</0> पर सक्रिय हो जाएं।",
+    "table": {
+      "route": "मार्ग",
+      "rider": "यात्री",
+      "status": "स्थिति",
+      "fare": "किराया",
+      "date": "तारीख"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "route": {
+      "noBreadcrumbs": "इस यात्रा के लिए कोई GPS निशान दर्ज नहीं किया गया।",
+      "heading": "🗺️ मार्ग ({{count}} बिंदु)"
+    },
+    "statusLabels": {
+      "requested": "अनुरोधित",
+      "accepted": "स्वीकृत",
+      "in_progress": "प्रगति पर",
+      "completed": "पूर्ण",
+      "cancelled": "रद्द",
+      "unknown": "अज्ञात"
+    }
+  }
+}

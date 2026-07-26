@@ -1,0 +1,47 @@
+{
+  "title": "Detalle del Conductor",
+  "loading": "Cargando datos del conductor...",
+  "notFound": {
+    "heading": "Conductor No Encontrado",
+    "backToFleet": "← Volver a la Flota"
+  },
+  "backToFleet": "← Volver a la Flota",
+  "profile": {
+    "carriageLabel": "Carruaje: {{carriageName}}",
+    "status": {
+      "active": "🟢 Activo",
+      "offline": "⚫ Sin conexión"
+    },
+    "joinedLine": "Se unió el {{date}} • ID de Usuario: {{userId}}"
+  },
+  "stats": {
+    "completed": "Completados",
+    "cancelled": "Cancelados",
+    "totalEarnings": "Ganancias Totales",
+    "avgFare": "Tarifa Promedio"
+  },
+  "rideHistory": {
+    "heading": "Historial de Viajes ({{count}})",
+    "empty": "Este conductor aún no tiene viajes.",
+    "table": {
+      "route": "Ruta",
+      "rider": "Pasajero",
+      "status": "Estado",
+      "paid": "Pagado",
+      "fare": "Tarifa",
+      "date": "Fecha"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "Solicitado",
+      "accepted": "Aceptado",
+      "in_progress": "En Curso",
+      "completed": "Completado",
+      "cancelled": "Cancelado",
+      "unknown": "Desconocido"
+    }
+  }
+}

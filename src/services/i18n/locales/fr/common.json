@@ -1,5 +1,5 @@
 {
-  "app-name": "Boilerplate",
+  "app-name": "Hooves",
   "loading": "Chargement…",
   "close": "Fermer",
   "navigation": {
@@ -8,7 +8,12 @@
     "signUp": "S'inscrire",
     "profile": "Profil",
     "users": "Utilisateurs",
-    "logout": "Se déconnecter"
+    "logout": "Se déconnecter",
+    "hailRide": "🐴 Appeler un Carrosse",
+    "driverDashboard": "🎠 Tableau de bord Conducteur",
+    "rideHistory": "📊 Historique des Courses",
+    "fleetDrivers": "🐴 Flotte (Conducteurs)",
+    "allRides": "🎫 Tous les Trajets"
   },
   "formInputs": {
     "avatarInput": {
@@ -37,5 +42,25 @@
     "facebook": {
       "action": "Se connecter avec Facebook"
     }
+  },
+  "locationPermission": {
+    "requesting": "📍 Demande de votre position...",
+    "errors": {
+      "notSupported": "Votre navigateur ne prend pas en charge la géolocalisation.",
+      "denied": "L'accès à la localisation a été refusé. Veuillez l'autoriser et réessayer.",
+      "unavailable": "Impossible de déterminer votre position. Veuillez réessayer.",
+      "timeout": "La demande de localisation a expiré. Veuillez réessayer."
+    },
+    "resetHelp": "Si le clic sur le bouton n'affiche pas d'invite du navigateur, vous devrez peut-être réinitialiser les autorisations de localisation dans les paramètres du site de votre navigateur (cliquez sur l'icône de verrouillage dans la barre d'adresse).",
+    "actions": {
+      "allowAccess": "📍 Autoriser l'accès à la localisation"
+    }
+  },
+  "driverTrackingMap": {
+    "pickupLabel": "Départ",
+    "dropoffLabel": "Arrivée",
+    "unavailable": "Carte indisponible — NEXT_PUBLIC_MAPBOX_TOKEN n'est pas configuré.",
+    "carriageTitle": "Votre carrosse",
+    "recentre": "📍 Recentrer"
   }
 }

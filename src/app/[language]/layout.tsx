@@ -3,7 +3,7 @@ import AppSidebar from "@/components/app-sidebar";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import AuthProvider from "@/services/auth/auth-provider";
 import "../globals.css";
-import { Roboto } from "next/font/google";
+import { Maiden_Orange } from "next/font/google";
 import { dir } from "i18next";
 import { DirectionProvider } from "@radix-ui/react-direction";
 import "@/services/i18n/config";
@@ -21,10 +21,13 @@ import GoogleAuthProvider from "@/services/social-auth/google/google-auth-provid
 import FacebookAuthProvider from "@/services/social-auth/facebook/facebook-auth-provider";
 import ConfirmDialogProvider from "@/components/confirm-dialog/confirm-dialog-provider";
 
-const roboto = Roboto({
-  subsets: ["latin", "cyrillic"],
+// Maiden Orange ships a single weight (400) and only the latin/latin-ext
+// subsets, so non-latin locales (ar, zh, hi, uk) fall back to system fonts.
+const maidenOrange = Maiden_Orange({
+  subsets: ["latin"],
+  weight: "400",
   display: "swap",
-  variable: "--font-roboto",
+  variable: "--font-maiden-orange",
 });
 
 type Props = {
@@ -59,7 +62,7 @@ export default async function RootLayout(props: {
       lang={language}
       dir={dir(language)}
       suppressHydrationWarning
-      className={roboto.variable}
+      className={maidenOrange.variable}
     >
       <body suppressHydrationWarning className="font-sans antialiased">
         <DirectionProvider dir={dir(language)}>

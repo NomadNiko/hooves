@@ -1,0 +1,43 @@
+{
+  "title": "Ride History & Earnings",
+  "loading": "Loading...",
+  "noProfile": {
+    "heading": "📊 Ride History",
+    "description": "You don't have a driver profile yet.",
+    "actions": {
+      "createProfile": "Create Driver Profile"
+    }
+  },
+  "heading": "📊 Your Ride History",
+  "stats": {
+    "totalRides": "Total Rides",
+    "totalEarnings": "Total Earnings",
+    "thisWeek": "This Week",
+    "avgFare": "Avg Fare"
+  },
+  "rideList": {
+    "heading": "All Rides ({{count}})",
+    "empty": "No rides yet. Go active on your <0>dashboard</0> to start accepting rides.",
+    "table": {
+      "route": "Route",
+      "rider": "Rider",
+      "status": "Status",
+      "fare": "Fare",
+      "date": "Date"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "route": {
+      "noBreadcrumbs": "No GPS breadcrumbs recorded for this trip.",
+      "heading": "🗺️ Route ({{count}} points)"
+    },
+    "statusLabels": {
+      "requested": "Requested",
+      "accepted": "Accepted",
+      "in_progress": "In Progress",
+      "completed": "Completed",
+      "cancelled": "Cancelled",
+      "unknown": "Unknown"
+    }
+  }
+}

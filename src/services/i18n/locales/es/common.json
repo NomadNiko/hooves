@@ -1,5 +1,5 @@
 {
-  "app-name": "Boilerplate",
+  "app-name": "Hooves",
   "loading": "Cargando ...",
   "close": "Cerrar",
   "navigation": {
@@ -8,7 +8,12 @@
     "signUp": "Crear cuenta",
     "profile": "Perfil",
     "users": "Usuarios",
-    "logout": "Cerrar sesión"
+    "logout": "Cerrar sesión",
+    "hailRide": "🐴 Solicitar un Viaje",
+    "driverDashboard": "🎠 Panel del Conductor",
+    "rideHistory": "📊 Historial de Viajes",
+    "fleetDrivers": "🐴 Flota (Conductores)",
+    "allRides": "🎫 Todos los Viajes"
   },
   "formInputs": {
     "avatarInput": {
@@ -37,5 +42,25 @@
     "facebook": {
       "action": "Iniciar sesión con Facebook"
     }
+  },
+  "locationPermission": {
+    "requesting": "📍 Solicitando tu ubicación...",
+    "errors": {
+      "notSupported": "Tu navegador no admite la geolocalización.",
+      "denied": "Se denegó el acceso a la ubicación. Permite el acceso a la ubicación e inténtalo de nuevo.",
+      "unavailable": "No se pudo determinar tu ubicación. Inténtalo de nuevo.",
+      "timeout": "Se agotó el tiempo de la solicitud de ubicación. Inténtalo de nuevo."
+    },
+    "resetHelp": "Si al hacer clic en el botón no aparece un mensaje del navegador, es posible que debas restablecer los permisos de ubicación en la configuración del sitio de tu navegador (haz clic en el icono del candado en la barra de direcciones).",
+    "actions": {
+      "allowAccess": "📍 Permitir Acceso a la Ubicación"
+    }
+  },
+  "driverTrackingMap": {
+    "pickupLabel": "Recogida",
+    "dropoffLabel": "Destino",
+    "unavailable": "Mapa no disponible — NEXT_PUBLIC_MAPBOX_TOKEN no está configurado.",
+    "carriageTitle": "Tu carruaje",
+    "recentre": "📍 Recentrar"
   }
 }

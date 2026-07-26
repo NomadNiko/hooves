@@ -1,0 +1,84 @@
+{
+  "title": "Panel del Conductor",
+  "loading": "Cargando...",
+  "onboarding": {
+    "heading": "🐴 Conviértete en Conductor",
+    "description": "Crea tu perfil de conductor para empezar a aceptar viajes en Mackinac Island.",
+    "inputs": {
+      "displayName": {
+        "label": "Nombre a mostrar *",
+        "placeholder": "Capitán Jack"
+      },
+      "carriageName": {
+        "label": "Nombre del carruaje",
+        "placeholder": "La Perla Negra"
+      },
+      "bio": {
+        "label": "Biografía",
+        "placeholder": "20 años conduciendo en la isla..."
+      }
+    },
+    "actions": {
+      "createProfile": "Crear Perfil"
+    },
+    "alerts": {
+      "profileCreated": "¡Perfil creado!"
+    }
+  },
+  "dashboard": {
+    "heading": "🐴 Panel del Conductor",
+    "status": {
+      "active": "🟢 Activo",
+      "offline": "⚫ Sin conexión"
+    },
+    "inactivePrompt": "Activa tu disponibilidad para empezar a recibir solicitudes de viaje.",
+    "alerts": {
+      "nowActive": "Ahora estás ACTIVO",
+      "nowOffline": "Ahora estás SIN CONEXIÓN"
+    }
+  },
+  "location": {
+    "deniedWarning": "⚠️ Se denegó el acceso a la ubicación. Tus pasajeros no podrán ver tu carruaje en el mapa.",
+    "deniedHelp": "Si el botón no muestra un mensaje del navegador, haz clic en el icono del candado en la barra de direcciones para restablecer los permisos de ubicación.",
+    "allowAccess": "📍 Permitir Acceso a la Ubicación",
+    "requesting": "Solicitando ubicación...",
+    "trackingActive": "Seguimiento activo",
+    "denied": "Ubicación denegada",
+    "notSupported": "Geolocalización no compatible",
+    "error": "Error de ubicación: {{message}}",
+    "pingingFrequency": "Enviando cada 5s"
+  },
+  "activeRides": {
+    "heading": "Tus Viajes Activos",
+    "riderLine": "Pasajero: {{riderName}} • Tarifa: {{fare}}",
+    "anonymousRider": "Anónimo",
+    "noFare": "—",
+    "statusLabels": {
+      "requested": "Solicitado",
+      "accepted": "Aceptado",
+      "in_progress": "En Curso",
+      "completed": "Completado",
+      "cancelled": "Cancelado"
+    },
+    "actions": {
+      "startTrip": "Iniciar Viaje",
+      "completeAndCheckout": "Completar y Cobrar",
+      "cancel": "Cancelar"
+    },
+    "alerts": {
+      "rideUpdated": "Viaje actualizado a {{status}}"
+    }
+  },
+  "incomingRequests": {
+    "heading": "Solicitudes Entrantes",
+    "autoRefreshes": "(se actualiza automáticamente)",
+    "empty": "No hay solicitudes de viaje pendientes. Esperando...",
+    "riderLine": "{{riderName}} • {{fare}}",
+    "actions": {
+      "accept": "Aceptar"
+    },
+    "alerts": {
+      "accepted": "¡Viaje aceptado hacia {{dropoff}}!"
+    }
+  }
+}

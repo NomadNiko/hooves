@@ -1,0 +1,29 @@
+{
+  "title": "نظرة عامة على الأسطول",
+  "loading": "جار تحميل بيانات الأسطول...",
+  "heading": "🐴 نظرة عامة على الأسطول",
+  "viewAllRides": "عرض جميع الرحلات ←",
+  "stats": {
+    "totalDrivers": "إجمالي السائقين",
+    "activeNow": "نشط الآن",
+    "completedRides": "الرحلات المكتملة",
+    "totalRevenue": "الإيرادات الإجمالية"
+  },
+  "table": {
+    "heading": "جميع السائقين",
+    "empty": "لا يوجد سائقون مسجلون بعد.",
+    "columns": {
+      "driver": "السائق",
+      "carriage": "العربة",
+      "status": "الحالة",
+      "rides": "الرحلات",
+      "earnings": "الأرباح",
+      "joined": "تاريخ الانضمام"
+    },
+    "noCarriage": "—",
+    "status": {
+      "active": "نشط",
+      "offline": "غير متصل"
+    }
+  }
+}

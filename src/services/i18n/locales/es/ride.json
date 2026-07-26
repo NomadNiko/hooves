@@ -1,0 +1,58 @@
+{
+  "title": "Solicitar un Carruaje",
+  "restoring": {
+    "heading": "🐴 Tu Viaje",
+    "checking": "Comprobando si tienes un viaje activo..."
+  },
+  "activeRide": {
+    "heading": "🐴 Tu Viaje",
+    "driverLabel": "Conductor:",
+    "fareLabel": "Tarifa:",
+    "noFare": "—",
+    "paid": "✓ Pagado",
+    "statusLabels": {
+      "requested": "🔍 Buscando un conductor...",
+      "accepted": "✅ ¡Conductor aceptado! El carruaje está en camino.",
+      "in_progress": "🐴 ¡Vas en camino!",
+      "completed": "🎉 ¡Viaje completado! Gracias por viajar con nosotros.",
+      "cancelled": "❌ Viaje cancelado.",
+      "unknown": "Desconocido"
+    },
+    "map": {
+      "livePosition": "📍 Posición en vivo: {{lat}}, {{lng}} — se actualiza cada 4s",
+      "waitingForDriver": "Esperando la ubicación de tu conductor. Puede que aún no tenga la ubicación activada."
+    },
+    "actions": {
+      "cancelRide": "Cancelar Viaje",
+      "hailAnother": "Solicitar Otro Carruaje"
+    },
+    "alerts": {
+      "cancelled": "Viaje cancelado."
+    }
+  },
+  "hailForm": {
+    "heading": "🐴 Solicitar un Carruaje",
+    "description": "Selecciona tus paradas de recogida y destino en Mackinac Island.",
+    "inputs": {
+      "pickup": {
+        "label": "Parada de Recogida",
+        "placeholder": "¿Dónde estás?"
+      },
+      "dropoff": {
+        "label": "Parada de Destino",
+        "placeholder": "¿A dónde vas?"
+      }
+    },
+    "actions": {
+      "hailCarriage": "Solicitar Carruaje 🐴",
+      "requesting": "Solicitando..."
+    },
+    "alerts": {
+      "requested": "¡Viaje solicitado! Buscando un conductor..."
+    }
+  },
+  "map": {
+    "loading": "Cargando mapa..."
+  },
+  "riderDefaultName": "Pasajero"
+}

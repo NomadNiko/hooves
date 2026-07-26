@@ -1,0 +1,47 @@
+{
+  "title": "تفاصيل السائق",
+  "loading": "جار تحميل بيانات السائق...",
+  "notFound": {
+    "heading": "السائق غير موجود",
+    "backToFleet": "← رجوع إلى الأسطول"
+  },
+  "backToFleet": "← رجوع إلى الأسطول",
+  "profile": {
+    "carriageLabel": "العربة: {{carriageName}}",
+    "status": {
+      "active": "🟢 نشط",
+      "offline": "⚫ غير متصل"
+    },
+    "joinedLine": "انضم في {{date}} • رقم المستخدم: {{userId}}"
+  },
+  "stats": {
+    "completed": "مكتملة",
+    "cancelled": "ملغاة",
+    "totalEarnings": "إجمالي الأرباح",
+    "avgFare": "متوسط الأجرة"
+  },
+  "rideHistory": {
+    "heading": "سجل الرحلات ({{count}})",
+    "empty": "لا توجد رحلات لهذا السائق بعد.",
+    "table": {
+      "route": "المسار",
+      "rider": "الراكب",
+      "status": "الحالة",
+      "paid": "مدفوع",
+      "fare": "الأجرة",
+      "date": "التاريخ"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "مطلوبة",
+      "accepted": "مقبولة",
+      "in_progress": "قيد التنفيذ",
+      "completed": "مكتملة",
+      "cancelled": "ملغاة",
+      "unknown": "غير معروف"
+    }
+  }
+}

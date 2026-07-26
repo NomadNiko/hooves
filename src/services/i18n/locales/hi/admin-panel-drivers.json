@@ -1,0 +1,29 @@
+{
+  "title": "बेड़ा अवलोकन",
+  "loading": "बेड़े का डेटा लोड हो रहा है...",
+  "heading": "🐴 बेड़ा अवलोकन",
+  "viewAllRides": "सभी सवारियां देखें →",
+  "stats": {
+    "totalDrivers": "कुल ड्राइवर",
+    "activeNow": "अभी सक्रिय",
+    "completedRides": "पूर्ण सवारियां",
+    "totalRevenue": "कुल आय"
+  },
+  "table": {
+    "heading": "सभी ड्राइवर",
+    "empty": "अभी तक कोई ड्राइवर पंजीकृत नहीं है।",
+    "columns": {
+      "driver": "ड्राइवर",
+      "carriage": "गाड़ी",
+      "status": "स्थिति",
+      "rides": "सवारियां",
+      "earnings": "कमाई",
+      "joined": "शामिल हुए"
+    },
+    "noCarriage": "—",
+    "status": {
+      "active": "सक्रिय",
+      "offline": "ऑफ़लाइन"
+    }
+  }
+}

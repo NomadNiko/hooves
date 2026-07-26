@@ -1,0 +1,84 @@
+{
+  "title": "司机仪表板",
+  "loading": "加载中...",
+  "onboarding": {
+    "heading": "🐴 成为司机",
+    "description": "创建您的司机资料，开始在麦基诺岛接单载客。",
+    "inputs": {
+      "displayName": {
+        "label": "显示名称 *",
+        "placeholder": "杰克船长"
+      },
+      "carriageName": {
+        "label": "马车名称",
+        "placeholder": "黑珍珠号"
+      },
+      "bio": {
+        "label": "简介",
+        "placeholder": "在岛上驾驶20年..."
+      }
+    },
+    "actions": {
+      "createProfile": "创建资料"
+    },
+    "alerts": {
+      "profileCreated": "资料已创建！"
+    }
+  },
+  "dashboard": {
+    "heading": "🐴 司机仪表板",
+    "status": {
+      "active": "🟢 在线",
+      "offline": "⚫ 离线"
+    },
+    "inactivePrompt": "上线以开始接收载客请求。",
+    "alerts": {
+      "nowActive": "您现在处于在线状态",
+      "nowOffline": "您现在处于离线状态"
+    }
+  },
+  "location": {
+    "deniedWarning": "⚠️ 位置访问被拒绝。乘客将无法在地图上看到您的马车。",
+    "deniedHelp": "如果下方按钮未显示浏览器提示，您可能需要在浏览器的网站设置中重置位置权限（点击地址栏中的锁形图标）。",
+    "allowAccess": "📍 允许访问位置",
+    "requesting": "正在请求位置...",
+    "trackingActive": "跟踪中",
+    "denied": "位置已被拒绝",
+    "notSupported": "不支持地理定位",
+    "error": "位置错误：{{message}}",
+    "pingingFrequency": "每5秒发送一次"
+  },
+  "activeRides": {
+    "heading": "您的进行中行程",
+    "riderLine": "乘客：{{riderName}} • 车费：{{fare}}",
+    "anonymousRider": "匿名",
+    "noFare": "—",
+    "statusLabels": {
+      "requested": "已请求",
+      "accepted": "已接受",
+      "in_progress": "进行中",
+      "completed": "已完成",
+      "cancelled": "已取消"
+    },
+    "actions": {
+      "startTrip": "开始行程",
+      "completeAndCheckout": "完成并结账",
+      "cancel": "取消"
+    },
+    "alerts": {
+      "rideUpdated": "行程状态已更新为 {{status}}"
+    }
+  },
+  "incomingRequests": {
+    "heading": "新的请求",
+    "autoRefreshes": "（自动刷新）",
+    "empty": "暂无待处理的行程请求。等待中...",
+    "riderLine": "{{riderName}} • {{fare}}",
+    "actions": {
+      "accept": "接受"
+    },
+    "alerts": {
+      "accepted": "已接受前往 {{dropoff}} 的行程！"
+    }
+  }
+}

@@ -27,8 +27,10 @@
       "role": {
         "label": "Rol",
         "options": {
-          "1": "Administrador",
-          "2": "Usuario"
+          "1": "Super Admin",
+          "2": "Admin",
+          "3": "Conductor",
+          "4": "Usuario"
         }
       }
     }

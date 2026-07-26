@@ -1,0 +1,47 @@
+{
+  "title": "Деталі водія",
+  "loading": "Завантаження даних водія...",
+  "notFound": {
+    "heading": "Водія не знайдено",
+    "backToFleet": "← Назад до автопарку"
+  },
+  "backToFleet": "← Назад до автопарку",
+  "profile": {
+    "carriageLabel": "Карета: {{carriageName}}",
+    "status": {
+      "active": "🟢 Активний",
+      "offline": "⚫ Не в мережі"
+    },
+    "joinedLine": "Приєднався {{date}} • ID користувача: {{userId}}"
+  },
+  "stats": {
+    "completed": "Завершено",
+    "cancelled": "Скасовано",
+    "totalEarnings": "Загальний заробіток",
+    "avgFare": "Середній тариф"
+  },
+  "rideHistory": {
+    "heading": "Історія поїздок ({{count}})",
+    "empty": "У цього водія ще немає поїздок.",
+    "table": {
+      "route": "Маршрут",
+      "rider": "Пасажир",
+      "status": "Статус",
+      "paid": "Оплачено",
+      "fare": "Тариф",
+      "date": "Дата"
+    },
+    "noRider": "—",
+    "noFare": "—",
+    "paidYes": "✓",
+    "paidNo": "—",
+    "statusLabels": {
+      "requested": "Запитано",
+      "accepted": "Прийнято",
+      "in_progress": "В процесі",
+      "completed": "Завершено",
+      "cancelled": "Скасовано",
+      "unknown": "Невідомо"
+    }
+  }
+}

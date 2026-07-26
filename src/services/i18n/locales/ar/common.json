@@ -1,5 +1,5 @@
 {
-  "app-name": "Boilerplate",
+  "app-name": "Hooves",
   "loading": "جارٍ التحميل ...",
   "close": "إغلاق",
   "navigation": {
@@ -8,7 +8,12 @@
     "signUp": "إنشاء حساب",
     "profile": "الملف الشخصي",
     "users": "المستخدمون",
-    "logout": "تسجيل الخروج"
+    "logout": "تسجيل الخروج",
+    "hailRide": "🐴 اطلب عربة",
+    "driverDashboard": "🎠 لوحة تحكم السائق",
+    "rideHistory": "📊 سجل الرحلات",
+    "fleetDrivers": "🐴 الأسطول (السائقون)",
+    "allRides": "🎫 جميع الرحلات"
   },
   "formInputs": {
     "avatarInput": {
@@ -37,5 +42,25 @@
     "facebook": {
       "action": "تسجيل الدخول عبر فيسبوك"
     }
+  },
+  "locationPermission": {
+    "requesting": "📍 جار طلب موقعك...",
+    "errors": {
+      "notSupported": "متصفحك لا يدعم تحديد الموقع الجغرافي.",
+      "denied": "تم رفض الوصول إلى الموقع. يرجى السماح بالوصول إلى الموقع والمحاولة مرة أخرى.",
+      "unavailable": "تعذر تحديد موقعك. يرجى المحاولة مرة أخرى.",
+      "timeout": "انتهت مهلة طلب الموقع. يرجى المحاولة مرة أخرى."
+    },
+    "resetHelp": "إذا لم يظهر النقر على الزر أدناه طلب المتصفح، فقد تحتاج إلى إعادة ضبط أذونات الموقع من إعدادات الموقع في متصفحك (انقر على أيقونة القفل في شريط العنوان).",
+    "actions": {
+      "allowAccess": "📍 السماح بالوصول إلى الموقع"
+    }
+  },
+  "driverTrackingMap": {
+    "pickupLabel": "الانطلاق",
+    "dropoffLabel": "الوصول",
+    "unavailable": "الخريطة غير متوفرة — لم يتم تكوين NEXT_PUBLIC_MAPBOX_TOKEN.",
+    "carriageTitle": "عربتك",
+    "recentre": "📍 إعادة التمركز"
   }
 }
