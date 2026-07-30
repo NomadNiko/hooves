@@ -104,30 +104,54 @@ function RidePageContent() {
     lng: number;
   } | null>(null);
 
-  // Fetch actual road-following route geometry from Mapbox Directions API.
-  // Route preview: pickup → dropoff (from form OR from active ride in REQUESTED state)
-  const previewFrom = pickup
+  // Resolve the coordinates currently chosen in the form. A custom selection
+  // carries its own pin; a named stand looks up its fixed position.
+  const formPickupCoords = pickup
     ? pickup === CUSTOM_LOCATION
       ? customPickupCoords
-      : STAND_COORDS[pickup]
-    : activeRide?.status === RideStatus.REQUESTED
+      : (STAND_COORDS[pickup] ?? null)
+    : null;
+  const formDropoffCoords = dropoff
+    ? dropoff === CUSTOM_LOCATION
+      ? customDropoffCoords
+      : (STAND_COORDS[dropoff] ?? null)
+    : null;
+
+  // Both endpoints resolved to a real position yet?
+  const hasBothEndpoints = !!formPickupCoords && !!formDropoffCoords;
+
+  // Whether the two endpoints are effectively the same place. This must be
+  // judged on coordinates, not on the selected labels: picking "custom" for
+  // both pickup and dropoff yields the same sentinel string while pointing at
+  // two entirely different pins, so comparing labels would wrongly block a
+  // perfectly valid custom-to-custom trip.
+  const endpointsCoincide =
+    hasBothEndpoints &&
+    Math.abs(formPickupCoords!.lat - formDropoffCoords!.lat) < 1e-5 &&
+    Math.abs(formPickupCoords!.lng - formDropoffCoords!.lng) < 1e-5;
+
+  const canHail = hasBothEndpoints && !endpointsCoincide;
+
+  // Fetch actual road-following route geometry from Mapbox Directions API.
+  // Route preview: pickup → dropoff (from form OR from active ride in REQUESTED state)
+  const previewFrom =
+    formPickupCoords ??
+    (activeRide?.status === RideStatus.REQUESTED
       ? resolveCoords(
           activeRide.pickup,
           activeRide.pickupLat,
           activeRide.pickupLng
         )
-      : null;
-  const previewTo = dropoff
-    ? dropoff === CUSTOM_LOCATION
-      ? customDropoffCoords
-      : STAND_COORDS[dropoff]
-    : activeRide?.status === RideStatus.REQUESTED
+      : null);
+  const previewTo =
+    formDropoffCoords ??
+    (activeRide?.status === RideStatus.REQUESTED
       ? resolveCoords(
           activeRide.dropoff,
           activeRide.dropoffLat,
           activeRide.dropoffLng
         )
-      : null;
+      : null);
   const previewRoute = useMapboxRoute(previewFrom ?? null, previewTo ?? null);
 
   // Active ride routes:
@@ -244,10 +268,9 @@ function RidePageContent() {
 
   // Hail a ride
   const handleHailRide = async () => {
-    if (!user?.id || !pickup || !dropoff) return;
-    // Validate custom locations have coordinates
-    if (pickup === CUSTOM_LOCATION && !customPickupCoords) return;
-    if (dropoff === CUSTOM_LOCATION && !customDropoffCoords) return;
+    if (!user?.id) return;
+    // Both endpoints must resolve to distinct positions.
+    if (!canHail) return;
     // Guard: never create a second ride while one is already in flight
     if (activeRide || submitting || restoring) return;
     setSubmitting(true);
@@ -558,55 +581,42 @@ function RidePageContent() {
           className="w-full"
           size="lg"
           onClick={handleHailRide}
-          disabled={
-            !pickup ||
-            !dropoff ||
-            pickup === dropoff ||
-            submitting ||
-            (pickup === CUSTOM_LOCATION && !customPickupCoords) ||
-            (dropoff === CUSTOM_LOCATION && !customDropoffCoords)
-          }
+          disabled={!canHail || submitting}
         >
           {submitting
             ? t("ride:hailForm.actions.requesting")
             : t("ride:hailForm.actions.hailCarriage")}
         </Button>
 
-        {/* Route preview map — appears once both locations are selected */}
-        {pickup &&
-          dropoff &&
-          pickup !== dropoff &&
-          (pickup !== CUSTOM_LOCATION || customPickupCoords) &&
-          (dropoff !== CUSTOM_LOCATION || customDropoffCoords) && (
-            <div className="pt-2">
-              <DriverTrackingMap
-                driverLocation={null}
-                pickupCoords={
-                  pickup === CUSTOM_LOCATION
-                    ? customPickupCoords
-                    : (STAND_COORDS[pickup] ?? null)
-                }
-                dropoffCoords={
-                  dropoff === CUSTOM_LOCATION
-                    ? customDropoffCoords
-                    : (STAND_COORDS[dropoff] ?? null)
-                }
-                pickupLabel={
-                  pickup === CUSTOM_LOCATION
-                    ? t("ride:hailForm.inputs.pickup.label")
-                    : pickup
-                }
-                dropoffLabel={
-                  dropoff === CUSTOM_LOCATION
-                    ? t("ride:hailForm.inputs.dropoff.label")
-                    : dropoff
-                }
-                fitMode="pickupAndDropoff"
-                routeLine={previewRoute ?? undefined}
-                height={240}
-              />
-            </div>
-          )}
+        {endpointsCoincide && (
+          <p className="text-xs text-orange-600 dark:text-orange-400">
+            ⚠️ {t("ride:hailForm.sameLocation")}
+          </p>
+        )}
+
+        {/* Route preview map — appears once both locations resolve */}
+        {canHail && (
+          <div className="pt-2">
+            <DriverTrackingMap
+              driverLocation={null}
+              pickupCoords={formPickupCoords}
+              dropoffCoords={formDropoffCoords}
+              pickupLabel={
+                pickup === CUSTOM_LOCATION
+                  ? t("ride:hailForm.inputs.pickup.label")
+                  : pickup
+              }
+              dropoffLabel={
+                dropoff === CUSTOM_LOCATION
+                  ? t("ride:hailForm.inputs.dropoff.label")
+                  : dropoff
+              }
+              fitMode="pickupAndDropoff"
+              routeLine={previewRoute ?? undefined}
+              height={240}
+            />
+          </div>
+        )}
       </div>
     </div>
   );

@@ -52,7 +52,8 @@
     },
     "alerts": {
       "requested": "Jízda vyžádána! Hledám řidiče..."
-    }
+    },
+    "sameLocation": "Místo nástupu a výstupu je stejné. Přesuňte jeden ze špendlíků."
   },
   "map": {
     "loading": "Načítání mapy..."

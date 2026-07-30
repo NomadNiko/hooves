@@ -52,7 +52,8 @@
     },
     "alerts": {
       "requested": "Fahrt angefragt! Suche nach einem Fahrer..."
-    }
+    },
+    "sameLocation": "Abhol- und Zielort sind identisch. Verschieben Sie einen der Pins."
   },
   "map": {
     "loading": "Karte wird geladen..."

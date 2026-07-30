@@ -52,7 +52,8 @@
     },
     "alerts": {
       "requested": "Ride requested! Looking for a driver..."
-    }
+    },
+    "sameLocation": "Pickup and dropoff are the same place. Move one of the pins."
   },
   "map": {
     "loading": "Loading map..."
