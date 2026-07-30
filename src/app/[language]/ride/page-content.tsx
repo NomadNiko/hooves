@@ -23,6 +23,8 @@ import {
   RideStatus,
   STANDS,
   STAND_COORDS,
+  CUSTOM_LOCATION,
+  resolveCoords,
 } from "@/services/api/types/ride";
 import dynamic from "next/dynamic";
 import LocationPermissionPrompt from "@/components/location-permission";
@@ -44,7 +46,12 @@ const DriverTrackingMap = dynamic(
     loading: () => <MapLoadingFallback />,
   }
 );
+const LocationPickerMap = dynamic(
+  () => import("@/components/map/location-picker-map"),
+  { ssr: false }
+);
 import HTTP_CODES_ENUM from "@/services/api/types/http-codes";
+import Link from "@/components/link";
 import { useSnackbar } from "@/hooks/use-snackbar";
 import { useTranslation } from "@/services/i18n/client";
 import { useMapboxRoute } from "@/hooks/use-mapbox-route";
@@ -64,6 +71,19 @@ function RidePageContent() {
 
   const [pickup, setPickup] = useState("");
   const [dropoff, setDropoff] = useState("");
+  const [customPickupCoords, setCustomPickupCoords] = useState<{
+    lat: number;
+    lng: number;
+  } | null>(null);
+  const [customDropoffCoords, setCustomDropoffCoords] = useState<{
+    lat: number;
+    lng: number;
+  } | null>(null);
+  // The rider's own GPS position, used to centre the custom-location picker.
+  const [userLocation, setUserLocation] = useState<{
+    lat: number;
+    lng: number;
+  } | null>(null);
   const [activeRide, setActiveRide] = useState<Ride | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [restoring, setRestoring] = useState(true);
@@ -73,11 +93,30 @@ function RidePageContent() {
   } | null>(null);
 
   // Fetch actual road-following route geometry from Mapbox Directions API.
-  // Route preview (hail form): pickup → dropoff
-  const previewRoute = useMapboxRoute(
-    pickup ? STAND_COORDS[pickup] : null,
-    dropoff ? STAND_COORDS[dropoff] : null
-  );
+  // Route preview: pickup → dropoff (from form OR from active ride in REQUESTED state)
+  const previewFrom = pickup
+    ? pickup === CUSTOM_LOCATION
+      ? customPickupCoords
+      : STAND_COORDS[pickup]
+    : activeRide?.status === RideStatus.REQUESTED
+      ? resolveCoords(
+          activeRide.pickup,
+          activeRide.pickupLat,
+          activeRide.pickupLng
+        )
+      : null;
+  const previewTo = dropoff
+    ? dropoff === CUSTOM_LOCATION
+      ? customDropoffCoords
+      : STAND_COORDS[dropoff]
+    : activeRide?.status === RideStatus.REQUESTED
+      ? resolveCoords(
+          activeRide.dropoff,
+          activeRide.dropoffLat,
+          activeRide.dropoffLng
+        )
+      : null;
+  const previewRoute = useMapboxRoute(previewFrom ?? null, previewTo ?? null);
 
   // Active ride routes:
   // - Accepted: driver → pickup (approach)
@@ -85,13 +124,21 @@ function RidePageContent() {
   const approachRoute = useMapboxRoute(
     activeRide?.status === RideStatus.ACCEPTED ? driverLocation : null,
     activeRide?.status === RideStatus.ACCEPTED
-      ? STAND_COORDS[activeRide?.pickup ?? ""]
+      ? resolveCoords(
+          activeRide?.pickup ?? "",
+          activeRide?.pickupLat,
+          activeRide?.pickupLng
+        )
       : null
   );
   const tripRoute = useMapboxRoute(
     activeRide?.status === RideStatus.IN_PROGRESS ? driverLocation : null,
     activeRide?.status === RideStatus.IN_PROGRESS
-      ? STAND_COORDS[activeRide?.dropoff ?? ""]
+      ? resolveCoords(
+          activeRide?.dropoff ?? "",
+          activeRide?.dropoffLat,
+          activeRide?.dropoffLng
+        )
       : null
   );
 
@@ -186,6 +233,9 @@ function RidePageContent() {
   // Hail a ride
   const handleHailRide = async () => {
     if (!user?.id || !pickup || !dropoff) return;
+    // Validate custom locations have coordinates
+    if (pickup === CUSTOM_LOCATION && !customPickupCoords) return;
+    if (dropoff === CUSTOM_LOCATION && !customDropoffCoords) return;
     // Guard: never create a second ride while one is already in flight
     if (activeRide || submitting || restoring) return;
     setSubmitting(true);
@@ -200,6 +250,18 @@ function RidePageContent() {
       dropoff,
       status: RideStatus.REQUESTED,
       fare,
+      ...(pickup === CUSTOM_LOCATION && customPickupCoords
+        ? {
+            pickupLat: customPickupCoords.lat,
+            pickupLng: customPickupCoords.lng,
+          }
+        : {}),
+      ...(dropoff === CUSTOM_LOCATION && customDropoffCoords
+        ? {
+            dropoffLat: customDropoffCoords.lat,
+            dropoffLng: customDropoffCoords.lng,
+          }
+        : {}),
     });
     setSubmitting(false);
     if (status === HTTP_CODES_ENUM.CREATED && data) {
@@ -230,6 +292,8 @@ function RidePageContent() {
     setActiveRide(null);
     setPickup("");
     setDropoff("");
+    setCustomPickupCoords(null);
+    setCustomDropoffCoords(null);
   };
 
   // Status display helper
@@ -290,25 +354,40 @@ function RidePageContent() {
             </div>
           )}
 
-          {/* Live map — driver en route or trip underway */}
-          {(activeRide.status === RideStatus.ACCEPTED ||
-            activeRide.status === RideStatus.IN_PROGRESS) && (
+          {/* Live map — shown at all stages of an active ride */}
+          {!isTerminal && (
             <div className="space-y-2">
               <DriverTrackingMap
                 driverLocation={driverLocation}
-                pickupCoords={STAND_COORDS[activeRide.pickup] ?? null}
-                dropoffCoords={STAND_COORDS[activeRide.dropoff] ?? null}
+                pickupCoords={
+                  resolveCoords(
+                    activeRide.pickup,
+                    activeRide.pickupLat,
+                    activeRide.pickupLng
+                  ) ?? null
+                }
+                dropoffCoords={
+                  resolveCoords(
+                    activeRide.dropoff,
+                    activeRide.dropoffLat,
+                    activeRide.dropoffLng
+                  ) ?? null
+                }
                 pickupLabel={activeRide.pickup}
                 dropoffLabel={activeRide.dropoff}
                 fitMode={
                   activeRide.status === RideStatus.IN_PROGRESS
                     ? "driverAndDropoff"
-                    : "driverAndPickup"
+                    : activeRide.status === RideStatus.ACCEPTED
+                      ? "driverAndPickup"
+                      : "pickupAndDropoff"
                 }
                 routeLine={
                   activeRide.status === RideStatus.IN_PROGRESS
                     ? (tripRoute ?? undefined)
-                    : (approachRoute ?? undefined)
+                    : activeRide.status === RideStatus.ACCEPTED
+                      ? (approachRoute ?? undefined)
+                      : (previewRoute ?? undefined)
                 }
               />
               <div className="text-xs text-muted-foreground">
@@ -317,7 +396,9 @@ function RidePageContent() {
                       lat: driverLocation.lat.toFixed(5),
                       lng: driverLocation.lng.toFixed(5),
                     })
-                  : t("ride:activeRide.map.waitingForDriver")}
+                  : activeRide.status === RideStatus.REQUESTED
+                    ? t("ride:activeRide.map.searchingForDriver")
+                    : t("ride:activeRide.map.waitingForDriver")}
               </div>
             </div>
           )}
@@ -341,9 +422,18 @@ function RidePageContent() {
               </Button>
             )}
             {isTerminal && (
-              <Button onClick={handleNewRide}>
-                {t("ride:activeRide.actions.hailAnother")}
-              </Button>
+              <>
+                {activeRide.status === RideStatus.COMPLETED && (
+                  <Button asChild>
+                    <Link href={`/ride/${activeRide.id}`}>
+                      {t("ride:activeRide.actions.viewTrip")}
+                    </Link>
+                  </Button>
+                )}
+                <Button variant="outline" onClick={handleNewRide}>
+                  {t("ride:activeRide.actions.hailAnother")}
+                </Button>
+              </>
             )}
           </div>
         </div>
@@ -359,26 +449,32 @@ function RidePageContent() {
         {t("ride:hailForm.description")}
       </p>
 
-      {/* Ask for location so we can show the rider on the map */}
+      {/* Ask for location so we can centre the custom-location picker */}
       <div className="mb-4">
         <LocationPermissionPrompt
-          onLocation={() => {
-            // Location granted — no action needed for now; the map will
-            // use the driver's location. Future: auto-select nearest stand.
-          }}
+          onLocation={(lat, lng) => setUserLocation({ lat, lng })}
         />
       </div>
 
       <div className="space-y-4">
         <div>
           <Label>{t("ride:hailForm.inputs.pickup.label")}</Label>
-          <Select value={pickup} onValueChange={setPickup}>
+          <Select
+            value={pickup}
+            onValueChange={(val) => {
+              setPickup(val);
+              if (val !== CUSTOM_LOCATION) setCustomPickupCoords(null);
+            }}
+          >
             <SelectTrigger>
               <SelectValue
                 placeholder={t("ride:hailForm.inputs.pickup.placeholder")}
               />
             </SelectTrigger>
             <SelectContent>
+              <SelectItem value={CUSTOM_LOCATION}>
+                {t("ride:hailForm.inputs.customLocation")}
+              </SelectItem>
               {STANDS.map((stand) => (
                 <SelectItem
                   key={stand}
@@ -390,17 +486,39 @@ function RidePageContent() {
               ))}
             </SelectContent>
           </Select>
+          {pickup === CUSTOM_LOCATION && (
+            <div className="mt-2">
+              <LocationPickerMap
+                value={customPickupCoords}
+                onChange={setCustomPickupCoords}
+                userLocation={userLocation}
+                autoSelectNearest
+                markerLabel={t("ride:hailForm.inputs.pickup.label")}
+                markerEmoji="🟢"
+                height={180}
+              />
+            </div>
+          )}
         </div>
 
         <div>
           <Label>{t("ride:hailForm.inputs.dropoff.label")}</Label>
-          <Select value={dropoff} onValueChange={setDropoff}>
+          <Select
+            value={dropoff}
+            onValueChange={(val) => {
+              setDropoff(val);
+              if (val !== CUSTOM_LOCATION) setCustomDropoffCoords(null);
+            }}
+          >
             <SelectTrigger>
               <SelectValue
                 placeholder={t("ride:hailForm.inputs.dropoff.placeholder")}
               />
             </SelectTrigger>
             <SelectContent>
+              <SelectItem value={CUSTOM_LOCATION}>
+                {t("ride:hailForm.inputs.customLocation")}
+              </SelectItem>
               {STANDS.map((stand) => (
                 <SelectItem
                   key={stand}
@@ -412,34 +530,73 @@ function RidePageContent() {
               ))}
             </SelectContent>
           </Select>
+          {dropoff === CUSTOM_LOCATION && (
+            <div className="mt-2">
+              <LocationPickerMap
+                value={customDropoffCoords}
+                onChange={setCustomDropoffCoords}
+                userLocation={userLocation}
+                markerLabel={t("ride:hailForm.inputs.dropoff.label")}
+                markerEmoji="🏁"
+                height={180}
+              />
+            </div>
+          )}
         </div>
 
         <Button
           className="w-full"
           size="lg"
           onClick={handleHailRide}
-          disabled={!pickup || !dropoff || pickup === dropoff || submitting}
+          disabled={
+            !pickup ||
+            !dropoff ||
+            pickup === dropoff ||
+            submitting ||
+            (pickup === CUSTOM_LOCATION && !customPickupCoords) ||
+            (dropoff === CUSTOM_LOCATION && !customDropoffCoords)
+          }
         >
           {submitting
             ? t("ride:hailForm.actions.requesting")
             : t("ride:hailForm.actions.hailCarriage")}
         </Button>
 
-        {/* Route preview map — appears once both stands are selected */}
-        {pickup && dropoff && pickup !== dropoff && (
-          <div className="pt-2">
-            <DriverTrackingMap
-              driverLocation={null}
-              pickupCoords={STAND_COORDS[pickup] ?? null}
-              dropoffCoords={STAND_COORDS[dropoff] ?? null}
-              pickupLabel={pickup}
-              dropoffLabel={dropoff}
-              fitMode="pickupAndDropoff"
-              routeLine={previewRoute ?? undefined}
-              height={240}
-            />
-          </div>
-        )}
+        {/* Route preview map — appears once both locations are selected */}
+        {pickup &&
+          dropoff &&
+          pickup !== dropoff &&
+          (pickup !== CUSTOM_LOCATION || customPickupCoords) &&
+          (dropoff !== CUSTOM_LOCATION || customDropoffCoords) && (
+            <div className="pt-2">
+              <DriverTrackingMap
+                driverLocation={null}
+                pickupCoords={
+                  pickup === CUSTOM_LOCATION
+                    ? customPickupCoords
+                    : (STAND_COORDS[pickup] ?? null)
+                }
+                dropoffCoords={
+                  dropoff === CUSTOM_LOCATION
+                    ? customDropoffCoords
+                    : (STAND_COORDS[dropoff] ?? null)
+                }
+                pickupLabel={
+                  pickup === CUSTOM_LOCATION
+                    ? t("ride:hailForm.inputs.pickup.label")
+                    : pickup
+                }
+                dropoffLabel={
+                  dropoff === CUSTOM_LOCATION
+                    ? t("ride:hailForm.inputs.dropoff.label")
+                    : dropoff
+                }
+                fitMode="pickupAndDropoff"
+                routeLine={previewRoute ?? undefined}
+                height={240}
+              />
+            </div>
+          )}
       </div>
     </div>
   );

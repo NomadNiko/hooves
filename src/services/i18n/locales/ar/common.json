@@ -3,17 +3,18 @@
   "loading": "جارٍ التحميل ...",
   "close": "إغلاق",
   "navigation": {
-    "home": "الرئيسية",
+    "home": "🏠 الرئيسية",
     "signIn": "تسجيل الدخول",
     "signUp": "إنشاء حساب",
     "profile": "الملف الشخصي",
-    "users": "المستخدمون",
+    "users": "👥 المستخدمون",
     "logout": "تسجيل الخروج",
     "hailRide": "🐴 اطلب عربة",
     "driverDashboard": "🎠 لوحة تحكم السائق",
     "rideHistory": "📊 سجل الرحلات",
     "fleetDrivers": "🐴 الأسطول (السائقون)",
-    "allRides": "🎫 جميع الرحلات"
+    "allRides": "🎫 جميع الرحلات",
+    "myRides": "📜 رحلاتي"
   },
   "formInputs": {
     "avatarInput": {
@@ -62,5 +63,11 @@
     "unavailable": "الخريطة غير متوفرة — لم يتم تكوين NEXT_PUBLIC_MAPBOX_TOKEN.",
     "carriageTitle": "عربتك",
     "recentre": "📍 إعادة التمركز"
+  },
+  "locationPicker": {
+    "hint": "انقر على طريق لتحديد موقعك — سيتم محاذاته مع أقرب مسار للعربات.",
+    "snapping": "جار البحث عن أقرب طريق...",
+    "noRoadNearby": "لا يوجد مسار للعربات بالقرب. انقر أقرب إلى طريق.",
+    "youAreHere": "أنت هنا"
   }
 }

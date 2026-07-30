@@ -1,0 +1,26 @@
+{
+  "title": "Mes Trajets",
+  "loading": "Chargement de vos trajets...",
+  "heading": "🐴 Mes Trajets",
+  "stats": {
+    "totalRides": "Total des Trajets",
+    "completed": "Terminés",
+    "totalSpent": "Total Dépensé"
+  },
+  "empty": "Vous n'avez pas encore effectué de trajet.",
+  "emptyAction": "Héler un Carrosse",
+  "card": {
+    "driver": "Conducteur",
+    "gpsPoints": "{{count}} points GPS enregistrés",
+    "viewDetails": "Voir les Détails du Trajet",
+    "tipDriver": "💰 Donner un Pourboire"
+  },
+  "statusLabels": {
+    "requested": "Demandé",
+    "accepted": "Accepté",
+    "in_progress": "En Cours",
+    "completed": "Terminé",
+    "cancelled": "Annulé",
+    "unknown": "Inconnu"
+  }
+}

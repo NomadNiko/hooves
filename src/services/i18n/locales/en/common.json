@@ -3,17 +3,18 @@
   "loading": "Loading ...",
   "close": "Close",
   "navigation": {
-    "home": "Home",
+    "home": "🏠 Home",
     "signIn": "Sign In",
     "signUp": "Sign Up",
     "profile": "Profile",
-    "users": "Users",
+    "users": "👥 Users",
     "logout": "Logout",
     "hailRide": "🐴 Hail a Ride",
     "driverDashboard": "🎠 Driver Dashboard",
     "rideHistory": "📊 Ride History",
     "fleetDrivers": "🐴 Fleet (Drivers)",
-    "allRides": "🎫 All Rides"
+    "allRides": "🎫 All Rides",
+    "myRides": "📜 My Rides"
   },
   "formInputs": {
     "avatarInput": {
@@ -62,5 +63,11 @@
     "unavailable": "Map unavailable — NEXT_PUBLIC_MAPBOX_TOKEN is not configured.",
     "carriageTitle": "Your carriage",
     "recentre": "📍 Re-centre"
+  },
+  "locationPicker": {
+    "hint": "Tap a road to set your pin — it snaps to the nearest carriage route.",
+    "snapping": "Finding nearest road...",
+    "noRoadNearby": "No carriage route nearby. Tap closer to a road.",
+    "youAreHere": "You are here"
   }
 }

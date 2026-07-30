@@ -1,0 +1,40 @@
+{
+  "title": "Trip Details",
+  "loading": "Loading trip details...",
+  "backToHistory": "Back to My Rides",
+  "heading": {
+    "completed": "Trip Complete! 🎉",
+    "cancelled": "Trip Cancelled",
+    "inProgress": "Trip In Progress"
+  },
+  "notFound": {
+    "heading": "Ride Not Found",
+    "description": "This ride could not be found or you don't have access to it.",
+    "backToHistory": "Back to My Rides"
+  },
+  "map": {
+    "gpsPoints": "{{count}} GPS points recorded along your journey"
+  },
+  "details": {
+    "heading": "Trip Summary",
+    "status": "Status",
+    "date": "Date",
+    "driver": "Driver",
+    "fare": "Fare",
+    "paid": "Payment received"
+  },
+  "statusLabels": {
+    "requested": "Requested",
+    "accepted": "Accepted",
+    "in_progress": "In Progress",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "unknown": "Unknown"
+  },
+  "tip": {
+    "heading": "💰 Tip Your Driver",
+    "description": "Show your appreciation for a great ride! Tips go directly to your driver.",
+    "custom": "Custom",
+    "thankYou": "Thank you for the tip! Your driver will appreciate it."
+  }
+}

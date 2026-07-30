@@ -1,0 +1,40 @@
+{
+  "title": "Fahrtdetails",
+  "loading": "Fahrtdetails werden geladen...",
+  "backToHistory": "Zurück zu Meinen Fahrten",
+  "heading": {
+    "completed": "Fahrt Abgeschlossen! 🎉",
+    "cancelled": "Fahrt Storniert",
+    "inProgress": "Fahrt in Bearbeitung"
+  },
+  "notFound": {
+    "heading": "Fahrt Nicht Gefunden",
+    "description": "Diese Fahrt konnte nicht gefunden werden oder Sie haben keinen Zugriff darauf.",
+    "backToHistory": "Zurück zu Meinen Fahrten"
+  },
+  "map": {
+    "gpsPoints": "{{count}} GPS-Punkte entlang Ihrer Reise aufgezeichnet"
+  },
+  "details": {
+    "heading": "Fahrtzusammenfassung",
+    "status": "Status",
+    "date": "Datum",
+    "driver": "Fahrer",
+    "fare": "Fahrpreis",
+    "paid": "Zahlung erhalten"
+  },
+  "statusLabels": {
+    "requested": "Angefragt",
+    "accepted": "Angenommen",
+    "in_progress": "In Bearbeitung",
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert",
+    "unknown": "Unbekannt"
+  },
+  "tip": {
+    "heading": "💰 Trinkgeld für Ihren Fahrer",
+    "description": "Zeigen Sie Ihre Wertschätzung für eine tolle Fahrt! Trinkgelder gehen direkt an Ihren Fahrer.",
+    "custom": "Benutzerdefiniert",
+    "thankYou": "Vielen Dank für das Trinkgeld! Ihr Fahrer wird es zu schätzen wissen."
+  }
+}

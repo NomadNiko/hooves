@@ -3,17 +3,18 @@
   "loading": "Cargando ...",
   "close": "Cerrar",
   "navigation": {
-    "home": "Inicio",
+    "home": "🏠 Inicio",
     "signIn": "Iniciar sesión",
     "signUp": "Crear cuenta",
     "profile": "Perfil",
-    "users": "Usuarios",
+    "users": "👥 Usuarios",
     "logout": "Cerrar sesión",
     "hailRide": "🐴 Solicitar un Viaje",
     "driverDashboard": "🎠 Panel del Conductor",
     "rideHistory": "📊 Historial de Viajes",
     "fleetDrivers": "🐴 Flota (Conductores)",
-    "allRides": "🎫 Todos los Viajes"
+    "allRides": "🎫 Todos los Viajes",
+    "myRides": "📜 Mis Viajes"
   },
   "formInputs": {
     "avatarInput": {
@@ -62,5 +63,11 @@
     "unavailable": "Mapa no disponible — NEXT_PUBLIC_MAPBOX_TOKEN no está configurado.",
     "carriageTitle": "Tu carruaje",
     "recentre": "📍 Recentrar"
+  },
+  "locationPicker": {
+    "hint": "Toca una calle para colocar tu marcador — se ajusta a la ruta de carruajes más cercana.",
+    "snapping": "Buscando la calle más cercana...",
+    "noRoadNearby": "No hay ruta de carruajes cerca. Toca más cerca de una calle.",
+    "youAreHere": "Estás aquí"
   }
 }

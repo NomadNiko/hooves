@@ -20,11 +20,13 @@
     },
     "map": {
       "livePosition": "📍 Posición en vivo: {{lat}}, {{lng}} — se actualiza cada 4s",
-      "waitingForDriver": "Esperando la ubicación de tu conductor. Puede que aún no tenga la ubicación activada."
+      "waitingForDriver": "Esperando la ubicación de tu conductor. Es posible que aún no tenga la ubicación compartida.",
+      "searchingForDriver": "Mostrando tu ruta planificada mientras buscamos un conductor..."
     },
     "actions": {
       "cancelRide": "Cancelar Viaje",
-      "hailAnother": "Solicitar Otro Carruaje"
+      "hailAnother": "Solicitar Otro Viaje",
+      "viewTrip": "Ver Detalles del Viaje"
     },
     "alerts": {
       "cancelled": "Viaje cancelado."
@@ -41,7 +43,8 @@
       "dropoff": {
         "label": "Parada de Destino",
         "placeholder": "¿A dónde vas?"
-      }
+      },
+      "customLocation": "📍 Ubicación personalizada (toca el mapa)"
     },
     "actions": {
       "hailCarriage": "Solicitar Carruaje 🐴",

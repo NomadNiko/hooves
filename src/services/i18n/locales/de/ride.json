@@ -20,11 +20,13 @@
     },
     "map": {
       "livePosition": "📍 Live-Position: {{lat}}, {{lng}} — Aktualisierung alle 4 Sek.",
-      "waitingForDriver": "Warten auf den Standort Ihres Fahrers. Die Standortfreigabe ist möglicherweise noch nicht aktiviert."
+      "waitingForDriver": "Warten auf den Standort Ihres Fahrers. Möglicherweise hat er die Standortfreigabe noch nicht aktiviert.",
+      "searchingForDriver": "Ihre geplante Route wird angezeigt, während wir einen Fahrer suchen..."
     },
     "actions": {
       "cancelRide": "Fahrt stornieren",
-      "hailAnother": "Weitere Kutsche rufen"
+      "hailAnother": "Weitere Kutsche rufen",
+      "viewTrip": "Fahrtdetails ansehen"
     },
     "alerts": {
       "cancelled": "Fahrt storniert."
@@ -41,7 +43,8 @@
       "dropoff": {
         "label": "Zielstation",
         "placeholder": "Wohin möchten Sie?"
-      }
+      },
+      "customLocation": "📍 Benutzerdefinierter Standort (Karte antippen)"
     },
     "actions": {
       "hailCarriage": "Kutsche rufen 🐴",

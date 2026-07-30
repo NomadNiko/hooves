@@ -1,0 +1,40 @@
+{
+  "title": "Detalles del Viaje",
+  "loading": "Cargando detalles del viaje...",
+  "backToHistory": "Volver a Mis Viajes",
+  "heading": {
+    "completed": "¡Viaje Completado! 🎉",
+    "cancelled": "Viaje Cancelado",
+    "inProgress": "Viaje en Progreso"
+  },
+  "notFound": {
+    "heading": "Viaje No Encontrado",
+    "description": "Este viaje no se pudo encontrar o no tienes acceso a él.",
+    "backToHistory": "Volver a Mis Viajes"
+  },
+  "map": {
+    "gpsPoints": "{{count}} puntos GPS registrados a lo largo de tu viaje"
+  },
+  "details": {
+    "heading": "Resumen del Viaje",
+    "status": "Estado",
+    "date": "Fecha",
+    "driver": "Conductor",
+    "fare": "Tarifa",
+    "paid": "Pago recibido"
+  },
+  "statusLabels": {
+    "requested": "Solicitado",
+    "accepted": "Aceptado",
+    "in_progress": "En Progreso",
+    "completed": "Completado",
+    "cancelled": "Cancelado",
+    "unknown": "Desconocido"
+  },
+  "tip": {
+    "heading": "💰 Propina para tu Conductor",
+    "description": "¡Muestra tu agradecimiento por un gran viaje! Las propinas van directamente a tu conductor.",
+    "custom": "Personalizado",
+    "thankYou": "¡Gracias por la propina! Tu conductor lo apreciará."
+  }
+}

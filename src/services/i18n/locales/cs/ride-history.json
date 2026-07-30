@@ -1,0 +1,26 @@
+{
+  "title": "Moje Jízdy",
+  "loading": "Načítání vašich jízd...",
+  "heading": "🐴 Moje Jízdy",
+  "stats": {
+    "totalRides": "Celkem Jízd",
+    "completed": "Dokončené",
+    "totalSpent": "Celkem Utraceno"
+  },
+  "empty": "Zatím jste neabsolvovali žádnou jízdu.",
+  "emptyAction": "Přivolat Kočár",
+  "card": {
+    "driver": "Řidič",
+    "gpsPoints": "{{count}} GPS bodů zaznamenáno",
+    "viewDetails": "Zobrazit Podrobnosti Jízdy",
+    "tipDriver": "💰 Dát Spropitné Řidiči"
+  },
+  "statusLabels": {
+    "requested": "Požadováno",
+    "accepted": "Přijato",
+    "in_progress": "Probíhá",
+    "completed": "Dokončeno",
+    "cancelled": "Zrušeno",
+    "unknown": "Neznámý"
+  }
+}

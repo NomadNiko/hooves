@@ -3,17 +3,18 @@
   "loading": "加载中 ...",
   "close": "关闭",
   "navigation": {
-    "home": "首页",
+    "home": "🏠 首页",
     "signIn": "登录",
     "signUp": "注册",
     "profile": "个人资料",
-    "users": "用户",
+    "users": "👥 用户",
     "logout": "退出登录",
     "hailRide": "🐴 叫一辆马车",
     "driverDashboard": "🎠 司机仪表板",
     "rideHistory": "📊 行程历史",
     "fleetDrivers": "🐴 车队（司机）",
-    "allRides": "🎫 所有行程"
+    "allRides": "🎫 所有行程",
+    "myRides": "📜 我的行程"
   },
   "formInputs": {
     "avatarInput": {
@@ -62,5 +63,11 @@
     "unavailable": "地图不可用 — 未配置 NEXT_PUBLIC_MAPBOX_TOKEN。",
     "carriageTitle": "您的马车",
     "recentre": "📍 重新居中"
+  },
+  "locationPicker": {
+    "hint": "点击道路放置标记 — 它会自动对齐到最近的马车路线。",
+    "snapping": "正在查找最近的道路...",
+    "noRoadNearby": "附近没有马车路线。请点击靠近道路的位置。",
+    "youAreHere": "您在这里"
   }
 }

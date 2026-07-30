@@ -1,0 +1,26 @@
+{
+  "title": "मेरी सवारियाँ",
+  "loading": "आपकी सवारियाँ लोड हो रही हैं...",
+  "heading": "🐴 मेरी सवारियाँ",
+  "stats": {
+    "totalRides": "कुल सवारियाँ",
+    "completed": "पूर्ण",
+    "totalSpent": "कुल खर्च"
+  },
+  "empty": "आपने अभी तक कोई सवारी नहीं ली है।",
+  "emptyAction": "गाड़ी बुलाएँ",
+  "card": {
+    "driver": "चालक",
+    "gpsPoints": "{{count}} GPS बिंदु रिकॉर्ड किए गए",
+    "viewDetails": "यात्रा विवरण देखें",
+    "tipDriver": "💰 चालक को टिप दें"
+  },
+  "statusLabels": {
+    "requested": "अनुरोधित",
+    "accepted": "स्वीकृत",
+    "in_progress": "प्रगति में",
+    "completed": "पूर्ण",
+    "cancelled": "रद्द",
+    "unknown": "अज्ञात"
+  }
+}

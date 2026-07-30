@@ -1,0 +1,26 @@
+{
+  "title": "رحلاتي",
+  "loading": "جارٍ تحميل رحلاتك...",
+  "heading": "🐴 رحلاتي",
+  "stats": {
+    "totalRides": "إجمالي الرحلات",
+    "completed": "مكتملة",
+    "totalSpent": "إجمالي الإنفاق"
+  },
+  "empty": "لم تقم بأي رحلة بعد.",
+  "emptyAction": "اطلب عربة",
+  "card": {
+    "driver": "السائق",
+    "gpsPoints": "{{count}} نقطة GPS مسجلة",
+    "viewDetails": "عرض تفاصيل الرحلة",
+    "tipDriver": "💰 إكرامية للسائق"
+  },
+  "statusLabels": {
+    "requested": "مطلوبة",
+    "accepted": "مقبولة",
+    "in_progress": "قيد التنفيذ",
+    "completed": "مكتملة",
+    "cancelled": "ملغاة",
+    "unknown": "غير معروف"
+  }
+}

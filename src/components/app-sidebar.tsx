@@ -161,10 +161,24 @@ function AppSidebar() {
                     <SidebarMenuItem>
                       <SidebarMenuButton
                         asChild
-                        isActive={pathname.includes("/ride")}
+                        isActive={
+                          pathname.includes("/ride") &&
+                          !pathname.includes("/ride/history") &&
+                          !pathname.includes("/ride/")
+                        }
                       >
                         <Link href="/ride">
                           {t("common:navigation.hailRide")}
+                        </Link>
+                      </SidebarMenuButton>
+                    </SidebarMenuItem>
+                    <SidebarMenuItem>
+                      <SidebarMenuButton
+                        asChild
+                        isActive={pathname.includes("/ride/history")}
+                      >
+                        <Link href="/ride/history">
+                          {t("common:navigation.myRides")}
                         </Link>
                       </SidebarMenuButton>
                     </SidebarMenuItem>

@@ -20,11 +20,13 @@
     },
     "map": {
       "livePosition": "📍 Živá poloha: {{lat}}, {{lng}} — aktualizace každé 4 s",
-      "waitingForDriver": "Čekání na polohu vašeho řidiče. Možná ještě nemá zapnuté sdílení polohy."
+      "waitingForDriver": "Čekáme na polohu vašeho řidiče. Možná ještě nezapnul sdílení polohy.",
+      "searchingForDriver": "Zobrazujeme vaši plánovanou trasu, zatímco hledáme řidiče..."
     },
     "actions": {
       "cancelRide": "Zrušit jízdu",
-      "hailAnother": "Přivolat další jízdu"
+      "hailAnother": "Přivolat další kočár",
+      "viewTrip": "Zobrazit podrobnosti jízdy"
     },
     "alerts": {
       "cancelled": "Jízda zrušena."
@@ -41,7 +43,8 @@
       "dropoff": {
         "label": "Stanoviště výstupu",
         "placeholder": "Kam jedete?"
-      }
+      },
+      "customLocation": "📍 Vlastní místo (klepněte na mapu)"
     },
     "actions": {
       "hailCarriage": "Přivolat kočár 🐴",

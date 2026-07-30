@@ -1,0 +1,26 @@
+{
+  "title": "Mis Viajes",
+  "loading": "Cargando tus viajes...",
+  "heading": "🐴 Mis Viajes",
+  "stats": {
+    "totalRides": "Total de Viajes",
+    "completed": "Completados",
+    "totalSpent": "Total Gastado"
+  },
+  "empty": "Aún no has realizado ningún viaje.",
+  "emptyAction": "Solicitar un Carruaje",
+  "card": {
+    "driver": "Conductor",
+    "gpsPoints": "{{count}} puntos GPS registrados",
+    "viewDetails": "Ver Detalles del Viaje",
+    "tipDriver": "💰 Dar Propina al Conductor"
+  },
+  "statusLabels": {
+    "requested": "Solicitado",
+    "accepted": "Aceptado",
+    "in_progress": "En Progreso",
+    "completed": "Completado",
+    "cancelled": "Cancelado",
+    "unknown": "Desconocido"
+  }
+}

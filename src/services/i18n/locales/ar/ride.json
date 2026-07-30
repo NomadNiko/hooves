@@ -20,11 +20,13 @@
     },
     "map": {
       "livePosition": "📍 الموقع المباشر: {{lat}}, {{lng}} — يتم التحديث كل 4 ثوانٍ",
-      "waitingForDriver": "في انتظار موقع سائقك. قد لا يكون قد فعّل مشاركة الموقع بعد."
+      "waitingForDriver": "في انتظار موقع السائق. قد لا يكون قد فعّل مشاركة الموقع بعد.",
+      "searchingForDriver": "عرض مسارك المخطط أثناء البحث عن سائق..."
     },
     "actions": {
       "cancelRide": "إلغاء الرحلة",
-      "hailAnother": "طلب عربة أخرى"
+      "hailAnother": "اطلب رحلة أخرى",
+      "viewTrip": "عرض تفاصيل الرحلة"
     },
     "alerts": {
       "cancelled": "تم إلغاء الرحلة."
@@ -41,7 +43,8 @@
       "dropoff": {
         "label": "محطة الوصول",
         "placeholder": "إلى أين تذهب؟"
-      }
+      },
+      "customLocation": "📍 موقع مخصص (انقر على الخريطة)"
     },
     "actions": {
       "hailCarriage": "طلب عربة 🐴",

@@ -20,11 +20,13 @@
     },
     "map": {
       "livePosition": "📍 Live position: {{lat}}, {{lng}} — updates every 4s",
-      "waitingForDriver": "Waiting for your driver's location. They may not have location sharing on yet."
+      "waitingForDriver": "Waiting for your driver's location. They may not have location sharing on yet.",
+      "searchingForDriver": "Showing your planned route while we find a driver..."
     },
     "actions": {
       "cancelRide": "Cancel Ride",
-      "hailAnother": "Hail Another Ride"
+      "hailAnother": "Hail Another Ride",
+      "viewTrip": "View Trip Details"
     },
     "alerts": {
       "cancelled": "Ride cancelled."
@@ -41,7 +43,8 @@
       "dropoff": {
         "label": "Dropoff Stand",
         "placeholder": "Where are you going?"
-      }
+      },
+      "customLocation": "📍 Custom Location (tap map)"
     },
     "actions": {
       "hailCarriage": "Hail Carriage 🐴",

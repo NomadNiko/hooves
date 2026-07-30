@@ -20,11 +20,13 @@
     },
     "map": {
       "livePosition": "📍 Position en direct : {{lat}}, {{lng}} — mise à jour toutes les 4s",
-      "waitingForDriver": "En attente de la position de votre conducteur. Il n'a peut-être pas encore activé le partage de position."
+      "waitingForDriver": "En attente de la position de votre conducteur. Il n'a peut-être pas encore activé le partage de position.",
+      "searchingForDriver": "Affichage de votre itinéraire prévu pendant que nous cherchons un conducteur..."
     },
     "actions": {
       "cancelRide": "Annuler la Course",
-      "hailAnother": "Appeler un Autre Carrosse"
+      "hailAnother": "Appeler un Autre Carrosse",
+      "viewTrip": "Voir les Détails du Trajet"
     },
     "alerts": {
       "cancelled": "Course annulée."
@@ -41,7 +43,8 @@
       "dropoff": {
         "label": "Arrêt d'Arrivée",
         "placeholder": "Où allez-vous ?"
-      }
+      },
+      "customLocation": "📍 Emplacement personnalisé (touchez la carte)"
     },
     "actions": {
       "hailCarriage": "Appeler un Carrosse 🐴",

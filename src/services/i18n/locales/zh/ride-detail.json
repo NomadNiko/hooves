@@ -1,0 +1,40 @@
+{
+  "title": "行程详情",
+  "loading": "正在加载行程详情...",
+  "backToHistory": "返回我的行程",
+  "heading": {
+    "completed": "行程完成！🎉",
+    "cancelled": "行程已取消",
+    "inProgress": "行程进行中"
+  },
+  "notFound": {
+    "heading": "未找到行程",
+    "description": "找不到该行程或您无权访问。",
+    "backToHistory": "返回我的行程"
+  },
+  "map": {
+    "gpsPoints": "沿途记录了 {{count}} 个GPS点"
+  },
+  "details": {
+    "heading": "行程摘要",
+    "status": "状态",
+    "date": "日期",
+    "driver": "车夫",
+    "fare": "费用",
+    "paid": "已收到付款"
+  },
+  "statusLabels": {
+    "requested": "已请求",
+    "accepted": "已接受",
+    "in_progress": "进行中",
+    "completed": "已完成",
+    "cancelled": "已取消",
+    "unknown": "未知"
+  },
+  "tip": {
+    "heading": "💰 给您的车夫小费",
+    "description": "为精彩的旅程表达您的感谢！小费将直接送达您的车夫。",
+    "custom": "自定义",
+    "thankYou": "感谢您的小费！您的车夫会很感激。"
+  }
+}

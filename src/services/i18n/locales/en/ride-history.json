@@ -1,0 +1,26 @@
+{
+  "title": "My Rides",
+  "loading": "Loading your rides...",
+  "heading": "🐴 My Rides",
+  "stats": {
+    "totalRides": "Total Rides",
+    "completed": "Completed",
+    "totalSpent": "Total Spent"
+  },
+  "empty": "You haven't taken any rides yet.",
+  "emptyAction": "Hail a Carriage",
+  "card": {
+    "driver": "Driver",
+    "gpsPoints": "{{count}} GPS points recorded",
+    "viewDetails": "View Trip Details",
+    "tipDriver": "💰 Tip Driver"
+  },
+  "statusLabels": {
+    "requested": "Requested",
+    "accepted": "Accepted",
+    "in_progress": "In Progress",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "unknown": "Unknown"
+  }
+}

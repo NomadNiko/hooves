@@ -3,17 +3,18 @@
   "loading": "Chargement…",
   "close": "Fermer",
   "navigation": {
-    "home": "Accueil",
+    "home": "🏠 Accueil",
     "signIn": "Se connecter",
     "signUp": "S'inscrire",
     "profile": "Profil",
-    "users": "Utilisateurs",
+    "users": "👥 Utilisateurs",
     "logout": "Se déconnecter",
     "hailRide": "🐴 Appeler un Carrosse",
     "driverDashboard": "🎠 Tableau de bord Conducteur",
     "rideHistory": "📊 Historique des Courses",
     "fleetDrivers": "🐴 Flotte (Conducteurs)",
-    "allRides": "🎫 Tous les Trajets"
+    "allRides": "🎫 Tous les Trajets",
+    "myRides": "📜 Mes Courses"
   },
   "formInputs": {
     "avatarInput": {
@@ -62,5 +63,11 @@
     "unavailable": "Carte indisponible — NEXT_PUBLIC_MAPBOX_TOKEN n'est pas configuré.",
     "carriageTitle": "Votre carrosse",
     "recentre": "📍 Recentrer"
+  },
+  "locationPicker": {
+    "hint": "Touchez une rue pour placer votre repère — il s'aligne sur la route de calèches la plus proche.",
+    "snapping": "Recherche de la rue la plus proche...",
+    "noRoadNearby": "Aucune route de calèches à proximité. Touchez plus près d'une rue.",
+    "youAreHere": "Vous êtes ici"
   }
 }

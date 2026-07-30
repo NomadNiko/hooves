@@ -1,0 +1,40 @@
+{
+  "title": "Détails du Trajet",
+  "loading": "Chargement des détails du trajet...",
+  "backToHistory": "Retour à Mes Trajets",
+  "heading": {
+    "completed": "Trajet Terminé ! 🎉",
+    "cancelled": "Trajet Annulé",
+    "inProgress": "Trajet en Cours"
+  },
+  "notFound": {
+    "heading": "Trajet Non Trouvé",
+    "description": "Ce trajet n'a pas pu être trouvé ou vous n'y avez pas accès.",
+    "backToHistory": "Retour à Mes Trajets"
+  },
+  "map": {
+    "gpsPoints": "{{count}} points GPS enregistrés le long de votre trajet"
+  },
+  "details": {
+    "heading": "Résumé du Trajet",
+    "status": "Statut",
+    "date": "Date",
+    "driver": "Conducteur",
+    "fare": "Tarif",
+    "paid": "Paiement reçu"
+  },
+  "statusLabels": {
+    "requested": "Demandé",
+    "accepted": "Accepté",
+    "in_progress": "En Cours",
+    "completed": "Terminé",
+    "cancelled": "Annulé",
+    "unknown": "Inconnu"
+  },
+  "tip": {
+    "heading": "💰 Pourboire pour votre Conducteur",
+    "description": "Montrez votre appréciation pour un excellent trajet ! Les pourboires vont directement à votre conducteur.",
+    "custom": "Personnalisé",
+    "thankYou": "Merci pour le pourboire ! Votre conducteur l'appréciera."
+  }
+}

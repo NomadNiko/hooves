@@ -1,0 +1,26 @@
+{
+  "title": "Meine Fahrten",
+  "loading": "Ihre Fahrten werden geladen...",
+  "heading": "🐴 Meine Fahrten",
+  "stats": {
+    "totalRides": "Fahrten Gesamt",
+    "completed": "Abgeschlossen",
+    "totalSpent": "Gesamtausgaben"
+  },
+  "empty": "Sie haben noch keine Fahrten unternommen.",
+  "emptyAction": "Kutsche Rufen",
+  "card": {
+    "driver": "Fahrer",
+    "gpsPoints": "{{count}} GPS-Punkte aufgezeichnet",
+    "viewDetails": "Fahrtdetails Anzeigen",
+    "tipDriver": "💰 Trinkgeld Geben"
+  },
+  "statusLabels": {
+    "requested": "Angefragt",
+    "accepted": "Angenommen",
+    "in_progress": "In Bearbeitung",
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert",
+    "unknown": "Unbekannt"
+  }
+}

@@ -3,17 +3,18 @@
   "loading": "लोड हो रहा है ...",
   "close": "बंद करें",
   "navigation": {
-    "home": "होम",
+    "home": "🏠 होम",
     "signIn": "साइन इन",
     "signUp": "साइन अप",
     "profile": "प्रोफ़ाइल",
-    "users": "उपयोगकर्ता",
+    "users": "👥 उपयोगकर्ता",
     "logout": "लॉगआउट",
     "hailRide": "🐴 एक सवारी बुलाएं",
     "driverDashboard": "🎠 ड्राइवर डैशबोर्ड",
     "rideHistory": "📊 सवारी इतिहास",
     "fleetDrivers": "🐴 बेड़ा (ड्राइवर)",
-    "allRides": "🎫 सभी सवारियां"
+    "allRides": "🎫 सभी सवारियां",
+    "myRides": "📜 मेरी सवारियां"
   },
   "formInputs": {
     "avatarInput": {
@@ -62,5 +63,11 @@
     "unavailable": "मानचित्र उपलब्ध नहीं है — NEXT_PUBLIC_MAPBOX_TOKEN कॉन्फ़िगर नहीं किया गया है।",
     "carriageTitle": "आपकी गाड़ी",
     "recentre": "📍 फिर से केंद्रित करें"
+  },
+  "locationPicker": {
+    "hint": "अपना पिन रखने के लिए किसी सड़क पर टैप करें — यह निकटतम गाड़ी मार्ग से जुड़ जाएगा।",
+    "snapping": "निकटतम सड़क खोजी जा रही है...",
+    "noRoadNearby": "आसपास कोई गाड़ी मार्ग नहीं है। सड़क के पास टैप करें।",
+    "youAreHere": "आप यहाँ हैं"
   }
 }

@@ -1,0 +1,26 @@
+{
+  "title": "Мої Поїздки",
+  "loading": "Завантаження ваших поїздок...",
+  "heading": "🐴 Мої Поїздки",
+  "stats": {
+    "totalRides": "Загальна Кількість Поїздок",
+    "completed": "Завершені",
+    "totalSpent": "Загальні Витрати"
+  },
+  "empty": "Ви ще не здійснили жодної поїздки.",
+  "emptyAction": "Викликати Карету",
+  "card": {
+    "driver": "Водій",
+    "gpsPoints": "{{count}} GPS-точок записано",
+    "viewDetails": "Переглянути Деталі Поїздки",
+    "tipDriver": "💰 Чайові Водію"
+  },
+  "statusLabels": {
+    "requested": "Запитано",
+    "accepted": "Прийнято",
+    "in_progress": "В Процесі",
+    "completed": "Завершено",
+    "cancelled": "Скасовано",
+    "unknown": "Невідомо"
+  }
+}

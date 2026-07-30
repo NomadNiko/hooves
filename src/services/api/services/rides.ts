@@ -52,7 +52,18 @@ export function useGetRideService() {
 }
 
 export type RidePostRequest = Pick<Ride, "riderId" | "pickup" | "dropoff"> &
-  Partial<Pick<Ride, "riderName" | "status" | "fare">>;
+  Partial<
+    Pick<
+      Ride,
+      | "riderName"
+      | "status"
+      | "fare"
+      | "pickupLat"
+      | "pickupLng"
+      | "dropoffLat"
+      | "dropoffLng"
+    >
+  >;
 
 export type RidePostResponse = Ride;
 

@@ -20,11 +20,13 @@
     },
     "map": {
       "livePosition": "📍 实时位置：{{lat}}, {{lng}} — 每4秒更新",
-      "waitingForDriver": "正在等待司机的位置信息。他们可能尚未开启位置共享。"
+      "waitingForDriver": "等待司机位置。他们可能尚未开启位置共享。",
+      "searchingForDriver": "在为您寻找司机的同时显示您的规划路线..."
     },
     "actions": {
       "cancelRide": "取消行程",
-      "hailAnother": "再叫一辆马车"
+      "hailAnother": "再叫一辆马车",
+      "viewTrip": "查看行程详情"
     },
     "alerts": {
       "cancelled": "行程已取消。"
@@ -41,7 +43,8 @@
       "dropoff": {
         "label": "目的地",
         "placeholder": "您要去哪里？"
-      }
+      },
+      "customLocation": "📍 自定义位置（点击地图）"
     },
     "actions": {
       "hailCarriage": "叫马车 🐴",

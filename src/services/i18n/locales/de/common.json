@@ -3,17 +3,18 @@
   "loading": "Wird geladen ...",
   "close": "Schließen",
   "navigation": {
-    "home": "Startseite",
+    "home": "🏠 Startseite",
     "signIn": "Anmelden",
     "signUp": "Registrieren",
     "profile": "Profil",
-    "users": "Benutzer",
+    "users": "👥 Benutzer",
     "logout": "Abmelden",
     "hailRide": "🐴 Kutsche rufen",
     "driverDashboard": "🎠 Fahrer-Dashboard",
     "rideHistory": "📊 Fahrtenverlauf",
     "fleetDrivers": "🐴 Flotte (Fahrer)",
-    "allRides": "🎫 Alle Fahrten"
+    "allRides": "🎫 Alle Fahrten",
+    "myRides": "📜 Meine Fahrten"
   },
   "formInputs": {
     "avatarInput": {
@@ -62,5 +63,11 @@
     "unavailable": "Karte nicht verfügbar — NEXT_PUBLIC_MAPBOX_TOKEN ist nicht konfiguriert.",
     "carriageTitle": "Ihre Kutsche",
     "recentre": "📍 Neu zentrieren"
+  },
+  "locationPicker": {
+    "hint": "Tippen Sie auf eine Straße, um Ihren Pin zu setzen — er rastet an der nächsten Kutschenroute ein.",
+    "snapping": "Nächste Straße wird gesucht...",
+    "noRoadNearby": "Keine Kutschenroute in der Nähe. Tippen Sie näher an eine Straße.",
+    "youAreHere": "Sie sind hier"
   }
 }

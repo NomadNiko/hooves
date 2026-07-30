@@ -3,17 +3,18 @@
   "loading": "Načítání ...",
   "close": "Zavřít",
   "navigation": {
-    "home": "Domů",
+    "home": "🏠 Domů",
     "signIn": "Přihlášení",
     "signUp": "Registrace",
     "profile": "Profil",
-    "users": "Uživatelé",
+    "users": "👥 Uživatelé",
     "logout": "Odhlásit se",
     "hailRide": "🐴 Přivolat jízdu",
     "driverDashboard": "🎠 Panel řidiče",
     "rideHistory": "📊 Historie jízd",
     "fleetDrivers": "🐴 Flotila (Řidiči)",
-    "allRides": "🎫 Všechny jízdy"
+    "allRides": "🎫 Všechny jízdy",
+    "myRides": "📜 Moje jízdy"
   },
   "formInputs": {
     "avatarInput": {
@@ -62,5 +63,11 @@
     "unavailable": "Mapa není k dispozici — NEXT_PUBLIC_MAPBOX_TOKEN není nakonfigurován.",
     "carriageTitle": "Váš kočár",
     "recentre": "📍 Vycentrovat"
+  },
+  "locationPicker": {
+    "hint": "Klepnutím na cestu umístíte špendlík — přichytí se k nejbližší kočárové trase.",
+    "snapping": "Hledání nejbližší cesty...",
+    "noRoadNearby": "V okolí není kočárová trasa. Klepněte blíže k cestě.",
+    "youAreHere": "Jste zde"
   }
 }

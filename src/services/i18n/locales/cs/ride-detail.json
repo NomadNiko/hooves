@@ -1,0 +1,40 @@
+{
+  "title": "Podrobnosti Jízdy",
+  "loading": "Načítání podrobností jízdy...",
+  "backToHistory": "Zpět na Moje Jízdy",
+  "heading": {
+    "completed": "Jízda Dokončena! 🎉",
+    "cancelled": "Jízda Zrušena",
+    "inProgress": "Jízda Probíhá"
+  },
+  "notFound": {
+    "heading": "Jízda Nenalezena",
+    "description": "Tuto jízdu se nepodařilo najít nebo k ní nemáte přístup.",
+    "backToHistory": "Zpět na Moje Jízdy"
+  },
+  "map": {
+    "gpsPoints": "{{count}} GPS bodů zaznamenáno během vaší cesty"
+  },
+  "details": {
+    "heading": "Shrnutí Jízdy",
+    "status": "Stav",
+    "date": "Datum",
+    "driver": "Řidič",
+    "fare": "Jízdné",
+    "paid": "Platba přijata"
+  },
+  "statusLabels": {
+    "requested": "Požadováno",
+    "accepted": "Přijato",
+    "in_progress": "Probíhá",
+    "completed": "Dokončeno",
+    "cancelled": "Zrušeno",
+    "unknown": "Neznámý"
+  },
+  "tip": {
+    "heading": "💰 Spropitné pro Vašeho Řidiče",
+    "description": "Ukažte své uznání za skvělou jízdu! Spropitné jde přímo vašemu řidiči.",
+    "custom": "Vlastní",
+    "thankYou": "Děkujeme za spropitné! Váš řidič si toho bude vážit."
+  }
+}

@@ -4,6 +4,10 @@ export type Ride = {
   riderName?: string | null;
   pickup: string;
   dropoff: string;
+  pickupLat?: number | null;
+  pickupLng?: number | null;
+  dropoffLat?: number | null;
+  dropoffLng?: number | null;
   status?: string | null;
   fare?: number | null;
   driverId?: string | null;
@@ -52,3 +56,20 @@ export const STAND_COORDS: Record<string, { lat: number; lng: number }> = {
 
 // Island centre — map fallback when no other reference point exists.
 export const MACKINAC_CENTER = { lat: 45.8547, lng: -84.6291 };
+
+// Sentinel value for custom (non-preset) locations.
+export const CUSTOM_LOCATION = "📍 Custom Location";
+
+/**
+ * Resolve the coordinates for a ride's pickup or dropoff.
+ * Prefers explicit lat/lng fields, falls back to STAND_COORDS lookup.
+ */
+export function resolveCoords(
+  name: string,
+  lat?: number | null,
+  lng?: number | null
+): { lat: number; lng: number } | null {
+  // eslint-disable-next-line eqeqeq -- `!= null` intentionally covers undefined too
+  if (lat != null && lng != null) return { lat, lng };
+  return STAND_COORDS[name] ?? null;
+}
