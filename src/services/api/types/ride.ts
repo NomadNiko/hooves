@@ -57,6 +57,10 @@ export const STAND_COORDS: Record<string, { lat: number; lng: number }> = {
 // Island centre — map fallback when no other reference point exists.
 export const MACKINAC_CENTER = { lat: 45.8547, lng: -84.6291 };
 
+// Downtown / Main Street area — where most trips end up, so it makes a
+// sensible default view when choosing a destination.
+export const DOWNTOWN_CENTER = { lat: 45.8503, lng: -84.6186 };
+
 // Sentinel value for custom (non-preset) locations.
 export const CUSTOM_LOCATION = "📍 Custom Location";
 

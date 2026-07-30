@@ -24,6 +24,7 @@ import {
   STANDS,
   STAND_COORDS,
   CUSTOM_LOCATION,
+  DOWNTOWN_CENTER,
   resolveCoords,
 } from "@/services/api/types/ride";
 import dynamic from "next/dynamic";
@@ -84,6 +85,17 @@ function RidePageContent() {
     lat: number;
     lng: number;
   } | null>(null);
+
+  // Stable callback. An inline arrow here would be recreated every render,
+  // which re-triggers the geolocation request inside LocationPermissionPrompt
+  // and churns userLocation's object identity in a loop. Keeping the previous
+  // object when the coordinates are unchanged stops downstream effects from
+  // re-firing on every position refresh.
+  const handleUserLocation = useCallback((lat: number, lng: number) => {
+    setUserLocation((prev) =>
+      prev && prev.lat === lat && prev.lng === lng ? prev : { lat, lng }
+    );
+  }, []);
   const [activeRide, setActiveRide] = useState<Ride | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [restoring, setRestoring] = useState(true);
@@ -451,9 +463,7 @@ function RidePageContent() {
 
       {/* Ask for location so we can centre the custom-location picker */}
       <div className="mb-4">
-        <LocationPermissionPrompt
-          onLocation={(lat, lng) => setUserLocation({ lat, lng })}
-        />
+        <LocationPermissionPrompt onLocation={handleUserLocation} />
       </div>
 
       <div className="space-y-4">
@@ -535,7 +545,7 @@ function RidePageContent() {
               <LocationPickerMap
                 value={customDropoffCoords}
                 onChange={setCustomDropoffCoords}
-                userLocation={userLocation}
+                initialCenter={DOWNTOWN_CENTER}
                 markerLabel={t("ride:hailForm.inputs.dropoff.label")}
                 markerEmoji="🏁"
                 height={180}

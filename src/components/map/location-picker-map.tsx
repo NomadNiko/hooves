@@ -16,9 +16,12 @@ type Props = {
   value: LatLng | null;
   /** Called with a road-snapped location when the user picks one. */
   onChange: (location: LatLng) => void;
+  /** Where to centre the map on first render. */
+  initialCenter?: LatLng | null;
   /**
-   * The rider's current GPS position. Used to centre the map and to place an
-   * initial pin on the nearest road when nothing is selected yet.
+   * The rider's current GPS position. When provided, shows a "you are here"
+   * dot and — once, on arrival — centres the map there. Omit this entirely
+   * for pickers where the rider's own position is irrelevant.
    */
   userLocation?: LatLng | null;
   /**
@@ -38,6 +41,7 @@ type Props = {
 export default function LocationPickerMap({
   value,
   onChange,
+  initialCenter,
   userLocation,
   autoSelectNearest = false,
   markerLabel,
@@ -53,6 +57,10 @@ export default function LocationPickerMap({
   const abortRef = useRef<AbortController | null>(null);
   // Guards the one-time auto-snap of the rider's own position.
   const autoSnappedRef = useRef(false);
+  // Guards the one-time camera move. After this the camera belongs to the
+  // user — we never programmatically move it again, so panning and pinch
+  // zoom are never fought or reset.
+  const didCentreRef = useRef(false);
 
   /** Snap a raw coordinate then publish it, or flag it as unusable. */
   const snapAndSet = useCallback(
@@ -95,11 +103,16 @@ export default function LocationPickerMap({
     snapAndSet(userLocation.lat, userLocation.lng);
   }, [autoSelectNearest, userLocation, value, snapAndSet]);
 
-  // Keep the camera on the rider once their position arrives.
+  // Centre on the rider exactly once, when their position first arrives.
+  // The map may well have mounted before GPS resolved, which is why this
+  // can't be left to initialViewState alone. The ref makes it strictly
+  // one-shot so the user keeps full control of the camera afterwards.
   useEffect(() => {
+    if (didCentreRef.current) return;
     if (!userLocation) return;
     const map = mapRef.current?.getMap();
     if (!map) return;
+    didCentreRef.current = true;
     map.easeTo({
       center: [userLocation.lng, userLocation.lat],
       zoom: 15.5,
@@ -125,7 +138,8 @@ export default function LocationPickerMap({
     );
   }
 
-  const center = value ?? userLocation ?? MACKINAC_CENTER;
+  // Read once on mount; subsequent camera state is owned by the user.
+  const mountCentre = value ?? initialCenter ?? userLocation ?? MACKINAC_CENTER;
 
   return (
     <div className="space-y-1">
@@ -137,9 +151,9 @@ export default function LocationPickerMap({
           ref={mapRef}
           mapboxAccessToken={MAPBOX_TOKEN}
           initialViewState={{
-            latitude: center.lat,
-            longitude: center.lng,
-            zoom: 15.5,
+            latitude: mountCentre.lat,
+            longitude: mountCentre.lng,
+            zoom: 15,
           }}
           mapStyle="mapbox://styles/mapbox/streets-v12"
           style={{ width: "100%", height: "100%" }}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/services/i18n/client";
 
@@ -36,6 +36,15 @@ export function useLocationPermission(
   const [state, setState] = useState<LocationState>("idle");
   const [error, setError] = useState<string | null>(null);
 
+  // Held in a ref so that callers passing an inline arrow don't change the
+  // identity of requestLocation. Without this, an unstable callback makes
+  // the auto-request effect re-fire on every render, repeatedly hitting
+  // geolocation and churning any state the caller derives from it.
+  const onLocationRef = useRef(onLocation);
+  useEffect(() => {
+    onLocationRef.current = onLocation;
+  }, [onLocation]);
+
   const requestLocation = useCallback(() => {
     if (!navigator.geolocation) {
       setState("unavailable");
@@ -50,7 +59,7 @@ export function useLocationPermission(
       (pos) => {
         setState("granted");
         setError(null);
-        onLocation(pos.coords.latitude, pos.coords.longitude);
+        onLocationRef.current(pos.coords.latitude, pos.coords.longitude);
       },
       (err) => {
         if (err.code === err.PERMISSION_DENIED) {
@@ -66,7 +75,7 @@ export function useLocationPermission(
       },
       { enableHighAccuracy: true, timeout: 10000 }
     );
-  }, [onLocation, t]);
+  }, [t]);
 
   return { state, error, requestLocation };
 }
