@@ -240,6 +240,16 @@ function AppSidebar() {
                         </Link>
                       </SidebarMenuButton>
                     </SidebarMenuItem>
+                    <SidebarMenuItem>
+                      <SidebarMenuButton
+                        asChild
+                        isActive={pathname.includes("/admin-panel/dispatch")}
+                      >
+                        <Link href="/admin-panel/dispatch">
+                          {t("common:navigation.dispatch")}
+                        </Link>
+                      </SidebarMenuButton>
+                    </SidebarMenuItem>
                     {/* sidebar-menu-items */}
                   </>
                 )}

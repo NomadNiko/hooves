@@ -1,0 +1,40 @@
+{
+  "title": "Dispatch",
+  "loading": "Cargando datos de dispatch...",
+  "heading": "📡 Centro de Dispatch",
+  "stats": {
+    "activeDrivers": "Conductores Activos",
+    "activeRides": "Viajes Activos",
+    "pendingRequests": "Solicitudes Pendientes",
+    "totalDrivers": "Total de Conductores"
+  },
+  "driverStatus": {
+    "available": "✅ Disponible",
+    "onTrip": "🐴 En Viaje",
+    "enRoute": "🚀 En Camino al Punto de Recogida"
+  },
+  "driverPanel": {
+    "selectPrompt": "Toca un conductor en el mapa para ver sus detalles.",
+    "status": "Estado",
+    "lastUpdate": "Última Señal",
+    "completedRides": "Viajes Completados",
+    "currentRide": "Viaje Actual:"
+  },
+  "form": {
+    "heading": "Crear Viaje Manual",
+    "pickup": "Recogida",
+    "pickupPlaceholder": "Seleccionar parada de recogida",
+    "dropoff": "Destino",
+    "dropoffPlaceholder": "Seleccionar parada de destino",
+    "fare": "Tarifa ($)",
+    "assignDriver": "Asignar a Conductor",
+    "driverPlaceholder": "Seleccionar un conductor",
+    "createRide": "Crear y Asignar Viaje",
+    "creating": "Creando...",
+    "manualRiderName": "Sin cita (Dispatch)",
+    "cashNote": "El conductor cobrará en efectivo o procesará la tarjeta directamente.",
+    "alerts": {
+      "created": "Viaje creado y asignado al conductor."
+    }
+  }
+}

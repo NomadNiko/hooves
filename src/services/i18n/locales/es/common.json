@@ -14,7 +14,8 @@
     "rideHistory": "📊 Historial de Viajes",
     "fleetDrivers": "🐴 Flota (Conductores)",
     "allRides": "🎫 Todos los Viajes",
-    "myRides": "📜 Mis Viajes"
+    "myRides": "📜 Mis Viajes",
+    "dispatch": "📡 Despacho"
   },
   "formInputs": {
     "avatarInput": {

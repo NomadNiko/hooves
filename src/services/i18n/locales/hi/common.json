@@ -14,7 +14,8 @@
     "rideHistory": "📊 सवारी इतिहास",
     "fleetDrivers": "🐴 बेड़ा (ड्राइवर)",
     "allRides": "🎫 सभी सवारियां",
-    "myRides": "📜 मेरी सवारियां"
+    "myRides": "📜 मेरी सवारियां",
+    "dispatch": "📡 डिस्पैच"
   },
   "formInputs": {
     "avatarInput": {

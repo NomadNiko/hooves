@@ -1,0 +1,40 @@
+{
+  "title": "Dispatch",
+  "loading": "Chargement des données de dispatch...",
+  "heading": "📡 Centre de Dispatch",
+  "stats": {
+    "activeDrivers": "Conducteurs Actifs",
+    "activeRides": "Courses Actives",
+    "pendingRequests": "Demandes en Attente",
+    "totalDrivers": "Total des Conducteurs"
+  },
+  "driverStatus": {
+    "available": "✅ Disponible",
+    "onTrip": "🐴 En Course",
+    "enRoute": "🚀 En Route vers le Point de Prise en Charge"
+  },
+  "driverPanel": {
+    "selectPrompt": "Appuyez sur un conducteur sur la carte pour voir ses détails.",
+    "status": "Statut",
+    "lastUpdate": "Dernier Signal",
+    "completedRides": "Courses Terminées",
+    "currentRide": "Course Actuelle :"
+  },
+  "form": {
+    "heading": "Créer une Course Manuelle",
+    "pickup": "Prise en Charge",
+    "pickupPlaceholder": "Sélectionner un arrêt de prise en charge",
+    "dropoff": "Dépose",
+    "dropoffPlaceholder": "Sélectionner un arrêt de dépose",
+    "fare": "Tarif ($)",
+    "assignDriver": "Assigner au Conducteur",
+    "driverPlaceholder": "Sélectionner un conducteur",
+    "createRide": "Créer et Assigner la Course",
+    "creating": "Création...",
+    "manualRiderName": "Sans rendez-vous (Dispatch)",
+    "cashNote": "Le conducteur encaissera en espèces ou traitera la carte directement.",
+    "alerts": {
+      "created": "Course créée et assignée au conducteur."
+    }
+  }
+}

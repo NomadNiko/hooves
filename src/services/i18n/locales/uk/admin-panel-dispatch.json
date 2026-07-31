@@ -1,0 +1,40 @@
+{
+  "title": "Dispatch",
+  "loading": "Завантаження даних диспетчера...",
+  "heading": "📡 Центр Dispatch",
+  "stats": {
+    "activeDrivers": "Активні Водії",
+    "activeRides": "Активні Поїздки",
+    "pendingRequests": "Очікувані Запити",
+    "totalDrivers": "Загальна Кількість Водіїв"
+  },
+  "driverStatus": {
+    "available": "✅ Доступний",
+    "onTrip": "🐴 У Поїздці",
+    "enRoute": "🚀 Прямує до Місця Посадки"
+  },
+  "driverPanel": {
+    "selectPrompt": "Натисніть на водія на карті, щоб переглянути його деталі.",
+    "status": "Статус",
+    "lastUpdate": "Останній Сигнал",
+    "completedRides": "Завершені Поїздки",
+    "currentRide": "Поточна Поїздка:"
+  },
+  "form": {
+    "heading": "Створити Ручну Поїздку",
+    "pickup": "Посадка",
+    "pickupPlaceholder": "Оберіть зупинку посадки",
+    "dropoff": "Висадка",
+    "dropoffPlaceholder": "Оберіть зупинку висадки",
+    "fare": "Тариф ($)",
+    "assignDriver": "Призначити Водію",
+    "driverPlaceholder": "Оберіть водія",
+    "createRide": "Створити та Призначити Поїздку",
+    "creating": "Створення...",
+    "manualRiderName": "Без запису (Dispatch)",
+    "cashNote": "Водій збере оплату готівкою або обробить картку безпосередньо.",
+    "alerts": {
+      "created": "Поїздку створено та призначено водію."
+    }
+  }
+}

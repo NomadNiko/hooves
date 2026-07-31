@@ -14,7 +14,8 @@
     "rideHistory": "📊 行程历史",
     "fleetDrivers": "🐴 车队（司机）",
     "allRides": "🎫 所有行程",
-    "myRides": "📜 我的行程"
+    "myRides": "📜 我的行程",
+    "dispatch": "📡 调度中心"
   },
   "formInputs": {
     "avatarInput": {

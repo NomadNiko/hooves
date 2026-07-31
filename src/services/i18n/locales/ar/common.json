@@ -14,7 +14,8 @@
     "rideHistory": "📊 سجل الرحلات",
     "fleetDrivers": "🐴 الأسطول (السائقون)",
     "allRides": "🎫 جميع الرحلات",
-    "myRides": "📜 رحلاتي"
+    "myRides": "📜 رحلاتي",
+    "dispatch": "📡 الإرسال"
   },
   "formInputs": {
     "avatarInput": {

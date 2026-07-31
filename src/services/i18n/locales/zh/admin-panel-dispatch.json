@@ -1,0 +1,40 @@
+{
+  "title": "Dispatch",
+  "loading": "正在加载调度数据...",
+  "heading": "📡 调度中心",
+  "stats": {
+    "activeDrivers": "在线车夫",
+    "activeRides": "进行中的行程",
+    "pendingRequests": "待处理请求",
+    "totalDrivers": "车夫总数"
+  },
+  "driverStatus": {
+    "available": "✅ 可用",
+    "onTrip": "🐴 行程中",
+    "enRoute": "🚀 前往接客点"
+  },
+  "driverPanel": {
+    "selectPrompt": "点击地图上的车夫查看详情。",
+    "status": "状态",
+    "lastUpdate": "最后信号",
+    "completedRides": "已完成行程",
+    "currentRide": "当前行程："
+  },
+  "form": {
+    "heading": "手动创建行程",
+    "pickup": "上车点",
+    "pickupPlaceholder": "选择上车站点",
+    "dropoff": "下车点",
+    "dropoffPlaceholder": "选择下车站点",
+    "fare": "费用 ($)",
+    "assignDriver": "分配给车夫",
+    "driverPlaceholder": "选择车夫",
+    "createRide": "创建并分配行程",
+    "creating": "创建中...",
+    "manualRiderName": "现场乘客 (Dispatch)",
+    "cashNote": "车夫将直接收取现金或处理刷卡付款。",
+    "alerts": {
+      "created": "行程已创建并分配给车夫。"
+    }
+  }
+}

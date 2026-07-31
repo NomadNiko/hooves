@@ -1,0 +1,40 @@
+{
+  "title": "Dispatch",
+  "loading": "Dispatch-Daten werden geladen...",
+  "heading": "📡 Dispatch-Zentrale",
+  "stats": {
+    "activeDrivers": "Aktive Fahrer",
+    "activeRides": "Aktive Fahrten",
+    "pendingRequests": "Ausstehende Anfragen",
+    "totalDrivers": "Fahrer Gesamt"
+  },
+  "driverStatus": {
+    "available": "✅ Verfügbar",
+    "onTrip": "🐴 Auf Fahrt",
+    "enRoute": "🚀 Unterwegs zum Abholpunkt"
+  },
+  "driverPanel": {
+    "selectPrompt": "Tippen Sie auf einen Fahrer auf der Karte, um seine Details anzuzeigen.",
+    "status": "Status",
+    "lastUpdate": "Letztes Signal",
+    "completedRides": "Abgeschlossene Fahrten",
+    "currentRide": "Aktuelle Fahrt:"
+  },
+  "form": {
+    "heading": "Manuelle Fahrt Erstellen",
+    "pickup": "Abholung",
+    "pickupPlaceholder": "Abholstation auswählen",
+    "dropoff": "Absetzpunkt",
+    "dropoffPlaceholder": "Absetzstation auswählen",
+    "fare": "Fahrpreis ($)",
+    "assignDriver": "Fahrer Zuweisen",
+    "driverPlaceholder": "Fahrer auswählen",
+    "createRide": "Fahrt Erstellen & Zuweisen",
+    "creating": "Wird erstellt...",
+    "manualRiderName": "Laufkundschaft (Dispatch)",
+    "cashNote": "Der Fahrer kassiert bar oder wickelt die Kartenzahlung direkt ab.",
+    "alerts": {
+      "created": "Fahrt erstellt und dem Fahrer zugewiesen."
+    }
+  }
+}

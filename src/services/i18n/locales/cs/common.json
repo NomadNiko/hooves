@@ -14,7 +14,8 @@
     "rideHistory": "📊 Historie jízd",
     "fleetDrivers": "🐴 Flotila (Řidiči)",
     "allRides": "🎫 Všechny jízdy",
-    "myRides": "📜 Moje jízdy"
+    "myRides": "📜 Moje jízdy",
+    "dispatch": "📡 Dispečink"
   },
   "formInputs": {
     "avatarInput": {

@@ -14,7 +14,8 @@
     "rideHistory": "📊 Історія поїздок",
     "fleetDrivers": "🐴 Автопарк (Водії)",
     "allRides": "🎫 Всі поїздки",
-    "myRides": "📜 Мої поїздки"
+    "myRides": "📜 Мої поїздки",
+    "dispatch": "📡 Диспетчерська"
   },
   "formInputs": {
     "avatarInput": {

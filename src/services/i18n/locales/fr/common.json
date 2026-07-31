@@ -14,7 +14,8 @@
     "rideHistory": "📊 Historique des Courses",
     "fleetDrivers": "🐴 Flotte (Conducteurs)",
     "allRides": "🎫 Tous les Trajets",
-    "myRides": "📜 Mes Courses"
+    "myRides": "📜 Mes Courses",
+    "dispatch": "📡 Dispatch"
   },
   "formInputs": {
     "avatarInput": {

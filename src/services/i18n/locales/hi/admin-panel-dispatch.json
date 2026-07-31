@@ -1,0 +1,40 @@
+{
+  "title": "Dispatch",
+  "loading": "डिस्पैच डेटा लोड हो रहा है...",
+  "heading": "📡 Dispatch केंद्र",
+  "stats": {
+    "activeDrivers": "सक्रिय चालक",
+    "activeRides": "सक्रिय सवारियाँ",
+    "pendingRequests": "लंबित अनुरोध",
+    "totalDrivers": "कुल चालक"
+  },
+  "driverStatus": {
+    "available": "✅ उपलब्ध",
+    "onTrip": "🐴 यात्रा पर",
+    "enRoute": "🚀 पिकअप की ओर"
+  },
+  "driverPanel": {
+    "selectPrompt": "विवरण देखने के लिए मानचित्र पर किसी चालक पर टैप करें।",
+    "status": "स्थिति",
+    "lastUpdate": "अंतिम संकेत",
+    "completedRides": "पूर्ण सवारियाँ",
+    "currentRide": "वर्तमान सवारी:"
+  },
+  "form": {
+    "heading": "मैन्युअल सवारी बनाएँ",
+    "pickup": "पिकअप",
+    "pickupPlaceholder": "पिकअप स्टैंड चुनें",
+    "dropoff": "ड्रॉपऑफ",
+    "dropoffPlaceholder": "ड्रॉपऑफ स्टैंड चुनें",
+    "fare": "किराया ($)",
+    "assignDriver": "चालक को असाइन करें",
+    "driverPlaceholder": "चालक चुनें",
+    "createRide": "सवारी बनाएँ और असाइन करें",
+    "creating": "बनाया जा रहा है...",
+    "manualRiderName": "वॉक-अप (Dispatch)",
+    "cashNote": "चालक नकद भुगतान एकत्र करेगा या सीधे कार्ड संभालेगा।",
+    "alerts": {
+      "created": "सवारी बनाई गई और चालक को असाइन की गई।"
+    }
+  }
+}

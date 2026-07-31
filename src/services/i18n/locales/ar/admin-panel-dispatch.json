@@ -1,0 +1,40 @@
+{
+  "title": "Dispatch",
+  "loading": "جارٍ تحميل بيانات الإرسال...",
+  "heading": "📡 مركز Dispatch",
+  "stats": {
+    "activeDrivers": "السائقون النشطون",
+    "activeRides": "الرحلات النشطة",
+    "pendingRequests": "الطلبات المعلقة",
+    "totalDrivers": "إجمالي السائقين"
+  },
+  "driverStatus": {
+    "available": "✅ متاح",
+    "onTrip": "🐴 في رحلة",
+    "enRoute": "🚀 في الطريق إلى نقطة الالتقاط"
+  },
+  "driverPanel": {
+    "selectPrompt": "انقر على سائق على الخريطة لعرض تفاصيله.",
+    "status": "الحالة",
+    "lastUpdate": "آخر إشارة",
+    "completedRides": "الرحلات المكتملة",
+    "currentRide": "الرحلة الحالية:"
+  },
+  "form": {
+    "heading": "إنشاء رحلة يدوية",
+    "pickup": "نقطة الالتقاط",
+    "pickupPlaceholder": "اختر موقف الالتقاط",
+    "dropoff": "نقطة الوصول",
+    "dropoffPlaceholder": "اختر موقف الوصول",
+    "fare": "الأجرة ($)",
+    "assignDriver": "تعيين لسائق",
+    "driverPlaceholder": "اختر سائقاً",
+    "createRide": "إنشاء وتعيين الرحلة",
+    "creating": "جارٍ الإنشاء...",
+    "manualRiderName": "حضور مباشر (Dispatch)",
+    "cashNote": "سيقوم السائق بتحصيل الدفع نقداً أو معالجة البطاقة مباشرة.",
+    "alerts": {
+      "created": "تم إنشاء الرحلة وتعيينها للسائق."
+    }
+  }
+}

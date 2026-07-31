@@ -14,7 +14,8 @@
     "rideHistory": "📊 Ride History",
     "fleetDrivers": "🐴 Fleet (Drivers)",
     "allRides": "🎫 All Rides",
-    "myRides": "📜 My Rides"
+    "myRides": "📜 My Rides",
+    "dispatch": "📡 Dispatch"
   },
   "formInputs": {
     "avatarInput": {

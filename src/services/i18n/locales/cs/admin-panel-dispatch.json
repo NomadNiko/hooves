@@ -1,0 +1,40 @@
+{
+  "title": "Dispatch",
+  "loading": "Načítání dat dispečinku...",
+  "heading": "📡 Centrum Dispatch",
+  "stats": {
+    "activeDrivers": "Aktivní Řidiči",
+    "activeRides": "Aktivní Jízdy",
+    "pendingRequests": "Čekající Požadavky",
+    "totalDrivers": "Celkem Řidičů"
+  },
+  "driverStatus": {
+    "available": "✅ Dostupný",
+    "onTrip": "🐴 Na Jízdě",
+    "enRoute": "🚀 Na Cestě k Místu Vyzvednutí"
+  },
+  "driverPanel": {
+    "selectPrompt": "Klepněte na řidiče na mapě pro zobrazení jeho detailů.",
+    "status": "Stav",
+    "lastUpdate": "Poslední Signál",
+    "completedRides": "Dokončené Jízdy",
+    "currentRide": "Aktuální Jízda:"
+  },
+  "form": {
+    "heading": "Vytvořit Ruční Jízdu",
+    "pickup": "Vyzvednutí",
+    "pickupPlaceholder": "Vyberte stanoviště vyzvednutí",
+    "dropoff": "Vysazení",
+    "dropoffPlaceholder": "Vyberte stanoviště vysazení",
+    "fare": "Jízdné ($)",
+    "assignDriver": "Přiřadit Řidiči",
+    "driverPlaceholder": "Vyberte řidiče",
+    "createRide": "Vytvořit a Přiřadit Jízdu",
+    "creating": "Vytváření...",
+    "manualRiderName": "Bez objednávky (Dispatch)",
+    "cashNote": "Řidič vybere hotovost nebo zpracuje platbu kartou přímo.",
+    "alerts": {
+      "created": "Jízda vytvořena a přiřazena řidiči."
+    }
+  }
+}

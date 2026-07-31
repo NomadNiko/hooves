@@ -1,0 +1,40 @@
+{
+  "title": "Dispatch",
+  "loading": "Loading dispatch data...",
+  "heading": "📡 Dispatch Center",
+  "stats": {
+    "activeDrivers": "Active Drivers",
+    "activeRides": "Active Rides",
+    "pendingRequests": "Pending Requests",
+    "totalDrivers": "Total Drivers"
+  },
+  "driverStatus": {
+    "available": "✅ Available",
+    "onTrip": "🐴 On Trip",
+    "enRoute": "🚀 En Route to Pickup"
+  },
+  "driverPanel": {
+    "selectPrompt": "Tap a driver on the map to see their details.",
+    "status": "Status",
+    "lastUpdate": "Last Ping",
+    "completedRides": "Completed Rides",
+    "currentRide": "Current Ride:"
+  },
+  "form": {
+    "heading": "Create Manual Ride",
+    "pickup": "Pickup",
+    "pickupPlaceholder": "Select pickup stand",
+    "dropoff": "Dropoff",
+    "dropoffPlaceholder": "Select dropoff stand",
+    "fare": "Fare ($)",
+    "assignDriver": "Assign to Driver",
+    "driverPlaceholder": "Select a driver",
+    "createRide": "Create & Assign Ride",
+    "creating": "Creating...",
+    "manualRiderName": "Walk-up (Dispatch)",
+    "cashNote": "Driver will collect cash payment or handle card directly.",
+    "alerts": {
+      "created": "Ride created and assigned to driver."
+    }
+  }
+}
